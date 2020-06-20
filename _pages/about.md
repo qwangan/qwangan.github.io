@@ -13,4 +13,4 @@ redirect_from:
 * My research interests include quantitative risk management, operations research, financial engineering and game theory.
 
 # News
-* We are organizing a [weekly seminar on risk management and actuarial science](https://yang-liu16.github.io/seminar/). Due to COVID-19, we have switched the seminars to online sessions via Zoom. Researchers all over the world interested in quantitative risk management, actuarial science and mathematical finance are welcomed to join us by sending me an email.
+* We are organizing a [weekly seminar on risk management and actuarial science](https://yang-liu16.github.io/seminar/). Due to COVID-19, we have switched the seminars to online sessions via Zoom. Researchers all over the world interested in quantitative risk management, actuarial science and mathematical finance are welcomed to join us by sending emails to me or the other organizors.
