@@ -1,15 +1,7 @@
 ---
-title: "Paper Title Number 1"
+title: "Signaling game models of equity financing under information asymmetry and finite project life"
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+citation: '<b>Wang, Q.</b> and Kwok, Y.K. <i>International Journal of Financial Engineering.</i> <b>6</b>(1), 1950002.'
 ---
-This paper is about the number 1. The number 2 is left for future work.
-
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
-
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+[[Journal]](https://www.worldscientific.com/doi/10.1142/S2424786319500026)
