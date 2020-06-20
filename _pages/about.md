@@ -15,3 +15,8 @@ redirect_from:
 
 # News
 * We are organizing a [weekly seminar on risk management and actuarial science](https://yang-liu16.github.io/seminar/). Due to COVID-19, we have switched the seminars to online sessions via Zoom. Researchers all over the world interested in quantitative risk management, actuarial science and mathematical finance are welcomed to join us by sending emails to me or the other organizers.
+
+# Contacts
+* Email: q428wang@uwaterloo.ca
+* Office: Rm 4233, Department of Statistics and Actuarial Science
+* Address: Mathematics 3, University of Waterloo, 200 University Avenue West, Waterloo, Ontario, Canada N2L 3G1
