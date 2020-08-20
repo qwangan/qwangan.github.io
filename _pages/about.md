@@ -8,6 +8,10 @@ redirect_from:
   - /about.html
 ---
 
+<p align="center">
+  <img src="https://qwangan.github.io/images/Photo1.jpeg" alt="Photo" style="width: 450px;"/> 
+</p>
+
 # About Me
 * I am a first-year Ph.D. student in Actuarial Science at the University of Waterloo (UW), supervised by Prof. [Ruodu Wang](http://sas.uwaterloo.ca/~wang/).
 * I received my M.Phil. Degree in Mathematics and B.Sc. Degree in Mathematics and Economics at the Hong Kong University of Science and Technology (HKUST), supervised by Prof. [Yue Kuen Kwok](https://www.math.ust.hk/~maykwok/).
