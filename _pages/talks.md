@@ -11,5 +11,5 @@ author_profile: true
 * 23rd Annual International Real Options Conference, 2019 (London, UK)
 
 # Peer-review Service
-Actuarial science journal(s): ASTIN Bulletin, Insurance: Mathematics and Economics
-Mathematical finance journal(s): Quantitative Finance
+* Actuarial science journal(s): ASTIN Bulletin, Insurance: Mathematics and Economics
+* Mathematical finance journal(s): Quantitative Finance
