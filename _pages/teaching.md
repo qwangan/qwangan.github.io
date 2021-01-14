@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 # Teaching Assistant at UW
-* MATBUS 472 Risk Management (Winter 2021)
+* MATBUS 472 - Risk Management (Winter 2021)
 * ACTSC 431 - Loss Model I (Spring 2020)
 * ACTSC 445/845 - Quantitative Enterprise Risk Management (Spring 2020)
 * ACTSC 231 - Introductory Financial Mathematics (Winter 2020)
