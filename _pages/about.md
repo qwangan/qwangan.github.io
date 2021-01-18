@@ -15,7 +15,7 @@ redirect_from:
 # About Me
 * I am a second-year Ph.D. student in Actuarial Science at the University of Waterloo (UW), supervised by Prof. [Ruodu Wang](http://sas.uwaterloo.ca/~wang/).
 * I received my M.Phil. Degree in Mathematics and B.Sc. Degree in Mathematics and Economics at the Hong Kong University of Science and Technology (HKUST), supervised by Prof. [Yue Kuen Kwok](https://www.math.ust.hk/~maykwok/).
-* My research interests include quantitative risk management, operations research, financial engineering, and game theory.
+* My research interests include actuarial science, quantitative risk management, operations research, financial engineering, and game theory.
 
 # News
 * We are hosting a [weekly seminar on risk management and actuarial science](https://yang-liu16.github.io/seminar/). Due to COVID-19, we have switched the seminars to online sessions via Zoom. Researchers all over the world interested in quantitative risk management, actuarial science and mathematical finance are welcomed to join us by sending emails to me, [Yang Liu](https://yang-liu16.github.io/), or [Liyuan Lin](mailto:l89lin@uwaterloo.ca).
