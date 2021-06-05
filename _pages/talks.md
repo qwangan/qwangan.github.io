@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 # Invited Academic Presentations
-* SIAM Conference on Financial Mathematics and Engineering, 2021 (Online)
+* SIAM Conference on Financial Mathematics and Engineering (FM21), 2021 (Online)
 
 # Contributed Academic Presentations
 * 5th PKU-NUS Annual International Conference on Quantitative Finance and Economics, 2021 (Online)
