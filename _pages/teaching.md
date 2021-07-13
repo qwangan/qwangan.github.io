@@ -6,6 +6,7 @@ author_profile: true
 ---
 
 # Teaching Assistant at UW
+* ACTSC 431 - Casualty and Health Insurance Mathematics 2 (Spring 2021)
 * MATBUS 472 - Risk Management (Winter 2021)
 * ACTSC 431 - Loss Model I (Spring 2020)
 * ACTSC 445/845 - Quantitative Enterprise Risk Management (Spring 2020)
