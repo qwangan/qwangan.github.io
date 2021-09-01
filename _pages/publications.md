@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-* **Wang, Q.**, Wang, R. and Zitikis, R. (2021). Risk measures induced by efficient insurance contracts. Submitted.
+* **Wang, Q.**, Wang, R. and Zitikis, R. (2021). Risk measures induced by efficient insurance contracts. Submitted. [[<span style="color:green">arXiv</span>]](https://arxiv.org/submit/3908249/preview)
 * Pesenti, S., **Wang, Q.** and Wang, R. (2021). Optimizing distortion riskmetrics with distributional uncertainty. Submitted. [[<span style="color:green">arXiv</span>]](http://arxiv.org/abs/2011.04889)
 * Embrechts, P., Mao, T., **Wang, Q.** and Wang, R. (2021). Bayes risk, elicitability, and the Expected Shortfall. *Mathematical Finance*, forthcoming. [[<span style="color:green">SSRN</span>]](https://ssrn.com/abstract=3708379)
 * **Wang, Q.**, Wang, R. and Wei, Y.  (2020). Distortion riskmetrics on general spaces. *ASTIN Bulletin*, **50**(4), 827--851. [[<span style="color:green">Journal</span>]](https://doi.org/10.1017/asb.2020.14) 
