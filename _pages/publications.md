@@ -5,6 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
+* Han, X., **Wang, Q.**, Wang, R. and Xia, J. (2021). Cash-subadditive risk measures without quasi-convexity. Submitted. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2110.12198#)
 * **Wang, Q.**, Wang, R. and Zitikis, R. (2021). Risk measures induced by efficient insurance contracts. Submitted. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2109.00314v2)
 * Pesenti, S., **Wang, Q.** and Wang, R. (2021). Optimizing distortion riskmetrics with distributional uncertainty. Submitted. [[<span style="color:green">arXiv</span>]](http://arxiv.org/abs/2011.04889)
 * Embrechts, P., Mao, T., **Wang, Q.** and Wang, R. (2021). Bayes risk, elicitability, and the Expected Shortfall. *Mathematical Finance*, forthcoming. [[<span style="color:green">SSRN</span>]](https://ssrn.com/abstract=3708379)
