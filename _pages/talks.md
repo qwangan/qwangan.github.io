@@ -5,6 +5,9 @@ permalink: /talks/
 author_profile: true
 ---
 
+# Conferences Organized
+* 2nd Waterloo Student Conference in Statistics, Actuarial Science and Finance (Student Co-chair), 2021 (Online)
+
 # Invited Academic Presentations
 * SIAM Conference on Financial Mathematics and Engineering (FM21), 2021 (Online)
 
