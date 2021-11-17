@@ -19,7 +19,7 @@ redirect_from:
 
 # News
 * It is a great honor for me to be selected as one of the four recipients of the [James C. Hickman Scholar Doctoral Stipend](https://www.soa.org/resources/announcements/press-releases/2021/hickmans-scholar/) from the Society of Actuaries (SOA) for the 2021--2022 academic year.
-* We are hosting a [weekly seminar on risk management and actuarial science](https://yang-liu16.github.io/seminar/). Due to COVID-19, we have switched the seminars to online sessions via Zoom. Researchers all over the world interested in quantitative risk management, actuarial science and mathematical finance are welcomed to join us by sending emails to me, [Yang Liu](https://yang-liu16.github.io/), or [Liyuan Lin](mailto:l89lin@uwaterloo.ca).
+* We are hosting a [weekly seminar on risk management and actuarial science](https://yang-liu16.github.io/seminar/). Due to COVID-19, we have switched the seminars to online sessions via Zoom. Researchers all over the world interested in quantitative risk management, actuarial science and mathematical finance are welcomed to join us by sending emails to me, [Yang Liu](https://yang-liu16.github.io/), or [Liyuan Lin](https://liyuan-lin.github.io/Liyuan/).
 
 # Contacts
 * Email: q428wang@uwaterloo.ca
