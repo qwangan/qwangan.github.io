@@ -9,6 +9,7 @@ author_profile: true
 * 2nd Waterloo Student Conference in Statistics, Actuarial Science and Finance (Student Co-chair), 2021 (Online)
 
 # Invited Academic Presentations
+* Real Options Seminar, Osaka University, 2021 (Online)
 * SIAM Conference on Financial Mathematics and Engineering, 2021 (Online)
 
 # Contributed Academic Presentations
