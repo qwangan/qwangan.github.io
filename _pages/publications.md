@@ -7,7 +7,7 @@ author_profile: true
 
 * Han, X., **Wang, Q.**, Wang, R. and Xia, J. (2021). Cash-subadditive risk measures without quasi-convexity. Submitted. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2110.12198#)
 * Pesenti, S., **Wang, Q.** and Wang, R. (2021). Optimizing distortion riskmetrics with distributional uncertainty. Submitted. [[<span style="color:green">arXiv</span>]](http://arxiv.org/abs/2011.04889)
-* **Wang, Q.**, Wang, R. and Zitikis, R. (2021). Risk measures induced by efficient insurance contracts. *Insurance: Mathematics and Economics*, forthcoming. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2109.00314v2)
+* **Wang, Q.**, Wang, R. and Zitikis, R. (2021). Risk measures induced by efficient insurance contracts. *Insurance: Mathematics and Economics*, **103**, 56--65.
 * Embrechts, P., Mao, T., **Wang, Q.** and Wang, R. (2021). Bayes risk, elicitability, and the Expected Shortfall. *Mathematical Finance*, **31**(4), 1190--1217. [[<span style="color:green">Journal</span>]](https://onlinelibrary.wiley.com/doi/full/10.1111/mafi.12313)
 * **Wang, Q.**, Wang, R. and Wei, Y.  (2020). Distortion riskmetrics on general spaces. *ASTIN Bulletin*, **50**(4), 827--851. [[<span style="color:green">Journal</span>]](https://doi.org/10.1017/asb.2020.14) 
 * **Wang, Q.** and Kwok, Y. K. (2020). Real option signaling games of debt financing using equity guarantee swaps. *International Journal of Theoretical and Applied Finance*, **23**(5), 2050036. [[<span style="color:green">Journal</span>]](https://doi.org/10.1142/S0219024920500363)
