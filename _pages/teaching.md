@@ -6,6 +6,7 @@ author_profile: true
 ---
 
 # Teaching Assistant at UW
+* ACTSC 964 - Quantitative Risk Management (Spring 2022)
 * ACTSC 446/846 - Mathematics of Financial Markets (Winter 2022)
 * ACTSC 431 - Casualty and Health Insurance Mathematics 2 (Spring 2021)
 * MATBUS 472 - Risk Management (Winter 2021 -- 2022)
