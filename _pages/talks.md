@@ -13,6 +13,7 @@ author_profile: true
 * SIAM Conference on Financial Mathematics and Engineering, 2021 (Online)
 
 # Contributed Academic Presentations
+* 57th Actuarial Research Conference, 2022 (Urbana-Champaign, US)
 * 25th International Congress on Insurance: Mathematics and Economics, 2021 (Online)
 * CORS/INFORMS International Conference, 2022 (Vancouver, CA)
 * 56th Actuarial Research Conference, 2021 (Online)
