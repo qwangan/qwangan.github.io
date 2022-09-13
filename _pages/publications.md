@@ -5,6 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
+* **Wang, Q.**, Wang, R. and Ziegel, J. (2022). E-backtesting. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2209.00991).
 * Han, X., **Wang, Q.**, Wang, R. and Xia, J. (2021). Cash-subadditive risk measures without quasi-convexity. Submitted. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2110.12198#)
 * Pesenti, S., **Wang, Q.** and Wang, R. (2021). Optimizing distortion riskmetrics with distributional uncertainty. Submitted. [[<span style="color:green">arXiv</span>]](http://arxiv.org/abs/2011.04889)
 * **Wang, Q.**, Wang, R. and Zitikis, R. (2021). Risk measures induced by efficient insurance contracts. *Insurance: Mathematics and Economics*, **103**, 56--65.
