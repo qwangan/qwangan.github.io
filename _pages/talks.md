@@ -6,7 +6,8 @@ author_profile: true
 ---
 
 # Conferences Organized
-* 2nd Waterloo Student Conference in Statistics, Actuarial Science and Finance (Student Co-chair), 2021 (Online)
+* 3rd Waterloo Student Conference in Statistics, Actuarial Science and Finance (Co-chair), 2022 (Waterloo, Canada)
+* 2nd Waterloo Student Conference in Statistics, Actuarial Science and Finance (Co-chair), 2021 (Online)
 
 # Invited Academic Presentations
 * Real Options Seminar, Osaka University, 2021 (Online)
@@ -15,7 +16,7 @@ author_profile: true
 # Contributed Academic Presentations
 * 57th Actuarial Research Conference, 2022 (Urbana-Champaign, US)
 * 25th International Congress on Insurance: Mathematics and Economics, 2021 (Online)
-* CORS/INFORMS International Conference, 2022 (Vancouver, CA)
+* CORS/INFORMS International Conference, 2022 (Vancouver, Canada)
 * 56th Actuarial Research Conference, 2021 (Online)
 * 24th International Congress on Insurance: Mathematics and Economics, 2021 (Online)
 * 5th PKU-NUS Annual International Conference on Quantitative Finance and Economics, 2021 (Online)
