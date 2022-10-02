@@ -5,6 +5,9 @@ permalink: /teaching/
 author_profile: true
 ---
 
+# Instructor at UW
+* ACTSC 371 - Introduction to Investment (expected Winter 2022)
+
 # Teaching Assistant at UW
 * ACTSC 363 - Casualty and Health Insurance Mathematics 1 (Fall 2022)
 * ACTSC 964 - Quantitative Risk Management (Spring 2022)
