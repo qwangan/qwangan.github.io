@@ -9,6 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-[My Curriculum Vitae [PDF]](https://qwangan.github.io/files/Curriculum Vitae.pdf)
+[My Curriculum Vitae [PDF]](https://qwangan.github.io/files/Curriculum_Vitae.pdf)
 
 <!-- <embed src="http://qwangan.com/files/Curriculum_Vitae.pdf" width="650" height="1800" type='application/pdf'> -->
