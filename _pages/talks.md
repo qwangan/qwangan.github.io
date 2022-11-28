@@ -10,6 +10,8 @@ author_profile: true
 * 2nd Waterloo Student Conference in Statistics, Actuarial Science and Finance (Co-chair), 2021 (Online)
 
 # Invited Academic Presentations
+* Young Data Science Researcher Seminar Zurich, 2022 (Online)
+* INFORMS Annual Meeting, 2022 (Indianapolis, US)
 * Real Options Seminar, Osaka University, 2021 (Online)
 * SIAM Conference on Financial Mathematics and Engineering, 2021 (Online)
 
