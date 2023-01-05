@@ -17,7 +17,7 @@ author_profile: true
 
 # Contributed Academic Presentations
 * 57th Actuarial Research Conference, 2022 (Urbana-Champaign, US)
-* 25th International Congress on Insurance: Mathematics and Economics, 2021 (Online)
+* 25th International Congress on Insurance: Mathematics and Economics, 2022 (Online)
 * CORS/INFORMS International Conference, 2022 (Vancouver, Canada)
 * 56th Actuarial Research Conference, 2021 (Online)
 * 24th International Congress on Insurance: Mathematics and Economics, 2021 (Online)
