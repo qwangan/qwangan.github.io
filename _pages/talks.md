@@ -28,5 +28,7 @@ author_profile: true
 
 # Peer-review Service
 * Actuarial science journal(s): ASTIN Bulletin, Insurance: Mathematics and Economics, Annals of Actuarial Science
-* Mathematical finance journal(s): Quantitative Finance
+* Mathematical finance journal(s): Quantitative Finance, Mathematical Finance
+* Operations Research journal(s): Mathematics of Operations Research
+* Economics journal(s): Economic Modelling
 * Probability journal(s): Statistics & Probability Letters
