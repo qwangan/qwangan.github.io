@@ -9,8 +9,8 @@
 locale                   : "en-US"
 title                    : "Qiuqi Wang's Webpage"
 title_separator          : "-"
-name                     : &name "Qiuqi Wang"
-description              : &description "Ph.D., Department of Statistics and Actuarial Science, University of Waterloo"
+name                     : &name "Qiuqi Wang, Ph.D., A.S.A."
+description              : &description "Assistant Professor, Maurice R. Greenberg School of Risk Science, Georgia State University"
 url                      : https://qwangan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "qwangan/qwangan.github.io"
@@ -77,13 +77,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Qiuqi Wang"
+  name             : "Qiuqi Wang, Ph.D., A.S.A."
   avatar           : "Photo1.jpeg"
-  bio              : "Ph.D., Department of Statistics and Actuarial Science, University of Waterloo"
-  location         : "Waterloo, Ontario, Canada"
+  bio              : "Assistant Professor, Maurice R. Greenberg School of Risk Science, Georgia State University"
+  location         : "Atlanta, Georgia, U.S.A."
   employer         :
   googlescholar    : "https://scholar.google.ca/citations?user=vboPnRoAAAAJ&hl=en"
-  email            : "q428wang@uwaterloo.ca"
+  email            : "qwang30@gsu.edu"
   uri              :
   bitbucket        :
   codepen          :
