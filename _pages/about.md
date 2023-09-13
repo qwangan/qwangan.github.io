@@ -13,7 +13,7 @@ redirect_from:
 </p>
 
 # About Me
-* I will join Georgia State University, **[Maurice R. Greenberg School of Risk Science](https://robinson.gsu.edu/academic-departments/risk-management-and-insurance/)**, as a tenure-track Assistant Professor in Actuarial Science from Fall 2023.
+* I joined Georgia State University, **[Maurice R. Greenberg School of Risk Science]([https://robinson.gsu.edu/academic-departments/risk-management-and-insurance/](https://robinson.gsu.edu/academic-departments/risk-science/))**, as a tenure-track Assistant Professor in Actuarial Science in Fall 2023.
 * I obtained my Ph.D. degree in Actuarial Science at the University of Waterloo (UW), supervised by Prof. [Ruodu Wang](http://sas.uwaterloo.ca/~wang/). Prior to this, I received my M.Phil. Degree in Mathematics and B.Sc. Degree in Mathematics and Economics at the Hong Kong University of Science and Technology (HKUST), supervised by Prof. [Yue Kuen Kwok](https://www.math.ust.hk/~maykwok/).
 * My research interests include actuarial science, quantitative risk management, operations research, financial engineering, and game theory.
 
@@ -24,6 +24,6 @@ redirect_from:
 * We are hosting a **[weekly seminar on risk management and actuarial science](https://yang-liu16.github.io/seminar/)**. Due to COVID-19, we have switched the seminars to online sessions via Zoom. Researchers all over the world interested in quantitative risk management, actuarial science and mathematical finance are welcomed to join us by sending emails to me, [Zhanyi Jiao](mailto:z27jiao@uwaterloo.ca), [Yang Liu](https://yang-liu16.github.io/), or [Liyuan Lin](https://liyuan-lin.github.io/Liyuan/).
 
 # Contacts
-* Email: q428wang@uwaterloo.ca
-* Office: Rm 4233, Department of Statistics and Actuarial Science
-* Address: Mathematics 3, University of Waterloo, 200 University Avenue West, Waterloo, Ontario, Canada N2L 3G1
+* Email: qwang30@gsu.edu
+* Office: Unite 1127, Maurice R. Greenberg School of Risk Science (GSRS), Robinson College of Business
+* Address: Georgia State University, 35 Broad Street NW, Atlanta, Georgia, 30303
