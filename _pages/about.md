@@ -24,5 +24,6 @@ redirect_from:
 
 # Contacts
 * Email: qwang30@gsu.edu
+* Tel: 404-413-7470
 * Office: Unite 1127, Maurice R. Greenberg School of Risk Science (GSRS), Robinson College of Business
 * Address: Georgia State University, 35 Broad Street NW, Atlanta, Georgia, 30303
