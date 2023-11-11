@@ -13,7 +13,7 @@ redirect_from:
 </p>
 
 # About Me
-* I joined Georgia State University, **[Maurice R. Greenberg School of Risk Science]([https://robinson.gsu.edu/academic-departments/risk-science/](https://robinson.gsu.edu/academic-departments/risk-science/))**, as a tenure-track Assistant Professor in Actuarial Science in Fall 2023.
+* I joined Georgia State University, **[Maurice R. Greenberg School of Risk Science](https://robinson.gsu.edu/academic-departments/risk-science/)**, as a tenure-track Assistant Professor in Actuarial Science in Fall 2023.
 * I obtained my Ph.D. degree in Actuarial Science at the University of Waterloo (UW), supervised by Prof. [Ruodu Wang](http://sas.uwaterloo.ca/~wang/). Prior to this, I received my M.Phil. Degree in Mathematics and B.Sc. Degree in Mathematics and Economics at the Hong Kong University of Science and Technology (HKUST), supervised by Prof. [Yue Kuen Kwok](https://www.math.ust.hk/~maykwok/).
 * My research interests include actuarial science, quantitative risk management, operations research, financial engineering, and game theory.
 
