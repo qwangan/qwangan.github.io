@@ -5,6 +5,9 @@ permalink: /teaching/
 author_profile: true
 ---
 
+# Courses at GSU
+* AS 3230/8230 - Financial Mathematics (Spring 2024)
+
 # Instructor at UW
 * ACTSC 371 - Introduction to Investment (Winter 2023)
 
