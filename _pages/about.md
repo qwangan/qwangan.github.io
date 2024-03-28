@@ -18,6 +18,7 @@ redirect_from:
 * My research interests include actuarial science, quantitative risk management, operations research, financial engineering, and game theory.
 
 # News
+* I am honored to be selected as the recipient of the **Statistical Society of Canada's Pierre Robillard Award** from the Statistical Society of Canada (SSC) for the year 2024, recognizing the best Ph.D. thesis defended at a Canadian university in 2023 in the fields of probability or statistics.
 * We have successfully hosted the in-person **[3rd Waterloo Student Conference in Statistics, Actuarial Science and Finance](https://uwaterloo.ca/statistics-actuarial-science-finance-student-conference/)** on Oct 14 & 15, 2022, for which I served as one of the student co-chairs with Alexandra Mossman.
 * It is a great honor for me to be renewed as one of the recipients of the **[James C. Hickman Scholar Doctoral Stipend](https://www.soa.org/resources/announcements/press-releases/2022/2022-hickman-scholar/)** from the Society of Actuaries (SOA) for 2022--2023 academic year.
 * It is my great pleasure to be selected as one of the two recipients of the **Comprehensive Award** for 2020 by the department.
@@ -25,5 +26,5 @@ redirect_from:
 # Contacts
 * Email: qwang30@gsu.edu
 * Tel: +1 404-413-7470
-* Office: Unite 1127, Maurice R. Greenberg School of Risk Science (GSRS), Robinson College of Business
+* Office: Suite 1127, Maurice R. Greenberg School of Risk Science (GSRS), Robinson College of Business
 * Address: Georgia State University, 35 Broad Street NW, Atlanta, Georgia, 30303
