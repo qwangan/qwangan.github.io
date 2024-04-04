@@ -16,8 +16,8 @@ redirect_from:
 * Assistant Professor - Georgia State University, [Maurice R. Greenberg School of Risk Science](https://robinson.gsu.edu/academic-departments/risk-science/), 2023 - present
 
 # Education
-* Ph.D. in Actuarial Science - University of Waterloo (Advisor: Ruodu Wang), 2023
-* M.Phil. in Mathematics - Hong Kong University of Science and Technology (Advisor: Yue Kuen Kwok), 2019
+* Ph.D. in Actuarial Science - University of Waterloo (Advisor: [Ruodu Wang](https://sas.uwaterloo.ca/~wang/)), 2023
+* M.Phil. in Mathematics - Hong Kong University of Science and Technology (Advisor: [Yue Kuen Kwok](https://www.math.hkust.edu.hk/~maykwok/)), 2019
 * B.Sc. in Mathematics and Economics - Hong Kong University of Science and Technology, 2017
 
 # Research Interests
