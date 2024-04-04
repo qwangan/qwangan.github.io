@@ -13,7 +13,7 @@ redirect_from:
 </p>
 
 # Academic Appointment
-* Assistant Professor - Georgia State University, [Maurice R. Greenberg School of Risk Science](https://robinson.gsu.edu/academic-departments/risk-science/), 2023 - present
+* Assistant Professor - Georgia State University, 2023 - present
 
 # Education
 * Ph.D. in Actuarial Science - University of Waterloo (Advisor: [Ruodu Wang](https://sas.uwaterloo.ca/~wang/)), 2023
