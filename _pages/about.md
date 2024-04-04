@@ -12,10 +12,16 @@ redirect_from:
   <img src="https://qwangan.github.io/images/Photo.jpeg" alt="Photo" style="width: 450px;"/> 
 </p>
 
-# About Me
-* I joined Georgia State University, [Maurice R. Greenberg School of Risk Science](https://robinson.gsu.edu/academic-departments/risk-science/), as a tenure-track Assistant Professor in Actuarial Science in Fall 2023.
-* I obtained my Ph.D. degree in Actuarial Science at the University of Waterloo (UW), supervised by Prof. [Ruodu Wang](http://sas.uwaterloo.ca/~wang/). Prior to this, I received my M.Phil. Degree in Mathematics and B.Sc. Degree in Mathematics and Economics at the Hong Kong University of Science and Technology (HKUST), supervised by Prof. [Yue Kuen Kwok](https://www.math.ust.hk/~maykwok/).
-* My research interests include actuarial science, quantitative risk management, operations research, financial engineering, and game theory.
+# Academic Appointment
+* Assistant Professor - Georgia State University, [Maurice R. Greenberg School of Risk Science](https://robinson.gsu.edu/academic-departments/risk-science/), 2023 - present
+
+# Education
+* Ph.D. in Actuarial Science - University of Waterloo (Advisor: Ruodu Wang), 2023
+* M.Phil. in Mathematics - Hong Kong University of Science and Technology (Advisor: Yue Kuen Kwok), 2019
+* B.Sc. in Mathematics and Economics - Hong Kong University of Science and Technology, 2017
+
+# Research Interests
+* Actuarial science; quantitative risk management; operations research; financial engineering; game theory
 
 # News
 * I am honored to be selected as the recipient of the **Statistical Society of Canada's Pierre Robillard Award** from the Statistical Society of Canada (SSC) for 2024, which is awarded to one recipient per year recognizing the best Ph.D. thesis defended at a Canadian university in 2023 in the fields of probability or statistics.
