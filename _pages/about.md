@@ -25,7 +25,7 @@ redirect_from:
 
 # News
 * I am pleased to win third place in the Mathematics Doctoral Prize competition. This prize is awarded annually to recognize the achievement of graduating doctoral students in the Faculty of Mathematics, University of Waterloo.
-* I am honored to be selected as the recipient of the **Statistical Society of Canada's Pierre Robillard Award** from the Statistical Society of Canada (SSC) for 2024, which is awarded to one recipient per year recognizing the best Ph.D. thesis defended at a Canadian university in 2023 in the fields of probability or statistics.
+* I am honored to be selected as the recipient of the **[Statistical Society of Canada's Pierre Robillard Award](https://ssc.ca/en/awards/2024/qiuqi-wang-2024-pierre-robillard-award-winner)** from the Statistical Society of Canada (SSC) for 2024, which is awarded to one recipient per year recognizing the best Ph.D. thesis defended at a Canadian university in 2023 in the fields of probability or statistics.
 * We have successfully hosted the in-person **[3rd Waterloo Student Conference in Statistics, Actuarial Science and Finance](https://uwaterloo.ca/statistics-actuarial-science-finance-student-conference/)** on Oct 14 & 15, 2022, for which I served as one of the student co-chairs with Alexandra Mossman.
 * It is a great honor for me to be renewed as one of the recipients of the **[James C. Hickman Scholar Doctoral Stipend](https://www.soa.org/resources/announcements/press-releases/2022/2022-hickman-scholar/)** from the Society of Actuaries (SOA) for 2022--2023 academic year.
 
