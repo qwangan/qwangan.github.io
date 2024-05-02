@@ -5,8 +5,8 @@ permalink: /publications/
 author_profile: true
 ---
 
-* Aboagye, E., Asimit, V., Fung, T. C., Peng, L. and **Wang, Q.** (2024). A revisit of the optimal excess-of-loss contract. Preprint.
-* **Wang, Q.**, Wang, R. and Ziegel, J. (2022). E-backtesting. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2209.00991).
+* Aboagye, E., Asimit, V., Fung, T. C., Peng, L. and **Wang, Q.** (2024). A revisit of the optimal excess-of-loss contract. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2405.00188).
+* **Wang, Q.**, Wang, R. and Ziegel, J. (2022). E-backtesting. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2209.00991)
 * Han, X., **Wang, Q.**, Wang, R. and Xia, J. (2021). Cash-subadditive risk measures without quasi-convexity. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2110.12198#)
 * Pesenti, S., **Wang, Q.** and Wang, R. (2020). Optimizing distortion riskmetrics with distributional uncertainty. Preprint. [[<span style="color:green">arXiv</span>]](http://arxiv.org/abs/2011.04889)
 * **Wang, Q.**, Wang, R. and Zitikis, R. (2022). Risk measures induced by efficient insurance contracts. *Insurance: Mathematics and Economics*, **103**, 56--65. [[<span style="color:green">Journal</span>]](https://doi.org/10.1016/j.insmatheco.2022.01.003)
