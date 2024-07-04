@@ -30,7 +30,7 @@ redirect_from:
 * It is a great honor for me to be renewed as one of the recipients of the **[James C. Hickman Scholar Doctoral Stipend](https://www.soa.org/resources/announcements/press-releases/2022/2022-hickman-scholar/)** from the Society of Actuaries (SOA) for 2022--2023 academic year.
 
 # Contacts
-* Email: qwang30@gsu.edu
+* Email: qwang30 {AT} gsu {DOT} edu
 * Tel: +1 404-413-7470
 * Office: Suite 1127, Maurice R. Greenberg School of Risk Science (GSRS), Robinson College of Business
 * Address: Georgia State University, 35 Broad Street NW, Atlanta, Georgia, 30303
