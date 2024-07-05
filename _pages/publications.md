@@ -8,7 +8,7 @@ author_profile: true
 * Aboagye, E., Asimit, V., Fung, T. C., Peng, L. and **Wang, Q.** (2024). A revisit of the optimal excess-of-loss contract. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2405.00188).
 * **Wang, Q.**, Wang, R. and Ziegel, J. (2022). E-backtesting. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2209.00991)
 * Han, X., **Wang, Q.**, Wang, R. and Xia, J. (2021). Cash-subadditive risk measures without quasi-convexity. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2110.12198#)
-* Pesenti, S., **Wang, Q.** and Wang, R. (2020). Optimizing distortion riskmetrics with distributional uncertainty. Preprint. [[<span style="color:green">arXiv</span>]](http://arxiv.org/abs/2011.04889)
+* Pesenti, S., **Wang, Q.** and Wang, R. (2024). Optimizing distortion riskmetrics with distributional uncertainty. *Mathematical Programming*, forthcoming. [[<span style="color:green">arXiv</span>]](http://arxiv.org/abs/2011.04889)
 * **Wang, Q.**, Wang, R. and Zitikis, R. (2022). Risk measures induced by efficient insurance contracts. *Insurance: Mathematics and Economics*, **103**, 56--65. [[<span style="color:green">Journal</span>]](https://doi.org/10.1016/j.insmatheco.2022.01.003)
 * Embrechts, P., Mao, T., **Wang, Q.** and Wang, R. (2021). Bayes risk, elicitability, and the Expected Shortfall. *Mathematical Finance*, **31**(4), 1190--1217. [[<span style="color:green">Journal</span>]](https://onlinelibrary.wiley.com/doi/full/10.1111/mafi.12313)
 * **Wang, Q.**, Wang, R. and Wei, Y.  (2020). Distortion riskmetrics on general spaces. *ASTIN Bulletin*, **50**(3), 827--851. [[<span style="color:green">Journal</span>]](https://doi.org/10.1017/asb.2020.14) 
