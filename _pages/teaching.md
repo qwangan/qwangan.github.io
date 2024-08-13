@@ -6,7 +6,8 @@ author_profile: true
 ---
 
 # Courses at GSU
-* AS 3230/8230 - Financial Mathematics (Spring 2024)
+* RMI 8300 - Predictive Risk Modeling (Fall 2024)
+* AS 3230/8230 - Financial Mathematics (Spring & Fall 2024)
 
 # Instructor at UW
 * ACTSC 371 - Introduction to Investment (Winter 2023)
