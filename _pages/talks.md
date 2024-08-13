@@ -15,12 +15,15 @@ author_profile: true
 * 2nd Waterloo Student Conference in Statistics, Actuarial Science and Finance (Co-chair), 2021 (Online)
 
 # Invited Academic Presentations
+* Pierre Robillard Invited Address, Statistical Society of Canada Annual Meeting, 2024 (St.~John's, Canada)
 * Young Data Science Researcher Seminar Zurich, 2022 (Online)
 * INFORMS Annual Meeting, 2022 (Indianapolis, US)
 * Real Options Seminar, Osaka University, 2021 (Online)
 * SIAM Conference on Financial Mathematics and Engineering, 2021 (Online)
 
 # Contributed Academic Presentations
+* 59th Actuarial Research Conference, 2024 (Murfreesboro, US)
+* 27th International Congress of Insurance: Mathematics and Economics, 2024 (Chicago, US)
 * 57th Actuarial Research Conference, 2022 (Urbana-Champaign, US)
 * 25th International Congress on Insurance: Mathematics and Economics, 2022 (Online)
 * CORS/INFORMS International Conference, 2022 (Vancouver, Canada)
