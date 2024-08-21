@@ -5,6 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
+* Boonen, T. J., Chen, Y., Han, X. and **Wang, Q.** (2024). Optimal insurance design with Lambda-Value-at-Risk. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2408.09799).
 * Aboagye, E., Asimit, V., Fung, T. C., Peng, L. and **Wang, Q.** (2024). A revisit of the optimal excess-of-loss contract. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2405.00188).
 * **Wang, Q.**, Wang, R. and Ziegel, J. (2022). E-backtesting. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2209.00991)
 * Han, X., **Wang, Q.**, Wang, R. and Xia, J. (2021). Cash-subadditive risk measures without quasi-convexity. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2110.12198#)
