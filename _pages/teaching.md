@@ -24,6 +24,6 @@ author_profile: true
 * MATBUS 471 - Fixed Income Securities (Fall 2019 -- 2021, Winter 2020)
 * MATBUS 470 - Derivatives (Fall 2019 -- 2022, Winter 2021)
 
-# Teaching Assitant at HKUST
+# Teaching Assistant at HKUST
 * MATH 4321 - Game Theory (with tutorials) (Spring 2018, 2019)
 * MATH 4511 - Quantitative Methods for Fixed Income Derivatives (with tutorials) (Fall 2018)
