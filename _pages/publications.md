@@ -7,9 +7,9 @@ author_profile: true
 
 # Pre-publication Manuscripts
 * Boonen, T. J., Chen, Y., Han, X. and **Wang, Q.** (2024). Optimal insurance design with Lambda-Value-at-Risk. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2408.09799)
-* **Wang, Q.**, Wang, R. and Ziegel, J. (2022). E-backtesting. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2209.00991)
 
 # Peer-reviewed Journal Articles
+* **Wang, Q.**, Wang, R. and Ziegel, J. (2025). E-backtesting. *Management Science*, forthcoming. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2209.00991)
 * Han, X., **Wang, Q.**, Wang, R. and Xia, J. (2025). Cash-subadditive risk measures without quasi-convexity. *Mathematics of Operations Research*, forthcoming. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2110.12198#)
 * Aboagye, E., Asimit, V., Fung, T. C., Peng, L. and **Wang, Q.** (2024). A revisit of the optimal excess-of-loss contract. *European Journal of Operational Research*, forthcoming. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2405.00188)
 * Pesenti, S., **Wang, Q.** and Wang, R. (2024). Optimizing distortion riskmetrics with distributional uncertainty. *Mathematical Programming*, available online. [[<span style="color:green">Journal</span>]](https://link.springer.com/article/10.1007/s10107-024-02128-6)
