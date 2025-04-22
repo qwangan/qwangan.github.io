@@ -9,7 +9,7 @@ author_profile: true
 
 
 # Peer-reviewed Journal Articles
-* * Boonen, T. J., Chen, Y., Han, X. and **Wang, Q.** (2025). Optimal insurance design with Lambda-Value-at-Risk. *European Journal of Operational Research*, forthcoming. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2408.09799)
+* Boonen, T. J., Chen, Y., Han, X. and **Wang, Q.** (2025). Optimal insurance design with Lambda-Value-at-Risk. *European Journal of Operational Research*, forthcoming. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2408.09799)
 * **Wang, Q.**, Wang, R. and Ziegel, J. (2025). E-backtesting. *Management Science*, forthcoming. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2209.00991)
 * Han, X., **Wang, Q.**, Wang, R. and Xia, J. (2025). Cash-subadditive risk measures without quasi-convexity. *Mathematics of Operations Research*, forthcoming. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2110.12198#)
 * Aboagye, E., Asimit, V., Fung, T. C., Peng, L. and **Wang, Q.** (2024). A revisit of the optimal excess-of-loss contract. *European Journal of Operational Research*, forthcoming. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2405.00188)
