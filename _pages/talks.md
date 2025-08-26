@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 # Academic Visits
-* Nankai University (School of Mathematical Sciences), 2023 (Tianjin, China)
+* Nankai University (School of Mathematical Sciences), 2023, 2025 (Tianjin, China)
 * Chinese Academy of Sciences (Academy of Math and Systems Science), 2021, 2023 (Beijing, China)
 * University of Science and Technology of China (School of Management), 2021 (Hefei, China)
 
@@ -15,6 +15,8 @@ author_profile: true
 * 2nd Waterloo Student Conference in Statistics, Actuarial Science and Finance (Co-chair), 2021 (Online)
 
 # Invited Academic Presentations
+* China Conference on Insurance and Risk Management, 2025 (Urumqi, China)
+* 3rd Foundations and Applications of Decentralized Risk-Sharing, 2025 (Paris, France)
 * Pierre Robillard Invited Address, Statistical Society of Canada Annual Meeting, 2024 (St.~John's, Canada)
 * Young Data Science Researcher Seminar Zurich, 2022 (Online)
 * INFORMS Annual Meeting, 2022 (Indianapolis, US)
@@ -22,6 +24,7 @@ author_profile: true
 * SIAM Conference on Financial Mathematics and Engineering, 2021 (Online)
 
 # Contributed Academic Presentations
+* 60th Actuarial Research Conference, 2025 (Toronto, Canada)
 * 59th Actuarial Research Conference, 2024 (Murfreesboro, US)
 * 27th International Congress of Insurance: Mathematics and Economics, 2024 (Chicago, US)
 * 57th Actuarial Research Conference, 2022 (Urbana-Champaign, US)
