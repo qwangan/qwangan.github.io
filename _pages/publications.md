@@ -7,6 +7,7 @@ author_profile: true
 
 # Pre-publication Manuscripts
 
+* Chi, Y., Fung, T. C., Peng, L. and **Wang, Q.** (2025). Statistical solutions of optimal multivariate reinsurance under distortion risk measures. Preprint.
 
 # Peer-reviewed Journal Articles
 * Boonen, T. J., Chen, Y., Han, X. and **Wang, Q.** (2025). Optimal insurance design with Lambda-Value-at-Risk. *European Journal of Operational Research*, forthcoming. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2408.09799)
