@@ -10,7 +10,7 @@ author_profile: true
 * Chi, Y., Fung, T. C., Peng, L. and **Wang, Q.** (2025). Statistical solutions of optimal multivariate reinsurance under distortion risk measures. Preprint.
 
 # Peer-reviewed Journal Articles
-* **Wang, Q.**, Wang, R. and Ziegel, J. (2025). E-backtesting. *Management Science*, available online. [[<span style="color:green">Journal</span>]]([https://arxiv.org/abs/2209.00991](https://doi.org/10.1287/mnsc.2023.01659))
+* **Wang, Q.**, Wang, R. and Ziegel, J. (2025). E-backtesting. *Management Science*, available online. [[<span style="color:green">Journal</span>]](https://doi.org/10.1287/mnsc.2023.01659)
 * Han, X., **Wang, Q.**, Wang, R. and Xia, J. (2025). Cash-subadditive risk measures without quasi-convexity. *Mathematics of Operations Research*, available online. [[<span style="color:green">Journal</span>]](https://doi.org/10.1287/moor.2022.0312)
 * Boonen, T. J., Chen, Y., Han, X. and **Wang, Q.** (2025). Optimal insurance design with Lambda-Value-at-Risk. *European Journal of Operational Research*, **327**(1), 232--246. [[<span style="color:green">Journal</span>]](https://doi.org/10.1016/j.ejor.2025.04.038)
 * Aboagye, E., Asimit, V., Fung, T. C., Peng, L. and **Wang, Q.** (2025). A revisit of the optimal excess-of-loss contract. *European Journal of Operational Research*, **322**(1), 341--354. [[<span style="color:green">Journal</span>]](https://doi.org/10.1016/j.ejor.2024.11.027)
