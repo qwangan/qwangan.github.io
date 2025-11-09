@@ -21,7 +21,7 @@ redirect_from:
 * B.Sc. in Mathematics and Economics - Hong Kong University of Science and Technology, 2017
 
 # Research Interests
-* Actuarial science; quantitative risk management; operations research; financial engineering; game theory
+* Actuarial science; quantitative risk management; operations research; financial engineering; non-parametric hypothesis testing; game theory
 
 # News
 * I am pleased to win third place in the Mathematics Doctoral Prize competition. This prize is awarded annually to recognize the achievement of graduating doctoral students in the Faculty of Mathematics, University of Waterloo.
