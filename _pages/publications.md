@@ -7,7 +7,7 @@ author_profile: true
 
 # Pre-publication Manuscripts
 
-* Jiao, Z., **Wang, Q.** and Zhao, Y. (2025). Standard and comparative e-backtests for general risk measures. Preprint. [[<span style="color:green">ArXiv</span>]](https://arxiv.org/abs/2511.05840)
+* Jiao, Z., **Wang, Q.** and Zhao, Y. (2025). Standard and comparative e-backtests for general risk measures. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2511.05840)
 * Chi, Y., Fung, T. C., Peng, L. and **Wang, Q.** (2025). Statistical solutions of optimal multivariate reinsurance under distortion risk measures. Preprint.
 
 # Peer-reviewed Journal Articles
