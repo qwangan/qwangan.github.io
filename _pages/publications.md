@@ -7,7 +7,7 @@ author_profile: true
 
 # Pre-publication Manuscripts
 
-* Bellini, F., Huang, M., **Wang, Q.** and Wang, R. (2025). Lambda Expected Shortfall. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2512.23139)
+* Bellini, F., Huang, M., **Wang, Q.** and Wang, R. (2026). Lambda Expected Shortfall. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2512.23139)
 * Jiao, Z., **Wang, Q.** and Zhao, Y. (2025). Standard and comparative e-backtests for general risk measures. Preprint. [[<span style="color:green">arXiv</span>]](https://arxiv.org/abs/2511.05840)
 * Chi, Y., Fung, T. C., Peng, L. and **Wang, Q.** (2025). Statistical solutions of optimal multivariate reinsurance under distortion risk measures. Preprint.
 
