@@ -24,6 +24,7 @@ author_profile: true
 * SIAM Conference on Financial Mathematics and Engineering, 2021 (Online)
 
 # Contributed Academic Presentations
+* 1st ASTIN Bulletin Conference, 2026 (Zurich, Switzerland)
 * 60th Actuarial Research Conference, 2025 (Toronto, Canada)
 * 59th Actuarial Research Conference, 2024 (Murfreesboro, US)
 * 27th International Congress of Insurance: Mathematics and Economics, 2024 (Chicago, US)
