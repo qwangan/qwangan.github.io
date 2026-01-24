@@ -7,6 +7,7 @@ author_profile: true
 
 # Academic Visits
 * Nankai University (School of Mathematical Sciences), 2023, 2025 (Tianjin, China)
+* Chinese University of Hong Kong-Shenzhen (School of Science and Engineering), 2024 (Shenzhen, China)
 * Chinese Academy of Sciences (Academy of Math and Systems Science), 2021, 2023 (Beijing, China)
 * University of Science and Technology of China (School of Management), 2021 (Hefei, China)
 
