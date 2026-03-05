@@ -6,6 +6,8 @@ author_profile: true
 ---
 
 # Academic Visits
+* University of Iowa (Department of Statistics and Actuarial Science), 2026 (Iowa City, US)
+* Michigan State University (Department of Statistics and Probability), 2025 (Lansing, US)
 * University of Waterloo (Department of Statistics and Actuarial Science), 2023, 2025 (Waterloo, Canada)
 * Nankai University (School of Mathematical Sciences), 2023, 2025 (Tianjin, China)
 * Chinese University of Hong Kong-Shenzhen (School of Science and Engineering), 2024 (Shenzhen, China)
@@ -17,6 +19,7 @@ author_profile: true
 * 2nd Waterloo Student Conference in Statistics, Actuarial Science and Finance (Co-chair), 2021 (Online)
 
 # Invited Academic Presentations
+* 2nd Midwest Actuarial Research Seminars, 2026 (West Lafayette, US)
 * China Conference on Insurance and Risk Management, 2025 (Urumqi, China)
 * 3rd Foundations and Applications of Decentralized Risk-Sharing, 2025 (Paris, France)
 * Young Talents in Actuarial Science and Quantitative Finance Conference, 2025 (Waterloo, Canada)
