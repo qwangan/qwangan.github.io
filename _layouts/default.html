@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Qiuqi Wang" />
+  <meta name="keywords" content="Qiuqi Wang, actuarial science, quantitative risk management, financial mathematics, Georgia State University, risk science, e-backtesting, distortion riskmetrics, Pierre Robillard Award" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
+  <meta property="og:description" content="{{ page.description | default: site.description }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}" />
+  <meta property="og:image" content="{{ site.url }}/images/Photo1.jpeg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="profile:first_name" content="Qiuqi" />
+  <meta property="profile:last_name" content="Wang" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}" />
+  <meta name="twitter:description" content="Qiuqi Wang, Ph.D., A.S.A. — Assistant Professor at the Maurice R. Greenberg School of Risk Science, Georgia State University." />
+  <meta name="twitter:image" content="{{ site.url }}/images/Photo1.jpeg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Qiuqi Wang",
+    "honorificSuffix": "Ph.D., A.S.A.",
+    "jobTitle": "Assistant Professor",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Georgia State University",
+      "url": "https://www.gsu.edu"
+    },
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Maurice R. Greenberg School of Risk Science, Robinson College of Business"
+    },
+    "url": "https://qwangan.github.io/",
+    "image": "https://qwangan.github.io/images/Photo1.jpeg",
+    "telephone": "+1-404-413-7470",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "35 Broad Street NW, Suite 1127",
+      "addressLocality": "Atlanta",
+      "addressRegion": "GA",
+      "postalCode": "30303",
+      "addressCountry": "US"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Waterloo" },
+      { "@type": "CollegeOrUniversity", "name": "Hong Kong University of Science and Technology" }
+    ],
+    "sameAs": [
+      "https://scholar.google.ca/citations?user=vboPnRoAAAAJ&amp;hl=en",
+      "https://github.com/qwangan"
+    ],
+    "knowsAbout": [
+      "Actuarial Science",
+      "Quantitative Risk Management",
+      "Financial Mathematics",
+      "Operations Research",
+      "Game Theory"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Lora:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
+</head>
+<body>
+{{ content }}
+<script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+- heading: Pre-publication Manuscripts
+  items:
+    - number: P3
+      authors: Jiao, Z., <strong>Wang, Q.</strong> and Zhao, Y.
+      title: Comparative e-backtests for general risk measures
+      venue: Preprint, 2026
+      links:
+        - label: arXiv
+          url: https://arxiv.org/abs/2511.05840
+          class: tag-arxiv
+    - number: P2
+      authors: Bellini, F., Huang, M., <strong>Wang, Q.</strong> and Wang, R.
+      title: Lambda Expected Shortfall
+      venue: Preprint, 2026
+      links:
+        - label: arXiv
+          url: https://arxiv.org/abs/2512.23139
+          class: tag-arxiv
+    - number: P1
+      authors: Chi, Y., Fung, T. C., Peng, L. and <strong>Wang, Q.</strong>
+      title: Statistical solutions of optimal multivariate reinsurance under distortion risk measures
+      venue: Preprint, 2025
+- heading: Peer-reviewed Journal Articles
+  items:
+    - number: J10
+      authors: <strong>Wang, Q.</strong>, Wang, R. and Ziegel, J.
+      title: E-backtesting
+      venue: <em>Management Science</em>, available online, 2025
+      links:
+        - label: Journal
+          url: https://doi.org/10.1287/mnsc.2023.01659
+          class: tag-journal
+    - number: J9
+      authors: Han, X., <strong>Wang, Q.</strong>, Wang, R. and Xia, J.
+      title: Cash-subadditive risk measures without quasi-convexity
+      venue: <em>Mathematics of Operations Research</em>, available online, 2025
+      links:
+        - label: Journal
+          url: https://doi.org/10.1287/moor.2022.0312
+          class: tag-journal
+    - number: J8
+      authors: Boonen, T. J., Chen, Y., Han, X. and <strong>Wang, Q.</strong>
+      title: Optimal insurance design with Lambda-Value-at-Risk
+      venue: <em>European Journal of Operational Research</em>, <strong>327</strong>(1), 232–246, 2025
+      links:
+        - label: Journal
+          url: https://doi.org/10.1016/j.ejor.2025.04.038
+          class: tag-journal
+    - number: J7
+      authors: Aboagye, E., Asimit, V., Fung, T. C., Peng, L. and <strong>Wang, Q.</strong>
+      title: A revisit of the optimal excess-of-loss contract
+      venue: <em>European Journal of Operational Research</em>, <strong>322</strong>(1), 341–354, 2025
+      links:
+        - label: Journal
+          url: https://doi.org/10.1016/j.ejor.2024.11.027
+          class: tag-journal
+    - number: J6
+      authors: Pesenti, S., <strong>Wang, Q.</strong> and Wang, R.
+      title: Optimizing distortion riskmetrics with distributional uncertainty
+      venue: <em>Mathematical Programming</em>, <strong>213</strong>, 51–106, 2024
+      links:
+        - label: Journal
+          url: https://doi.org/10.1007/s10107-024-02128-6
+          class: tag-journal
+    - number: J5
+      authors: <strong>Wang, Q.</strong>, Wang, R. and Zitikis, R.
+      title: Risk measures induced by efficient insurance contracts
+      venue: '<em>Insurance: Mathematics and Economics</em>, <strong>103</strong>, 56–65, 2022'
+      links:
+        - label: Journal
+          url: https://doi.org/10.1016/j.insmatheco.2022.01.003
+          class: tag-journal
+    - number: J4
+      authors: Embrechts, P., Mao, T., <strong>Wang, Q.</strong> and Wang, R.
+      title: Bayes risk, elicitability, and the Expected Shortfall
+      venue: <em>Mathematical Finance</em>, <strong>31</strong>(4), 1190–1217, 2021
+      links:
+        - label: Journal
+          url: https://onlinelibrary.wiley.com/doi/full/10.1111/mafi.12313
+          class: tag-journal
+    - number: J3
+      authors: <strong>Wang, Q.</strong>, Wang, R. and Wei, Y.
+      title: Distortion riskmetrics on general spaces
+      venue: <em>ASTIN Bulletin</em>, <strong>50</strong>(3), 827–851, 2020
+      links:
+        - label: Journal
+          url: https://doi.org/10.1017/asb.2020.14
+          class: tag-journal
+    - number: J2
+      authors: <strong>Wang, Q.</strong> and Kwok, Y. K.
+      title: Real option signaling games of debt financing using equity guarantee swaps
+      venue: <em>International Journal of Theoretical and Applied Finance</em>, <strong>23</strong>(5), 2050036, 2020
+      links:
+        - label: Journal
+          url: https://doi.org/10.1142/S0219024920500363
+          class: tag-journal
+    - number: J1
+      authors: <strong>Wang, Q.</strong> and Kwok, Y. K.
+      title: Signaling game models of equity financing under information asymmetry and finite project life
+      venue: <em>International Journal of Financial Engineering</em>, <strong>6</strong>(1), 1950002, 2019
+      links:
+        - label: Journal
+          url: https://www.worldscientific.com/doi/10.1142/S2424786319500026
+          class: tag-journal

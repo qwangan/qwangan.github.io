@@ -1,0 +1,50 @@
+- heading: Instructor — Georgia State University
+  courses:
+    - code: RMI 8300
+      name: Predictive Risk Modeling
+      term: Fall 2024, 2025
+    - code: AS 3230/8230
+      name: Financial Mathematics
+      term: Spring 2024; Fall 2024, 2025
+- heading: Instructor — University of Waterloo
+  courses:
+    - code: ACTSC 371
+      name: Introduction to Investment
+      term: Winter 2023
+- heading: Teaching Assistant — University of Waterloo
+  courses:
+    - code: ACTSC 363
+      name: Casualty and Health Insurance Mathematics 1
+      term: Fall 2022
+    - code: ACTSC 964
+      name: Quantitative Risk Management
+      term: Spring 2022
+    - code: ACTSC 446/846
+      name: Mathematics of Financial Markets
+      term: Winter 2022
+    - code: MATBUS 472
+      name: Risk Management
+      term: Winter 2021–2022
+    - code: MATBUS 470
+      name: Derivatives
+      term: Fall 2019–2022; Winter 2021
+    - code: MATBUS 471
+      name: Fixed Income Securities
+      term: Fall 2019–2021; Winter 2020
+    - code: ACTSC 431
+      name: Loss Model I / Casualty and Health Insurance Mathematics 2
+      term: Spring 2020, 2021
+    - code: ACTSC 445/845
+      name: Quantitative Enterprise Risk Management
+      term: Spring 2020
+    - code: ACTSC 231
+      name: Introductory Financial Mathematics
+      term: Winter 2020
+- heading: Teaching Assistant — HKUST
+  courses:
+    - code: MATH 4321
+      name: Game Theory (with tutorials)
+      term: Spring 2018, 2019
+    - code: MATH 4511
+      name: Quantitative Methods for Fixed Income Derivatives (with tutorials)
+      term: Fall 2018

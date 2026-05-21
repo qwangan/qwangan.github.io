@@ -1,0 +1,74 @@
+- column:
+    - heading: Invited Presentations
+      items:
+        - year: 2026
+          description: 2nd Midwest Actuarial Research Seminars
+          place: West Lafayette, US
+        - year: 2025
+          description: China Conference on Insurance and Risk Management
+          place: Urumqi, China
+        - year: 2025
+          description: 3rd Foundations and Applications of Decentralized Risk-Sharing
+          place: Paris, France
+        - year: 2025
+          description: Young Talents in Actuarial Science and Quantitative Finance
+          place: Waterloo, Canada
+        - year: 2024
+          description: Pierre Robillard Invited Address, SSC Annual Meeting
+          place: St. John's, Canada
+        - year: 2022
+          description: Young Data Science Researcher Seminar Zurich
+          place: Online
+        - year: 2022
+          description: INFORMS Annual Meeting
+          place: Indianapolis, US
+    - heading: Conference Organization
+      items:
+        - year: 2022
+          description: 3rd Waterloo Student Conference in Statistics, Actuarial Science and Finance <em>(Co-chair)</em>
+          place: Waterloo, Canada
+        - year: 2021
+          description: 2nd Waterloo Student Conference in Statistics, Actuarial Science and Finance <em>(Co-chair)</em>
+          place: Online
+- column:
+    - heading: Conference Presentations
+      items:
+        - year: 2026
+          description: 1st ASTIN Bulletin Conference
+          place: Zurich, Switzerland
+        - year: 2025
+          description: 60th Actuarial Research Conference
+          place: Toronto, Canada
+        - year: 2024
+          description: 59th Actuarial Research Conference
+          place: Murfreesboro, US
+        - year: 2024
+          description: '27th International Congress of Insurance: Mathematics and Economics'
+          place: Chicago, US
+        - year: 2022
+          description: 57th Actuarial Research Conference
+          place: Urbana-Champaign, US
+        - year: 2022
+          description: '25th International Congress on Insurance: Mathematics and Economics'
+          place: Online
+        - year: 2022
+          description: CORS/INFORMS International Conference
+          place: Vancouver, Canada
+        - year: 2021
+          description: 56th Actuarial Research Conference
+          place: Online
+        - year: 2021
+          description: '24th International Congress on Insurance: Mathematics and Economics'
+          place: Online
+        - year: 2021
+          description: 5th PKU-NUS Annual International Conference on Quantitative Finance and Economics
+          place: Online
+        - year: 2020
+          description: 5th Asian Quantitative Finance Seminar
+          place: Online
+        - year: 2019
+          description: 1st Waterloo Student Conference in Statistics, Actuarial Science and Finance
+          place: Waterloo, Canada
+        - year: 2019
+          description: 23rd Annual International Real Options Conference
+          place: London, UK

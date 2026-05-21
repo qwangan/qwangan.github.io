@@ -1,738 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Qiuqi Wang | Assistant Professor, Georgia State University</title>
-  <meta name="description" content="Qiuqi Wang, Ph.D., A.S.A. — Assistant Professor at the Maurice R. Greenberg School of Risk Science, Georgia State University. Research in actuarial science, quantitative risk management, and financial mathematics." />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Qiuqi Wang" />
-  <meta name="keywords" content="Qiuqi Wang, actuarial science, quantitative risk management, financial mathematics, Georgia State University, risk science, e-backtesting, distortion riskmetrics, Pierre Robillard Award" />
-  <link rel="canonical" href="https://qwangan.github.io/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Qiuqi Wang | Assistant Professor, Georgia State University" />
-  <meta property="og:description" content="Qiuqi Wang, Ph.D., A.S.A. — Assistant Professor at the Maurice R. Greenberg School of Risk Science, Georgia State University. Research in actuarial science, quantitative risk management, and financial mathematics." />
-  <meta property="og:url" content="https://qwangan.github.io/" />
-  <meta property="og:image" content="https://qwangan.github.io/images/Photo1.jpeg" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="profile:first_name" content="Qiuqi" />
-  <meta property="profile:last_name" content="Wang" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Qiuqi Wang | Assistant Professor, Georgia State University" />
-  <meta name="twitter:description" content="Qiuqi Wang, Ph.D., A.S.A. — Assistant Professor at the Maurice R. Greenberg School of Risk Science, Georgia State University." />
-  <meta name="twitter:image" content="https://qwangan.github.io/images/Photo1.jpeg" />
-
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Qiuqi Wang",
-    "honorificSuffix": "Ph.D., A.S.A.",
-    "jobTitle": "Assistant Professor",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Georgia State University",
-      "url": "https://www.gsu.edu"
-    },
-    "affiliation": {
-      "@type": "Organization",
-      "name": "Maurice R. Greenberg School of Risk Science, Robinson College of Business"
-    },
-    "url": "https://qwangan.github.io/",
-    "image": "https://qwangan.github.io/images/Photo1.jpeg",
-    "telephone": "+1-404-413-7470",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "35 Broad Street NW, Suite 1127",
-      "addressLocality": "Atlanta",
-      "addressRegion": "GA",
-      "postalCode": "30303",
-      "addressCountry": "US"
-    },
-    "alumniOf": [
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "University of Waterloo"
-      },
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "Hong Kong University of Science and Technology"
-      }
-    ],
-    "sameAs": [
-      "https://scholar.google.ca/citations?user=vboPnRoAAAAJ&amp;hl=en",
-      "https://github.com/qwangan"
-    ],
-    "knowsAbout": [
-      "Actuarial Science",
-      "Quantitative Risk Management",
-      "Financial Mathematics",
-      "Operations Research",
-      "Game Theory"
-    ]
-  }
-  </script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Lora:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --ink: #17202a;
-      --muted: #5b6673;
-      --quiet: #7b8490;
-      --paper: #fbfaf7;
-      --panel: #ffffff;
-      --wash: #f0f4f1;
-      --line: #d8ded8;
-      --navy: #183b56;
-      --blue: #28627c;
-      --green: #496f64;
-      --wine: #8a3a48;
-      --gold: #b6842d;
-      --shadow: 0 14px 34px rgba(30, 45, 55, 0.08);
-      --shadow-soft: 0 1px 2px rgba(30, 45, 55, 0.08);
-      --radius: 8px;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 86px;
-    }
-
-    body {
-      background: var(--paper);
-      color: var(--ink);
-      font-family: 'Inter', system-ui, sans-serif;
-      font-size: 15.5px;
-      line-height: 1.72;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: clip;
-    }
-
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background-image: linear-gradient(rgba(24, 59, 86, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(24, 59, 86, 0.025) 1px, transparent 1px);
-      background-size: 42px 42px;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent 52%);
-      z-index: -1;
-    }
-
-    a {
-      color: var(--blue);
-      text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
-    }
-
-    a:hover { color: var(--wine); }
-
-    ::selection { background: #dbe8df; color: var(--ink); }
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(251, 250, 247, 0.94);
-      border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(16px);
-    }
-
-    .nav-inner {
-      align-items: center;
-      display: flex;
-      height: 64px;
-      justify-content: space-between;
-      margin: 0 auto;
-      max-width: 1120px;
-      padding: 0 26px;
-    }
-
-    .nav-brand {
-      color: var(--ink);
-      font-family: 'Lora', serif;
-      font-size: 1.02rem;
-      font-weight: 600;
-      letter-spacing: 0;
-      text-decoration: none;
-    }
-
-    .nav-brand span { color: var(--wine); }
-
-    .nav-links {
-      align-items: center;
-      display: flex;
-      gap: 2px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      border-radius: var(--radius);
-      color: var(--muted);
-      display: block;
-      font-size: 0.86rem;
-      font-weight: 600;
-      letter-spacing: 0;
-      padding: 7px 11px;
-      text-decoration: none;
-      transition: background 0.18s ease, color 0.18s ease;
-    }
-
-    .nav-links a:hover {
-      background: var(--wash);
-      color: var(--ink);
-    }
-
-    .hamburger {
-      background: transparent;
-      border: 0;
-      cursor: pointer;
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      padding: 8px;
-    }
-
-    .hamburger span {
-      background: var(--ink);
-      border-radius: 2px;
-      display: block;
-      height: 2px;
-      transition: 0.2s;
-      width: 22px;
-    }
-
-    .hero {
-      background: linear-gradient(120deg, #fbfaf7 0%, #f7f1e8 52%, #e8f0ed 100%);
-      border-bottom: 1px solid var(--line);
-      overflow: hidden;
-      padding: 86px 26px 88px;
-      position: relative;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(90deg, rgba(138, 58, 72, 0.08), transparent 38%), linear-gradient(180deg, transparent 0%, rgba(73, 111, 100, 0.09) 100%);
-      pointer-events: none;
-    }
-
-    .hero-inner {
-      align-items: center;
-      display: grid;
-      gap: 72px;
-      grid-template-columns: 260px minmax(0, 1fr);
-      margin: 0 auto;
-      max-width: 1120px;
-      position: relative;
-    }
-
-    .hero-photo {
-      aspect-ratio: 4 / 5;
-      background: #d9d7d1;
-      border: 1px solid rgba(24, 59, 86, 0.2);
-      border-radius: var(--radius);
-      box-shadow: 22px 22px 0 rgba(73, 111, 100, 0.14), var(--shadow);
-      height: auto;
-      object-fit: cover;
-      object-position: 51% 22%;
-      width: 260px;
-    }
-
-    .hero-text {
-      border-left: 1px solid rgba(24, 59, 86, 0.24);
-      color: var(--ink);
-      max-width: 720px;
-      padding-left: 44px;
-    }
-
-    .hero-name {
-      color: var(--navy);
-      font-family: 'Lora', serif;
-      font-size: 3.8rem;
-      font-weight: 600;
-      line-height: 1.03;
-      margin-bottom: 12px;
-    }
-
-    .hero-cred {
-      color: var(--wine);
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 0;
-      margin-bottom: 18px;
-    }
-
-    .hero-position {
-      color: var(--ink);
-      font-size: 1.02rem;
-      font-weight: 700;
-      margin-bottom: 5px;
-    }
-
-    .hero-institution {
-      color: var(--muted);
-      font-size: 0.98rem;
-      margin-bottom: 26px;
-      max-width: 620px;
-    }
-
-    .hero-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .hero-link {
-      align-items: center;
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid rgba(24, 59, 86, 0.18);
-      border-radius: var(--radius);
-      color: var(--navy);
-      display: inline-flex;
-      font-size: 0.84rem;
-      font-weight: 700;
-      gap: 7px;
-      max-width: 100%;
-      min-height: 38px;
-      padding: 8px 13px;
-      text-decoration: none;
-      transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
-    }
-
-    .hero-link:hover {
-      border-color: rgba(138, 58, 72, 0.38);
-      box-shadow: var(--shadow-soft);
-      color: var(--wine);
-      transform: translateY(-1px);
-    }
-
-    .hero-link svg { fill: currentColor; height: 15px; width: 15px; }
-
-    .container {
-      margin: 0 auto;
-      max-width: 1120px;
-      padding: 0 26px;
-    }
-
-    section {
-      padding: 74px 0;
-    }
-
-    section:nth-child(even) { background: rgba(240, 244, 241, 0.72); }
-
-    .section-header {
-      align-items: center;
-      display: grid;
-      gap: 15px;
-      grid-template-columns: 38px auto 1fr;
-      margin-bottom: 34px;
-    }
-
-    .section-icon {
-      align-items: center;
-      background: var(--navy);
-      border-radius: var(--radius);
-      display: flex;
-      height: 38px;
-      justify-content: center;
-      width: 38px;
-    }
-
-    .section-icon svg { fill: #fff; height: 18px; width: 18px; }
-
-    .section-title {
-      color: var(--navy);
-      font-family: 'Lora', serif;
-      font-size: 1.62rem;
-      font-weight: 600;
-      line-height: 1.15;
-    }
-
-    .section-line {
-      background: linear-gradient(90deg, var(--line), transparent);
-      height: 1px;
-    }
-
-    .edu-list,
-    .pub-list,
-    .course-list,
-    .activity-list { list-style: none; }
-
-    .edu-list,
-    .course-list,
-    .pub-list { border-top: 1px solid var(--line); }
-
-    .edu-item {
-      align-items: flex-start;
-      border-bottom: 1px solid var(--line);
-      display: grid;
-      gap: 24px;
-      grid-template-columns: 74px minmax(0, 1fr);
-      padding: 18px 0;
-    }
-
-    .edu-year,
-    .pub-num,
-    .activity-year {
-      color: var(--wine);
-      font-size: 0.82rem;
-      font-weight: 800;
-      line-height: 1.5;
-    }
-
-    .edu-degree,
-    .pub-title {
-      color: var(--ink);
-      font-size: 0.98rem;
-      font-weight: 700;
-      line-height: 1.45;
-    }
-
-    .edu-school,
-    .pub-authors,
-    .pub-venue,
-    .activity-place,
-    .course-term {
-      color: var(--muted);
-      font-size: 0.88rem;
-    }
-
-    .edu-school { margin-top: 2px; }
-
-    .awards-grid,
-    .interests-grid {
-      display: grid;
-      gap: 16px;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .award-card,
-    .interest-item,
-    .contact-card {
-      background: rgba(255, 255, 255, 0.82);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .award-card {
-      border-top: 4px solid var(--gold);
-      padding: 20px 21px;
-      transition: box-shadow 0.18s ease, transform 0.18s ease;
-    }
-
-    .award-card:hover {
-      box-shadow: var(--shadow);
-      transform: translateY(-2px);
-    }
-
-    .award-label,
-    .pub-section-label,
-    .contact-label {
-      color: var(--quiet);
-      font-size: 0.75rem;
-      font-weight: 800;
-      letter-spacing: 0;
-      text-transform: uppercase;
-    }
-
-    .award-card h3 {
-      color: var(--navy);
-      font-size: 0.98rem;
-      line-height: 1.4;
-      margin: 8px 0 7px;
-    }
-
-    .award-card p {
-      color: var(--muted);
-      font-size: 0.88rem;
-      line-height: 1.58;
-    }
-
-    .interest-item {
-      align-items: flex-start;
-      display: flex;
-      gap: 13px;
-      padding: 18px 18px;
-    }
-
-    .interest-dot {
-      background: var(--wine);
-      border-radius: 50%;
-      flex: 0 0 auto;
-      height: 8px;
-      margin-top: 8px;
-      width: 8px;
-    }
-
-    .interest-item span {
-      color: var(--ink);
-      font-size: 0.94rem;
-      font-weight: 650;
-      line-height: 1.55;
-    }
-
-    .pub-section-label {
-      border-bottom: 1px solid var(--line);
-      margin: 38px 0 0;
-      padding: 0 0 10px;
-    }
-
-    .pub-section-label:first-of-type { margin-top: 0; }
-
-    .pub-item {
-      border-bottom: 1px solid var(--line);
-      display: grid;
-      gap: 18px;
-      grid-template-columns: 48px minmax(0, 1fr);
-      padding: 18px 0;
-    }
-
-    .pub-authors { margin-bottom: 3px; }
-
-    .pub-authors strong { color: var(--navy); font-weight: 800; }
-
-    .pub-venue {
-      font-style: italic;
-      margin-top: 3px;
-    }
-
-    .pub-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 8px;
-    }
-
-    .pub-tag {
-      border-radius: 5px;
-      display: inline-block;
-      font-size: 0.73rem;
-      font-weight: 800;
-      line-height: 1.3;
-      padding: 4px 8px;
-      text-decoration: none;
-    }
-
-    .tag-journal { background: #e8f0f5; border: 1px solid #c8d8e0; color: var(--blue); }
-    .tag-arxiv { background: #edf3ed; border: 1px solid #c9dacd; color: var(--green); }
-    .tag-preprint { background: #f8f0dc; border: 1px solid #ead4a4; color: #7c5a16; }
-
-    .teaching-group,
-    .activity-group { margin-bottom: 32px; }
-
-    .teaching-group h3,
-    .activity-group h3,
-    .contact-card h3 {
-      color: var(--navy);
-      font-size: 1rem;
-      font-weight: 800;
-      line-height: 1.45;
-      margin-bottom: 12px;
-    }
-
-    .course-item {
-      align-items: baseline;
-      border-bottom: 1px solid var(--line);
-      display: grid;
-      gap: 18px;
-      grid-template-columns: 120px minmax(0, 1fr) auto;
-      padding: 11px 0;
-    }
-
-    .course-code {
-      color: var(--wine);
-      font-size: 0.84rem;
-      font-weight: 800;
-      white-space: nowrap;
-    }
-
-    .course-name {
-      color: var(--ink);
-      font-size: 0.92rem;
-    }
-
-    .course-term { white-space: nowrap; }
-
-    .activity-columns {
-      display: grid;
-      gap: 42px;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    }
-
-    .activity-item {
-      display: grid;
-      gap: 14px;
-      grid-template-columns: 68px minmax(0, 1fr);
-      padding: 8px 0;
-    }
-
-    .activity-desc {
-      color: var(--ink);
-      font-size: 0.91rem;
-      line-height: 1.48;
-    }
-
-    .service-list { max-width: 840px; }
-    .service-label { min-width: 92px; }
-
-    .contact-grid {
-      display: grid;
-      gap: 22px;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    }
-
-    .contact-card { padding: 25px; }
-
-    .contact-row {
-      align-items: flex-start;
-      display: flex;
-      gap: 13px;
-      margin-bottom: 15px;
-    }
-
-    .contact-row:last-child { margin-bottom: 0; }
-
-    .contact-icon {
-      align-items: center;
-      background: var(--wash);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      display: flex;
-      flex: 0 0 auto;
-      height: 34px;
-      justify-content: center;
-      width: 34px;
-    }
-
-    .contact-icon svg { fill: var(--navy); height: 16px; width: 16px; }
-
-    .contact-value {
-      color: var(--ink);
-      font-size: 0.92rem;
-      line-height: 1.55;
-    }
-
-    footer {
-      background: var(--navy);
-      color: rgba(255, 255, 255, 0.72);
-      font-size: 0.82rem;
-      padding: 30px 24px;
-      text-align: center;
-    }
-
-    footer a { color: #fff; }
-
-    @media (max-width: 900px) {
-      .hero-inner {
-        gap: 40px;
-        grid-template-columns: 210px minmax(0, 1fr);
-      }
-
-      .hero-photo { width: 210px; }
-      .hero-name { font-size: 3.05rem; }
-      .hero-text { padding-left: 32px; }
-      .course-item { grid-template-columns: 110px minmax(0, 1fr); }
-      .course-term { grid-column: 2; white-space: normal; }
-    }
-
-    @media (max-width: 768px) {
-      nav { position: relative; }
-
-      .nav-links {
-        background: var(--paper);
-        border-bottom: 1px solid var(--line);
-        box-shadow: var(--shadow-soft);
-        display: none;
-        flex-direction: column;
-        gap: 0;
-        left: 0;
-        padding: 8px 18px 18px;
-        position: absolute;
-        right: 0;
-        top: 64px;
-      }
-
-      .nav-links.open { display: flex; }
-      .nav-links a { padding: 10px 8px; width: 100%; }
-      .hamburger { display: flex; }
-
-      .hero { padding: 54px 22px 58px; }
-
-      .hero-inner {
-        gap: 30px;
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .hero-photo {
-        box-shadow: 14px 14px 0 rgba(73, 111, 100, 0.14), var(--shadow-soft);
-        justify-self: center;
-        width: 190px;
-      }
-
-      .hero-text {
-        border-left: 0;
-        padding-left: 0;
-      }
-
-      .hero-name { font-size: 2.45rem; }
-      .hero-links { justify-content: center; }
-      .hero-link { justify-content: center; }
-
-      section { padding: 56px 0; }
-
-      .section-header {
-        gap: 12px;
-        grid-template-columns: 38px minmax(0, 1fr);
-      }
-
-      .section-line { display: none; }
-
-      .contact-grid,
-      .activity-columns { grid-template-columns: 1fr; }
-    }
-
-    @media (max-width: 520px) {
-      .container,
-      .nav-inner { padding-left: 18px; padding-right: 18px; }
-
-      .hero-photo { width: 168px; }
-      .hero-name { font-size: 2.08rem; }
-      .hero-institution { font-size: 0.92rem; }
-
-      .hero-links {
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-
-      .edu-item,
-      .pub-item,
-      .activity-item {
-        grid-template-columns: 1fr;
-        gap: 5px;
-      }
-
-      .course-item { grid-template-columns: 1fr; gap: 2px; }
-      .course-term { grid-column: auto; }
-      .contact-card { padding: 21px; }
-    }
-  </style>
-</head>
-<body>
-
-<!-- ─── NAV ─── -->
+---
+layout: default
+title: Qiuqi Wang | Assistant Professor, Georgia State University
+description: Qiuqi Wang, Ph.D., A.S.A. — Assistant Professor at the Maurice R. Greenberg School of Risk Science, Georgia State University. Research in actuarial science, quantitative risk management, and financial mathematics.
+---
+
+<!-- NAV -->
 <nav>
   <div class="nav-inner">
     <a class="nav-brand" href="#">Qiuqi <span>Wang</span></a>
@@ -746,40 +18,30 @@
       <li><a href="#activities">Activities</a></li>
       <li><a href="#service">Service</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="https://qwangan.github.io/files/Curriculum_Vitae.pdf" target="_blank">CV ↗</a></li>
+      <li><a href="{{ site.data.site.cv_url | relative_url }}" target="_blank">CV ↗</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ─── HERO ─── -->
+<!-- HERO -->
 <div class="hero">
   <div class="hero-inner">
-    <img
-      class="hero-photo"
-      src="images/Photo1.jpeg"
-      alt="Qiuqi Wang"
-      width="260"
-      height="325"
-      decoding="async"
-    />
+    <img class="hero-photo" src="{{ '/images/Photo1.jpeg' | relative_url }}" alt="Qiuqi Wang" width="260" height="325" decoding="async" />
     <div class="hero-text">
-      <h1 class="hero-name">Qiuqi Wang</h1>
-      <div class="hero-cred">Ph.D. &nbsp;·&nbsp; A.S.A.</div>
-      <div class="hero-position">Assistant Professor</div>
-      <div class="hero-institution">
-        Maurice R. Greenberg School of Risk Science<br>
-        Robinson College of Business, Georgia State University
-      </div>
+      <h1 class="hero-name">{{ site.data.site.name }}</h1>
+      <div class="hero-cred">{{ site.data.site.credentials }}</div>
+      <div class="hero-position">{{ site.data.site.position }}</div>
+      <div class="hero-institution">{{ site.data.site.institution_html }}</div>
       <div class="hero-links">
         <span class="hero-link">
           <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          qwang30 {AT} gsu {DOT} edu
+          {{ site.data.site.email_display }}
         </span>
-        <a class="hero-link" href="https://scholar.google.ca/citations?user=vboPnRoAAAAJ&amp;hl=en" target="_blank">
+        <a class="hero-link" href="{{ site.data.site.scholar_url }}" target="_blank">
           <svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 10a8 8 0 017.162 3.44L24 9.5 12 0z"/></svg>
           Google Scholar
         </a>
-        <a class="hero-link" href="https://qwangan.github.io/files/Curriculum_Vitae.pdf" target="_blank">
+        <a class="hero-link" href="{{ site.data.site.cv_url | relative_url }}" target="_blank">
           <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg>
           Curriculum Vitae
         </a>
@@ -788,731 +50,155 @@
   </div>
 </div>
 
-<!-- ─── ABOUT ─── -->
-<!-- ─── ACADEMIC APPOINTMENT ─── -->
 <section id="appointment">
   <div class="container">
-    <div class="section-header">
-      <div class="section-icon">
-        <svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2zm-9 9H7v-2h4v2zm6-4H7v-2h10v2zM7 4h10v2H7z"/></svg>
-      </div>
-      <h2 class="section-title">Academic Appointment</h2>
-      <div class="section-line"></div>
-    </div>
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2zm-9 9H7v-2h4v2zm6-4H7v-2h10v2zM7 4h10v2H7z"/></svg></div><h2 class="section-title">Academic Appointment</h2><div class="section-line"></div></div>
     <ul class="edu-list">
-      <li class="edu-item">
-        <div class="edu-year">2023–</div>
-        <div>
-          <div class="edu-degree">Assistant Professor</div>
-          <div class="edu-school">Maurice R. Greenberg School of Risk Science, Robinson College of Business, <a href="https://www.gsu.edu" target="_blank">Georgia State University</a></div>
-        </div>
-      </li>
+      {% for item in site.data.appointment %}
+      <li class="edu-item"><div class="edu-year">{{ item.year }}</div><div><div class="edu-degree">{{ item.title }}</div><div class="edu-school">{{ item.detail }}</div></div></li>
+      {% endfor %}
     </ul>
   </div>
 </section>
 
-<!-- ─── EDUCATION ─── -->
 <section id="education">
   <div class="container">
-    <div class="section-header">
-      <div class="section-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm-8 9.27V15l8 4.73L20 15v-2.73L12 16.27 4 12.27z"/></svg>
-      </div>
-      <h2 class="section-title">Education</h2>
-      <div class="section-line"></div>
-    </div>
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm-8 9.27V15l8 4.73L20 15v-2.73L12 16.27 4 12.27z"/></svg></div><h2 class="section-title">Education</h2><div class="section-line"></div></div>
     <ul class="edu-list">
-      <li class="edu-item">
-        <div class="edu-year">2023</div>
-        <div>
-          <div class="edu-degree">Ph.D. in Actuarial Science</div>
-          <div class="edu-school"><a href="https://uwaterloo.ca" target="_blank">University of Waterloo</a> &mdash; Advisor: <a href="https://sas.uwaterloo.ca/~wang/" target="_blank">Prof. Ruodu Wang</a></div>
-        </div>
-      </li>
-      <li class="edu-item">
-        <div class="edu-year">2019</div>
-        <div>
-          <div class="edu-degree">M.Phil. in Mathematics</div>
-          <div class="edu-school"><a href="https://www.ust.hk" target="_blank">Hong Kong University of Science and Technology</a> &mdash; Advisor: <a href="https://www.math.hkust.edu.hk/~maykwok/" target="_blank">Prof. Yue Kuen Kwok</a></div>
-        </div>
-      </li>
-      <li class="edu-item">
-        <div class="edu-year">2017</div>
-        <div>
-          <div class="edu-degree">B.Sc. in Mathematics and Economics</div>
-          <div class="edu-school"><a href="https://www.ust.hk" target="_blank">Hong Kong University of Science and Technology</a></div>
-        </div>
-      </li>
+      {% for item in site.data.education %}
+      <li class="edu-item"><div class="edu-year">{{ item.year }}</div><div><div class="edu-degree">{{ item.degree }}</div><div class="edu-school">{{ item.school }}</div></div></li>
+      {% endfor %}
     </ul>
   </div>
 </section>
 
-<!-- ─── RESEARCH ─── -->
 <section id="research">
   <div class="container">
-    <div class="section-header">
-      <div class="section-icon">
-        <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-      </div>
-      <h2 class="section-title">Research Interests</h2>
-      <div class="section-line"></div>
-    </div>
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg></div><h2 class="section-title">Research Interests</h2><div class="section-line"></div></div>
     <div class="interests-grid">
-      <div class="interest-item">
-        <div class="interest-dot"></div>
-        <span>Actuarial science; quantitative risk management</span>
-      </div>
-      <div class="interest-item">
-        <div class="interest-dot"></div>
-        <span>Operations research; financial engineering</span>
-      </div>
-      <div class="interest-item">
-        <div class="interest-dot"></div>
-        <span>Non-parametric hypothesis testing</span>
-      </div>
-      <div class="interest-item">
-        <div class="interest-dot"></div>
-        <span>Game theory</span>
-      </div>
+      {% for item in site.data.interests %}
+      <div class="interest-item"><div class="interest-dot"></div><span>{{ item }}</span></div>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<!-- ─── HONORS & AWARDS ─── -->
 <section id="awards">
   <div class="container">
-    <div class="section-header">
-      <div class="section-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      </div>
-      <h2 class="section-title">Honors &amp; Awards</h2>
-      <div class="section-line"></div>
-    </div>
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><h2 class="section-title">Honors &amp; Awards</h2><div class="section-line"></div></div>
     <div class="awards-grid">
-      <div class="award-card">
-        <div class="award-label">2024 · Statistical Society of Canada</div>
-        <h3><a href="https://ssc.ca/en/awards/2024/qiuqi-wang-2024-pierre-robillard-award-winner" target="_blank">Pierre Robillard Award</a></h3>
-        <p>Awarded annually to recognize the best Ph.D. thesis defended at a Canadian university in probability or statistics. One recipient per year.</p>
-      </div>
-      <div class="award-card">
-        <div class="award-label">2022–2023 · Society of Actuaries</div>
-        <h3><a href="https://www.soa.org/resources/announcements/press-releases/2022/2022-hickman-scholar/" target="_blank">James C. Hickman Scholar Doctoral Stipend</a></h3>
-        <p>Prestigious stipend from the SOA supporting outstanding doctoral students in actuarial science.</p>
-      </div>
-      <div class="award-card">
-        <div class="award-label">2023 · University of Waterloo</div>
-        <h3>Mathematics Doctoral Prize — 3rd Place</h3>
-        <p>Awarded annually by the Faculty of Mathematics to recognize the achievement of graduating doctoral students.</p>
-      </div>
+      {% for award in site.data.awards %}
+      <div class="award-card"><div class="award-label">{{ award.label }}</div><h3>{{ award.title }}</h3><p>{{ award.description }}</p></div>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<!-- ─── PUBLICATIONS ─── -->
 <section id="publications">
   <div class="container">
-    <div class="section-header">
-      <div class="section-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-      </div>
-      <h2 class="section-title">Publications</h2>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="pub-section-label">Pre-publication Manuscripts</div>
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div><h2 class="section-title">Publications</h2><div class="section-line"></div></div>
+    {% for group in site.data.publications %}
+    <div class="pub-section-label">{{ group.heading }}</div>
     <ul class="pub-list">
+      {% for pub in group.items %}
       <li class="pub-item">
-        <div class="pub-num">P3</div>
+        <div class="pub-num">{{ pub.number }}</div>
         <div class="pub-body">
-          <div class="pub-authors">Jiao, Z., <strong>Wang, Q.</strong> and Zhao, Y.</div>
-          <div class="pub-title">Comparative e-backtests for general risk measures</div>
-          <div class="pub-venue">Preprint, 2026</div>
-          <div class="pub-tags">
-            <a class="pub-tag tag-arxiv" href="https://arxiv.org/abs/2511.05840" target="_blank">arXiv</a>
-          </div>
+          <div class="pub-authors">{{ pub.authors }}</div>
+          <div class="pub-title">{{ pub.title }}</div>
+          <div class="pub-venue">{{ pub.venue }}</div>
+          {% if pub.links %}<div class="pub-tags">{% for link in pub.links %}<a class="pub-tag {{ link.class }}" href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% endfor %}</div>{% endif %}
         </div>
       </li>
-      <li class="pub-item">
-        <div class="pub-num">P2</div>
-        <div class="pub-body">
-          <div class="pub-authors">Bellini, F., Huang, M., <strong>Wang, Q.</strong> and Wang, R.</div>
-          <div class="pub-title">Lambda Expected Shortfall</div>
-          <div class="pub-venue">Preprint, 2026</div>
-          <div class="pub-tags">
-            <a class="pub-tag tag-arxiv" href="https://arxiv.org/abs/2512.23139" target="_blank">arXiv</a>
-          </div>
-        </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-num">P1</div>
-        <div class="pub-body">
-          <div class="pub-authors">Chi, Y., Fung, T. C., Peng, L. and <strong>Wang, Q.</strong></div>
-          <div class="pub-title">Statistical solutions of optimal multivariate reinsurance under distortion risk measures</div>
-          <div class="pub-venue">Preprint, 2025</div>
-        </div>
-      </li>
+      {% endfor %}
     </ul>
-
-    <div class="pub-section-label">Peer-reviewed Journal Articles</div>
-    <ul class="pub-list">
-      <li class="pub-item">
-        <div class="pub-num">J10</div>
-        <div class="pub-body">
-          <div class="pub-authors"><strong>Wang, Q.</strong>, Wang, R. and Ziegel, J.</div>
-          <div class="pub-title">E-backtesting</div>
-          <div class="pub-venue"><em>Management Science</em>, available online, 2025</div>
-          <div class="pub-tags">
-            <a class="pub-tag tag-journal" href="https://doi.org/10.1287/mnsc.2023.01659" target="_blank">Journal</a>
-          </div>
-        </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-num">J9</div>
-        <div class="pub-body">
-          <div class="pub-authors">Han, X., <strong>Wang, Q.</strong>, Wang, R. and Xia, J.</div>
-          <div class="pub-title">Cash-subadditive risk measures without quasi-convexity</div>
-          <div class="pub-venue"><em>Mathematics of Operations Research</em>, available online, 2025</div>
-          <div class="pub-tags">
-            <a class="pub-tag tag-journal" href="https://doi.org/10.1287/moor.2022.0312" target="_blank">Journal</a>
-          </div>
-        </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-num">J8</div>
-        <div class="pub-body">
-          <div class="pub-authors">Boonen, T. J., Chen, Y., Han, X. and <strong>Wang, Q.</strong></div>
-          <div class="pub-title">Optimal insurance design with Lambda-Value-at-Risk</div>
-          <div class="pub-venue"><em>European Journal of Operational Research</em>, <strong>327</strong>(1), 232–246, 2025</div>
-          <div class="pub-tags">
-            <a class="pub-tag tag-journal" href="https://doi.org/10.1016/j.ejor.2025.04.038" target="_blank">Journal</a>
-          </div>
-        </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-num">J7</div>
-        <div class="pub-body">
-          <div class="pub-authors">Aboagye, E., Asimit, V., Fung, T. C., Peng, L. and <strong>Wang, Q.</strong></div>
-          <div class="pub-title">A revisit of the optimal excess-of-loss contract</div>
-          <div class="pub-venue"><em>European Journal of Operational Research</em>, <strong>322</strong>(1), 341–354, 2025</div>
-          <div class="pub-tags">
-            <a class="pub-tag tag-journal" href="https://doi.org/10.1016/j.ejor.2024.11.027" target="_blank">Journal</a>
-          </div>
-        </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-num">J6</div>
-        <div class="pub-body">
-          <div class="pub-authors">Pesenti, S., <strong>Wang, Q.</strong> and Wang, R.</div>
-          <div class="pub-title">Optimizing distortion riskmetrics with distributional uncertainty</div>
-          <div class="pub-venue"><em>Mathematical Programming</em>, <strong>213</strong>, 51–106, 2024</div>
-          <div class="pub-tags">
-            <a class="pub-tag tag-journal" href="https://doi.org/10.1007/s10107-024-02128-6" target="_blank">Journal</a>
-          </div>
-        </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-num">J5</div>
-        <div class="pub-body">
-          <div class="pub-authors"><strong>Wang, Q.</strong>, Wang, R. and Zitikis, R.</div>
-          <div class="pub-title">Risk measures induced by efficient insurance contracts</div>
-          <div class="pub-venue"><em>Insurance: Mathematics and Economics</em>, <strong>103</strong>, 56–65, 2022</div>
-          <div class="pub-tags">
-            <a class="pub-tag tag-journal" href="https://doi.org/10.1016/j.insmatheco.2022.01.003" target="_blank">Journal</a>
-          </div>
-        </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-num">J4</div>
-        <div class="pub-body">
-          <div class="pub-authors">Embrechts, P., Mao, T., <strong>Wang, Q.</strong> and Wang, R.</div>
-          <div class="pub-title">Bayes risk, elicitability, and the Expected Shortfall</div>
-          <div class="pub-venue"><em>Mathematical Finance</em>, <strong>31</strong>(4), 1190–1217, 2021</div>
-          <div class="pub-tags">
-            <a class="pub-tag tag-journal" href="https://onlinelibrary.wiley.com/doi/full/10.1111/mafi.12313" target="_blank">Journal</a>
-          </div>
-        </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-num">J3</div>
-        <div class="pub-body">
-          <div class="pub-authors"><strong>Wang, Q.</strong>, Wang, R. and Wei, Y.</div>
-          <div class="pub-title">Distortion riskmetrics on general spaces</div>
-          <div class="pub-venue"><em>ASTIN Bulletin</em>, <strong>50</strong>(3), 827–851, 2020</div>
-          <div class="pub-tags">
-            <a class="pub-tag tag-journal" href="https://doi.org/10.1017/asb.2020.14" target="_blank">Journal</a>
-          </div>
-        </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-num">J2</div>
-        <div class="pub-body">
-          <div class="pub-authors"><strong>Wang, Q.</strong> and Kwok, Y. K.</div>
-          <div class="pub-title">Real option signaling games of debt financing using equity guarantee swaps</div>
-          <div class="pub-venue"><em>International Journal of Theoretical and Applied Finance</em>, <strong>23</strong>(5), 2050036, 2020</div>
-          <div class="pub-tags">
-            <a class="pub-tag tag-journal" href="https://doi.org/10.1142/S0219024920500363" target="_blank">Journal</a>
-          </div>
-        </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-num">J1</div>
-        <div class="pub-body">
-          <div class="pub-authors"><strong>Wang, Q.</strong> and Kwok, Y. K.</div>
-          <div class="pub-title">Signaling game models of equity financing under information asymmetry and finite project life</div>
-          <div class="pub-venue"><em>International Journal of Financial Engineering</em>, <strong>6</strong>(1), 1950002, 2019</div>
-          <div class="pub-tags">
-            <a class="pub-tag tag-journal" href="https://www.worldscientific.com/doi/10.1142/S2424786319500026" target="_blank">Journal</a>
-          </div>
-        </div>
-      </li>
-    </ul>
+    {% endfor %}
   </div>
 </section>
 
-<!-- ─── TEACHING ─── -->
 <section id="teaching">
   <div class="container">
-    <div class="section-header">
-      <div class="section-icon">
-        <svg viewBox="0 0 24 24"><path d="M18 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
-      </div>
-      <h2 class="section-title">Teaching</h2>
-      <div class="section-line"></div>
-    </div>
-
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M18 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg></div><h2 class="section-title">Teaching</h2><div class="section-line"></div></div>
+    {% for group in site.data.teaching %}
     <div class="teaching-group">
-      <h3>Instructor — Georgia State University</h3>
+      <h3>{{ group.heading }}</h3>
       <ul class="course-list">
-        <li class="course-item">
-          <span class="course-code">RMI 8300</span>
-          <span class="course-name">Predictive Risk Modeling</span>
-          <span class="course-term">Fall 2024, 2025</span>
-        </li>
-        <li class="course-item">
-          <span class="course-code">AS 3230/8230</span>
-          <span class="course-name">Financial Mathematics</span>
-          <span class="course-term">Spring 2024; Fall 2024, 2025</span>
-        </li>
+        {% for course in group.courses %}
+        <li class="course-item"><span class="course-code">{{ course.code }}</span><span class="course-name">{{ course.name }}</span><span class="course-term">{{ course.term }}</span></li>
+        {% endfor %}
       </ul>
     </div>
-
-    <div class="teaching-group">
-      <h3>Instructor — University of Waterloo</h3>
-      <ul class="course-list">
-        <li class="course-item">
-          <span class="course-code">ACTSC 371</span>
-          <span class="course-name">Introduction to Investment</span>
-          <span class="course-term">Winter 2023</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="teaching-group">
-      <h3>Teaching Assistant — University of Waterloo</h3>
-      <ul class="course-list">
-        <li class="course-item">
-          <span class="course-code">ACTSC 363</span>
-          <span class="course-name">Casualty and Health Insurance Mathematics 1</span>
-          <span class="course-term">Fall 2022</span>
-        </li>
-        <li class="course-item">
-          <span class="course-code">ACTSC 964</span>
-          <span class="course-name">Quantitative Risk Management</span>
-          <span class="course-term">Spring 2022</span>
-        </li>
-        <li class="course-item">
-          <span class="course-code">ACTSC 446/846</span>
-          <span class="course-name">Mathematics of Financial Markets</span>
-          <span class="course-term">Winter 2022</span>
-        </li>
-        <li class="course-item">
-          <span class="course-code">MATBUS 472</span>
-          <span class="course-name">Risk Management</span>
-          <span class="course-term">Winter 2021–2022</span>
-        </li>
-        <li class="course-item">
-          <span class="course-code">MATBUS 470</span>
-          <span class="course-name">Derivatives</span>
-          <span class="course-term">Fall 2019–2022; Winter 2021</span>
-        </li>
-        <li class="course-item">
-          <span class="course-code">MATBUS 471</span>
-          <span class="course-name">Fixed Income Securities</span>
-          <span class="course-term">Fall 2019–2021; Winter 2020</span>
-        </li>
-        <li class="course-item">
-          <span class="course-code">ACTSC 431</span>
-          <span class="course-name">Loss Model I / Casualty and Health Insurance Mathematics 2</span>
-          <span class="course-term">Spring 2020, 2021</span>
-        </li>
-        <li class="course-item">
-          <span class="course-code">ACTSC 445/845</span>
-          <span class="course-name">Quantitative Enterprise Risk Management</span>
-          <span class="course-term">Spring 2020</span>
-        </li>
-        <li class="course-item">
-          <span class="course-code">ACTSC 231</span>
-          <span class="course-name">Introductory Financial Mathematics</span>
-          <span class="course-term">Winter 2020</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="teaching-group">
-      <h3>Teaching Assistant — HKUST</h3>
-      <ul class="course-list">
-        <li class="course-item">
-          <span class="course-code">MATH 4321</span>
-          <span class="course-name">Game Theory (with tutorials)</span>
-          <span class="course-term">Spring 2018, 2019</span>
-        </li>
-        <li class="course-item">
-          <span class="course-code">MATH 4511</span>
-          <span class="course-name">Quantitative Methods for Fixed Income Derivatives (with tutorials)</span>
-          <span class="course-term">Fall 2018</span>
-        </li>
-      </ul>
-    </div>
+    {% endfor %}
   </div>
 </section>
 
-<!-- ─── ACTIVITIES ─── -->
 <section id="activities">
   <div class="container">
-    <div class="section-header">
-      <div class="section-icon">
-        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/></svg>
-      </div>
-      <h2 class="section-title">Conferences</h2>
-      <div class="section-line"></div>
-    </div>
-
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/></svg></div><h2 class="section-title">Conferences</h2><div class="section-line"></div></div>
     <div class="activity-columns">
-
+      {% for column in site.data.activities %}
       <div>
+        {% for group in column.column %}
         <div class="activity-group">
-          <h3>Invited Presentations</h3>
+          <h3>{{ group.heading }}</h3>
           <ul class="activity-list">
-            <li class="activity-item">
-              <span class="activity-year">2026</span>
-              <div><div class="activity-desc">2nd Midwest Actuarial Research Seminars</div><div class="activity-place">West Lafayette, US</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2025</span>
-              <div><div class="activity-desc">China Conference on Insurance and Risk Management</div><div class="activity-place">Urumqi, China</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2025</span>
-              <div><div class="activity-desc">3rd Foundations and Applications of Decentralized Risk-Sharing</div><div class="activity-place">Paris, France</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2025</span>
-              <div><div class="activity-desc">Young Talents in Actuarial Science and Quantitative Finance</div><div class="activity-place">Waterloo, Canada</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2024</span>
-              <div><div class="activity-desc">Pierre Robillard Invited Address, SSC Annual Meeting</div><div class="activity-place">St. John's, Canada</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2022</span>
-              <div><div class="activity-desc">Young Data Science Researcher Seminar Zurich</div><div class="activity-place">Online</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2022</span>
-              <div><div class="activity-desc">INFORMS Annual Meeting</div><div class="activity-place">Indianapolis, US</div></div>
-            </li>
+            {% for item in group.items %}
+            <li class="activity-item"><span class="activity-year">{{ item.year }}</span><div><div class="activity-desc">{{ item.description }}</div><div class="activity-place">{{ item.place }}</div></div></li>
+            {% endfor %}
           </ul>
         </div>
-
-        
-        <div class="activity-group">
-          <h3>Conference Organization</h3>
-          <ul class="activity-list">
-            <li class="activity-item">
-              <span class="activity-year">2022</span>
-              <div><div class="activity-desc">3rd Waterloo Student Conference in Statistics, Actuarial Science and Finance <em>(Co-chair)</em></div><div class="activity-place">Waterloo, Canada</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2021</span>
-              <div><div class="activity-desc">2nd Waterloo Student Conference in Statistics, Actuarial Science and Finance <em>(Co-chair)</em></div><div class="activity-place">Online</div></div>
-            </li>
-          </ul>
-        </div>
+        {% endfor %}
       </div>
-
-      <div>
-        <div class="activity-group">
-          <h3>Conference Presentations</h3>
-          <ul class="activity-list">
-            <li class="activity-item">
-              <span class="activity-year">2026</span>
-              <div><div class="activity-desc">1st ASTIN Bulletin Conference</div><div class="activity-place">Zurich, Switzerland</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2025</span>
-              <div><div class="activity-desc">60th Actuarial Research Conference</div><div class="activity-place">Toronto, Canada</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2024</span>
-              <div><div class="activity-desc">59th Actuarial Research Conference</div><div class="activity-place">Murfreesboro, US</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2024</span>
-              <div><div class="activity-desc">27th International Congress of Insurance: Mathematics and Economics</div><div class="activity-place">Chicago, US</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2022</span>
-              <div><div class="activity-desc">57th Actuarial Research Conference</div><div class="activity-place">Urbana-Champaign, US</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2022</span>
-              <div><div class="activity-desc">25th International Congress on Insurance: Mathematics and Economics</div><div class="activity-place">Online</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2022</span>
-              <div><div class="activity-desc">CORS/INFORMS International Conference</div><div class="activity-place">Vancouver, Canada</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2021</span>
-              <div><div class="activity-desc">56th Actuarial Research Conference</div><div class="activity-place">Online</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2021</span>
-              <div><div class="activity-desc">24th International Congress on Insurance: Mathematics and Economics</div><div class="activity-place">Online</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2021</span>
-              <div><div class="activity-desc">5th PKU-NUS Annual International Conference on Quantitative Finance and Economics</div><div class="activity-place">Online</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2020</span>
-              <div><div class="activity-desc">5th Asian Quantitative Finance Seminar</div><div class="activity-place">Online</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2019</span>
-              <div><div class="activity-desc">1st Waterloo Student Conference in Statistics, Actuarial Science and Finance</div><div class="activity-place">Waterloo, Canada</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2019</span>
-              <div><div class="activity-desc">23rd Annual International Real Options Conference</div><div class="activity-place">London, UK</div></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<!-- ─── ACADEMIC VISITS ─── -->
 <section id="visits">
   <div class="container">
-    <div class="section-header">
-      <div class="section-icon">
-        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      </div>
-      <h2 class="section-title">Academic Visits</h2>
-      <div class="section-line"></div>
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h2 class="section-title">Academic Visits</h2><div class="section-line"></div></div>
+    <div class="activity-group">
+      <ul class="activity-list">
+        {% for item in site.data.visits %}
+        <li class="activity-item"><span class="activity-year">{{ item.year }}</span><div><div class="activity-desc">{{ item.description }}</div><div class="activity-place">{{ item.place }}</div></div></li>
+        {% endfor %}
+      </ul>
     </div>
-        <div class="activity-group">
-          <ul class="activity-list">
-            <li class="activity-item">
-              <span class="activity-year">2026</span>
-              <div><div class="activity-desc">University of New South Wales (School of Risk & Actuarial Studies)</div><div class="activity-place">Sydney, Australia</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2026</span>
-              <div><div class="activity-desc">University of Melbourne (Department of Economics)</div><div class="activity-place">Melbourne, Australia</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2026</span>
-              <div><div class="activity-desc">Monash University (Department of Econometrics and Business Statistics)</div><div class="activity-place">Clayton, Australia</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2026</span>
-              <div><div class="activity-desc">University of Iowa (Department of Statistics and Actuarial Science)</div><div class="activity-place">Iowa City, US</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2025</span>
-              <div><div class="activity-desc">Michigan State University (Department of Statistics and Probability)</div><div class="activity-place">Lansing, US</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2023, 2025</span>
-              <div><div class="activity-desc">University of Waterloo (Department of Statistics and Actuarial Science)</div><div class="activity-place">Waterloo, Canada</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2023, 2025</span>
-              <div><div class="activity-desc">Nankai University (School of Mathematical Sciences)</div><div class="activity-place">Tianjin, China</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2024</span>
-              <div><div class="activity-desc">Chinese University of Hong Kong-Shenzhen (School of Science and Engineering)</div><div class="activity-place">Shenzhen, China</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2021, 2023</span>
-              <div><div class="activity-desc">Chinese Academy of Sciences (Academy of Math and Systems Science)</div><div class="activity-place">Beijing, China</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2021</span>
-              <div><div class="activity-desc">University of Science and Technology of China (School of Management)</div><div class="activity-place">Hefei, China</div></div>
-            </li>
-          </ul>
-        </div>
   </div>
 </section>
 
-<!-- ─── PEER REVIEW SERVICE ─── -->
 <section id="service">
   <div class="container">
-    <div class="section-header">
-      <div class="section-icon">
-        <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-      </div>
-      <h2 class="section-title">Peer Review Service</h2>
-      <div class="section-line"></div>
-    </div>
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h2 class="section-title">Peer Review Service</h2><div class="section-line"></div></div>
     <ul class="course-list service-list">
-      <li class="course-item"><span class="course-code service-label">Actuarial</span><span class="course-name">ASTIN Bulletin, Insurance: Mathematics and Economics, Annals of Actuarial Science, North American Actuarial Journal, European Actuarial Journal</span></li>
-      <li class="course-item"><span class="course-code service-label">Finance</span><span class="course-name">Quantitative Finance, Mathematical Finance, Finance &amp; Stochastics</span></li>
-      <li class="course-item"><span class="course-code service-label">OR</span><span class="course-name">Mathematics of Operations Research</span></li>
-      <li class="course-item"><span class="course-code service-label">Probability</span><span class="course-name">Statistics &amp; Probability Letters</span></li>
-      <li class="course-item"><span class="course-code service-label">Economics</span><span class="course-name">Economic Modelling</span></li>
+      {% for item in site.data.service %}
+      <li class="course-item"><span class="course-code service-label">{{ item.label }}</span><span class="course-name">{{ item.journals }}</span></li>
+      {% endfor %}
     </ul>
   </div>
 </section>
 
-<!-- ─── CONTACT ─── -->
 <section id="contact">
   <div class="container">
-    <div class="section-header">
-      <div class="section-icon">
-        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 011.91 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
-      </div>
-      <h2 class="section-title">Contact</h2>
-      <div class="section-line"></div>
-    </div>
-
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 011.91 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg></div><h2 class="section-title">Contact</h2><div class="section-line"></div></div>
     <div class="contact-grid">
       <div class="contact-card">
         <h3>Get in Touch</h3>
-
-        <div class="contact-row">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          </div>
-          <div>
-            <div class="contact-label">Email</div>
-            <div class="contact-value">qwang30 {AT} gsu {DOT} edu</div>
-          </div>
-        </div>
-
-        <div class="contact-row">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 011.91 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
-          </div>
-          <div>
-            <div class="contact-label">Phone</div>
-            <div class="contact-value">+1 (404) 413-7470</div>
-          </div>
-        </div>
-
-        <div class="contact-row">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div>
-            <div class="contact-label">Office</div>
-            <div class="contact-value">Suite 1127, Maurice R. Greenberg School of Risk Science<br>Robinson College of Business<br>35 Broad Street NW, Atlanta, GA 30303</div>
-          </div>
-        </div>
+        <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div><div><div class="contact-label">Email</div><div class="contact-value">{{ site.data.site.email_display }}</div></div></div>
+        <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 011.91 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg></div><div><div class="contact-label">Phone</div><div class="contact-value">{{ site.data.site.phone }}</div></div></div>
+        <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="contact-label">Office</div><div class="contact-value">{{ site.data.site.office_html }}</div></div></div>
       </div>
-
       <div class="contact-card">
         <h3>Online Profiles</h3>
-
-        <div class="contact-row">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 10a8 8 0 017.162 3.44L24 9.5 12 0z"/></svg>
-          </div>
-          <div>
-            <div class="contact-label">Google Scholar</div>
-            <div class="contact-value"><a href="https://scholar.google.ca/citations?user=vboPnRoAAAAJ&amp;hl=en" target="_blank">View Profile ↗</a></div>
-          </div>
-        </div>
-
-        <div class="contact-row">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-          </div>
-          <div>
-            <div class="contact-label">GitHub</div>
-            <div class="contact-value"><a href="https://github.com/qwangan" target="_blank">github.com/qwangan ↗</a></div>
-          </div>
-        </div>
-
-        <div class="contact-row">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg>
-          </div>
-          <div>
-            <div class="contact-label">Curriculum Vitae</div>
-            <div class="contact-value"><a href="https://qwangan.github.io/files/Curriculum_Vitae.pdf" target="_blank">Download PDF ↗</a></div>
-          </div>
-        </div>
-
-        <div class="contact-row">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/></svg>
-          </div>
-          <div>
-            <div class="contact-label">Department</div>
-            <div class="contact-value"><a href="https://robinson.gsu.edu/academic-departments/risk-management-insurance/" target="_blank">Maurice R. Greenberg School of Risk Science ↗</a></div>
-          </div>
-        </div>
+        <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 10a8 8 0 017.162 3.44L24 9.5 12 0z"/></svg></div><div><div class="contact-label">Google Scholar</div><div class="contact-value"><a href="{{ site.data.site.scholar_url }}" target="_blank">View Profile ↗</a></div></div></div>
+        <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></div><div><div class="contact-label">GitHub</div><div class="contact-value"><a href="{{ site.data.site.github_url }}" target="_blank">github.com/qwangan ↗</a></div></div></div>
+        <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg></div><div><div class="contact-label">Curriculum Vitae</div><div class="contact-value"><a href="{{ site.data.site.cv_url | relative_url }}" target="_blank">Download PDF ↗</a></div></div></div>
+        <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/></svg></div><div><div class="contact-label">Department</div><div class="contact-value"><a href="{{ site.data.site.department_url }}" target="_blank">Maurice R. Greenberg School of Risk Science ↗</a></div></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── FOOTER ─── -->
 <footer>
-  <p>
-    &copy; 2025 Qiuqi Wang &nbsp;&middot;&nbsp;
-    Assistant Professor, Georgia State University &nbsp;&middot;&nbsp;
-    qwang30 {AT} gsu {DOT} edu
-  </p>
+  <p>&copy; {{ site.data.site.footer_year }} Qiuqi Wang &nbsp;&middot;&nbsp; Assistant Professor, Georgia State University &nbsp;&middot;&nbsp; {{ site.data.site.email_display }}</p>
 </footer>
-
-<script>
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
-
-  if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-      const isOpen = navLinks.classList.toggle('open');
-      hamburger.setAttribute('aria-expanded', String(isOpen));
-    });
-  }
-
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const selector = a.getAttribute('href');
-      const target = selector && selector.length > 1 ? document.querySelector(selector) : document.body;
-      if (target) {
-        e.preventDefault();
-        const offset = 76;
-        const top = target === document.body ? 0 : target.offsetTop - offset;
-        window.scrollTo({ top, behavior: 'smooth' });
-        if (navLinks) navLinks.classList.remove('open');
-        if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
-      }
-    });
-  });
-
-  document.querySelectorAll('a[target="_blank"]').forEach(a => {
-    a.rel = 'noopener noreferrer';
-  });
-</script>
-
-</body>
-</html>
