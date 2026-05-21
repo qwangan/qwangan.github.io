@@ -3,3 +3,4 @@ url: https://qwangan.github.io
 baseurl: ""
 description: Qiuqi Wang, Ph.D., A.S.A. — Assistant Professor at the Maurice R. Greenberg School of Risk Science, Georgia State University.
 markdown: kramdown
+data_dir: _pages
