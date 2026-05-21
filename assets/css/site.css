@@ -209,15 +209,23 @@
       border: 0;
       border-radius: 50%;
       bottom: -46px;
-      clip-path: circle(49% at center);
       display: block;
       height: 132px;
-      object-fit: cover;
+      overflow: hidden;
       padding: 0;
       position: absolute;
       right: max(34px, calc((100vw - 1120px) / 2 + 30px));
       width: 132px;
       z-index: 2;
+    }
+
+    .hero-gsu-logo img {
+      display: block;
+      height: 116%;
+      margin: -8% 0 0 -8%;
+      max-width: none;
+      object-fit: cover;
+      width: 116%;
     }
 
     .hero-links {
