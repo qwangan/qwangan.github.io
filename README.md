@@ -14,6 +14,7 @@ Most routine edits are in `_pages/`:
 - `_pages/education.yml` and `_pages/appointment.yml` for background entries
 - `_pages/service.yml` for peer review service
 - `_pages/site.yml` for contact details and profile links
+- `files/Curriculum_Vitae.pdf` is the only CV PDF to replace when updating the CV
 
 Jekyll still refers to these files as `site.data.*` because `_config.yml` sets `data_dir: _pages`.
 
