@@ -1,21 +1,13 @@
-name: Build CV PDF
+name: Build CV PDF Draft
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-    paths:
-      - "_pages/**"
-      - "scripts/build_cv.rb"
-      - "cv-source/**"
-      - ".github/workflows/build-cv.yml"
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  build-cv:
+  build-cv-draft:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -26,17 +18,13 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-fonts-recommended
 
-      - name: Build CV from website data
-        run: ruby scripts/build_cv.rb
+      - name: Build draft CV from website data
+        run: ruby scripts/build_cv.rb --draft-output
 
-      - name: Commit generated CV when changed
-        run: |
-          if git diff --quiet -- files/Curriculum_Vitae.pdf cv-source/Curriculum_Vitae.tex; then
-            echo "CV is already up to date."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add files/Curriculum_Vitae.pdf cv-source/Curriculum_Vitae.tex
-          git commit -m "Build CV PDF from website data"
-          git push
+      - name: Upload draft CV artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-draft
+          path: |
+            .cv-build/Curriculum_Vitae.pdf
+            cv-source/Curriculum_Vitae.tex

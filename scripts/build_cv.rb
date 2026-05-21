@@ -228,6 +228,10 @@ unless ARGV.include?('--tex-only')
     system(*command) || abort('pdflatex failed')
   end
   built_pdf = File.join(BUILD_DIR, 'Curriculum_Vitae.pdf')
-  FileUtils.cp(built_pdf, PDF_PATH)
-  puts "Updated #{PDF_PATH}"
+  if ARGV.include?('--draft-output')
+    puts "Built draft PDF at #{built_pdf}"
+  else
+    FileUtils.cp(built_pdf, PDF_PATH)
+    puts "Updated #{PDF_PATH}"
+  end
 end

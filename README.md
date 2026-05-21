@@ -24,13 +24,21 @@ The page layout is in `index.html`. The visual design is in `assets/css/site.css
 
 ## Updating the CV
 
-The website uses one CV PDF: `files/Curriculum_Vitae.pdf`. It can be rebuilt from the same YAML files that power the website:
+The website uses one CV PDF: `files/Curriculum_Vitae.pdf`. This file is currently the restored original website CV and is the authoritative public PDF.
+
+The repo also has a draft generator:
+
+```bash
+ruby scripts/build_cv.rb --draft-output
+```
+
+This generates `cv-source/Curriculum_Vitae.tex` and builds a draft PDF in `.cv-build/` without replacing the public CV. To intentionally replace the public PDF after reviewing the draft, run:
 
 ```bash
 ruby scripts/build_cv.rb
 ```
 
-This generates `cv-source/Curriculum_Vitae.tex` and compiles a new `files/Curriculum_Vitae.pdf`. On GitHub, the **Build CV PDF** workflow runs when `_pages/*.yml`, the CV generator, or CV source files change, and commits the rebuilt PDF when needed.
+The GitHub **Build CV PDF Draft** workflow is manual and uploads draft artifacts only; it does not overwrite `files/Curriculum_Vitae.pdf` automatically.
 
 ## Updating Publications Automatically
 
