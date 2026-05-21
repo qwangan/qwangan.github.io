@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <title>Redirecting | Qiuqi Wang</title>
+  <script>
+    const redirects = {
+      '/arxiv': '/#publications',
+      '/arxiv/': '/#publications',
+      '/publications': '/#publications',
+      '/publications/': '/#publications',
+      '/portfolio': '/#research',
+      '/portfolio/': '/#research',
+      '/cv': '/files/Curriculum_Vitae.pdf',
+      '/cv/': '/files/Curriculum_Vitae.pdf',
+      '/teaching': '/#teaching',
+      '/teaching/': '/#teaching',
+      '/Curriculum_Vitae.pdf': '/files/Curriculum_Vitae.pdf'
+    };
+
+    const target = redirects[window.location.pathname] || '/';
+    window.location.replace(target);
+  </script>
+</head>
+<body>
+  <p>The page has moved. <a href="/">Continue to Qiuqi Wang's homepage</a>.</p>
+</body>
+</html>
