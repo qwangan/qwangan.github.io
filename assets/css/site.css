@@ -307,12 +307,18 @@
       line-height: 1.5;
     }
 
-    .edu-degree,
-    .pub-title {
+    .edu-degree {
       color: var(--ink);
       font-size: 0.98rem;
       font-weight: 700;
       line-height: 1.45;
+    }
+
+    .pub-title {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.5;
     }
 
     .edu-school,
@@ -420,8 +426,15 @@
     .pub-authors strong { color: var(--navy); font-weight: 800; }
 
     .pub-venue {
-      font-style: italic;
+      font-style: normal;
+      line-height: 1.5;
       margin-top: 3px;
+    }
+
+    .pub-venue em {
+      color: var(--navy);
+      font-style: italic;
+      font-weight: 800;
     }
 
     .pub-tags {
