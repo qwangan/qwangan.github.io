@@ -65,7 +65,7 @@
       }
     ],
     "sameAs": [
-      "https://scholar.google.ca/citations?user=vboPnRoAAAAJ&hl=en",
+      "https://scholar.google.ca/citations?user=vboPnRoAAAAJ&amp;hl=en",
       "https://github.com/qwangan"
     ],
     "knowsAbout": [
@@ -80,187 +80,211 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Lora:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet" />
   <style>
     :root {
-      --navy: #1b3a6b;
-      --navy-light: #2a5298;
-      --gold: #c8922a;
-      --gold-light: #f0c060;
-      --bg: #ffffff;
-      --bg-alt: #f5f7fb;
-      --bg-card: #ffffff;
-      --text: #1a202c;
-      --text-secondary: #4a5568;
-      --text-muted: #718096;
-      --border: #e2e8f0;
-      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.06);
-      --shadow-lg: 0 8px 32px rgba(27,58,107,0.12);
-      --radius: 10px;
+      --ink: #17202a;
+      --muted: #5b6673;
+      --quiet: #7b8490;
+      --paper: #fbfaf7;
+      --panel: #ffffff;
+      --wash: #f0f4f1;
+      --line: #d8ded8;
+      --navy: #183b56;
+      --blue: #28627c;
+      --green: #496f64;
+      --wine: #8a3a48;
+      --gold: #b6842d;
+      --shadow: 0 14px 34px rgba(30, 45, 55, 0.08);
+      --shadow-soft: 0 1px 2px rgba(30, 45, 55, 0.08);
+      --radius: 8px;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      font-size: 15.5px;
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 86px;
     }
 
-    /* ── NAV ── */
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15.5px;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: clip;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: linear-gradient(rgba(24, 59, 86, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(24, 59, 86, 0.025) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent 52%);
+      z-index: -1;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: var(--wine); }
+
+    ::selection { background: #dbe8df; color: var(--ink); }
+
     nav {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: var(--navy);
-      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+      background: rgba(251, 250, 247, 0.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(16px);
     }
 
     .nav-inner {
-      max-width: 1080px;
-      margin: 0 auto;
-      display: flex;
       align-items: center;
+      display: flex;
+      height: 64px;
       justify-content: space-between;
-      padding: 0 24px;
-      height: 58px;
+      margin: 0 auto;
+      max-width: 1120px;
+      padding: 0 26px;
     }
 
     .nav-brand {
-      font-size: 1rem;
+      color: var(--ink);
+      font-family: 'Lora', serif;
+      font-size: 1.02rem;
       font-weight: 600;
-      color: #fff;
-      letter-spacing: 0.01em;
+      letter-spacing: 0;
       text-decoration: none;
     }
 
-    .nav-brand span { color: var(--gold-light); }
+    .nav-brand span { color: var(--wine); }
 
     .nav-links {
+      align-items: center;
       display: flex;
-      gap: 4px;
+      gap: 2px;
       list-style: none;
     }
 
     .nav-links a {
-      color: rgba(255,255,255,0.82);
+      border-radius: var(--radius);
+      color: var(--muted);
+      display: block;
+      font-size: 0.86rem;
+      font-weight: 600;
+      letter-spacing: 0;
+      padding: 7px 11px;
       text-decoration: none;
-      font-size: 0.88rem;
-      font-weight: 500;
-      padding: 6px 12px;
-      border-radius: 6px;
-      transition: background 0.2s, color 0.2s;
-      letter-spacing: 0.02em;
+      transition: background 0.18s ease, color 0.18s ease;
     }
 
     .nav-links a:hover {
-      background: rgba(255,255,255,0.12);
-      color: #fff;
+      background: var(--wash);
+      color: var(--ink);
     }
 
     .hamburger {
+      background: transparent;
+      border: 0;
+      cursor: pointer;
       display: none;
       flex-direction: column;
-      gap: 4px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 4px;
-    }
-    .hamburger span {
-      display: block;
-      width: 22px;
-      height: 2px;
-      background: #fff;
-      border-radius: 2px;
-      transition: 0.3s;
+      gap: 5px;
+      padding: 8px;
     }
 
-    /* ── HERO / PROFILE ── */
+    .hamburger span {
+      background: var(--ink);
+      border-radius: 2px;
+      display: block;
+      height: 2px;
+      transition: 0.2s;
+      width: 22px;
+    }
+
     .hero {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 60%, #3b6cb7 100%);
-      padding: 72px 24px 60px;
-      position: relative;
+      background: linear-gradient(120deg, #fbfaf7 0%, #f7f1e8 52%, #e8f0ed 100%);
+      border-bottom: 1px solid var(--line);
       overflow: hidden;
+      padding: 86px 26px 88px;
+      position: relative;
     }
 
     .hero::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background: linear-gradient(90deg, rgba(138, 58, 72, 0.08), transparent 38%), linear-gradient(180deg, transparent 0%, rgba(73, 111, 100, 0.09) 100%);
+      pointer-events: none;
     }
 
     .hero-inner {
-      max-width: 1080px;
-      margin: 0 auto;
-      display: flex;
       align-items: center;
-      gap: 52px;
+      display: grid;
+      gap: 72px;
+      grid-template-columns: 260px minmax(0, 1fr);
+      margin: 0 auto;
+      max-width: 1120px;
       position: relative;
     }
 
     .hero-photo {
-      flex-shrink: 0;
-      width: 190px;
-      height: 190px;
-      border-radius: 50%;
+      aspect-ratio: 4 / 5;
+      background: #d9d7d1;
+      border: 1px solid rgba(24, 59, 86, 0.2);
+      border-radius: var(--radius);
+      box-shadow: 22px 22px 0 rgba(73, 111, 100, 0.14), var(--shadow);
+      height: auto;
       object-fit: cover;
-      border: 4px solid rgba(255,255,255,0.25);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      object-position: 51% 22%;
+      width: 260px;
     }
 
-    .hero-text { color: #fff; }
+    .hero-text {
+      border-left: 1px solid rgba(24, 59, 86, 0.24);
+      color: var(--ink);
+      max-width: 720px;
+      padding-left: 44px;
+    }
 
     .hero-name {
+      color: var(--navy);
       font-family: 'Lora', serif;
-      font-size: 2.4rem;
+      font-size: 3.8rem;
       font-weight: 600;
-      line-height: 1.2;
-      margin-bottom: 8px;
+      line-height: 1.03;
+      margin-bottom: 12px;
     }
 
     .hero-cred {
+      color: var(--wine);
       font-size: 1rem;
-      font-weight: 400;
-      color: var(--gold-light);
-      margin-bottom: 14px;
-      letter-spacing: 0.04em;
+      font-weight: 700;
+      letter-spacing: 0;
+      margin-bottom: 18px;
     }
 
     .hero-position {
-      font-size: 0.95rem;
-      color: rgba(255,255,255,0.82);
-      margin-bottom: 6px;
+      color: var(--ink);
+      font-size: 1.02rem;
+      font-weight: 700;
+      margin-bottom: 5px;
     }
 
     .hero-institution {
-      font-size: 0.93rem;
-      color: rgba(255,255,255,0.7);
-      margin-bottom: 24px;
-    }
-
-    .hero-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 24px;
-    }
-
-    .badge {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.22);
-      color: rgba(255,255,255,0.9);
-      font-size: 0.78rem;
-      font-weight: 500;
-      padding: 4px 12px;
-      border-radius: 20px;
-      backdrop-filter: blur(4px);
+      color: var(--muted);
+      font-size: 0.98rem;
+      margin-bottom: 26px;
+      max-width: 620px;
     }
 
     .hero-links {
@@ -270,464 +294,439 @@
     }
 
     .hero-link {
-      display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: rgba(255,255,255,0.13);
-      border: 1px solid rgba(255,255,255,0.25);
-      color: #fff;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(24, 59, 86, 0.18);
+      border-radius: var(--radius);
+      color: var(--navy);
+      display: inline-flex;
+      font-size: 0.84rem;
+      font-weight: 700;
+      gap: 7px;
+      max-width: 100%;
+      min-height: 38px;
+      padding: 8px 13px;
       text-decoration: none;
-      font-size: 0.83rem;
-      font-weight: 500;
-      padding: 7px 16px;
-      border-radius: 8px;
-      transition: background 0.2s, border-color 0.2s;
+      transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
     }
 
     .hero-link:hover {
-      background: rgba(255,255,255,0.22);
-      border-color: rgba(255,255,255,0.45);
+      border-color: rgba(138, 58, 72, 0.38);
+      box-shadow: var(--shadow-soft);
+      color: var(--wine);
+      transform: translateY(-1px);
     }
 
-    .hero-link svg { width: 15px; height: 15px; fill: currentColor; }
+    .hero-link svg { fill: currentColor; height: 15px; width: 15px; }
 
-    /* ── LAYOUT ── */
     .container {
-      max-width: 1080px;
       margin: 0 auto;
-      padding: 0 24px;
+      max-width: 1120px;
+      padding: 0 26px;
     }
 
-    /* ── SECTIONS ── */
     section {
-      padding: 64px 0;
+      padding: 74px 0;
     }
 
-    section:nth-child(even) {
-      background: var(--bg-alt);
-    }
+    section:nth-child(even) { background: rgba(240, 244, 241, 0.72); }
 
     .section-header {
-      display: flex;
       align-items: center;
-      gap: 14px;
-      margin-bottom: 36px;
+      display: grid;
+      gap: 15px;
+      grid-template-columns: 38px auto 1fr;
+      margin-bottom: 34px;
     }
 
     .section-icon {
-      width: 38px;
-      height: 38px;
-      background: var(--navy);
-      border-radius: 10px;
-      display: flex;
       align-items: center;
+      background: var(--navy);
+      border-radius: var(--radius);
+      display: flex;
+      height: 38px;
       justify-content: center;
-      flex-shrink: 0;
+      width: 38px;
     }
 
-    .section-icon svg { width: 18px; height: 18px; fill: #fff; }
+    .section-icon svg { fill: #fff; height: 18px; width: 18px; }
 
     .section-title {
-      font-family: 'Lora', serif;
-      font-size: 1.7rem;
-      font-weight: 600;
       color: var(--navy);
-      line-height: 1;
+      font-family: 'Lora', serif;
+      font-size: 1.62rem;
+      font-weight: 600;
+      line-height: 1.15;
     }
 
     .section-line {
-      flex: 1;
+      background: linear-gradient(90deg, var(--line), transparent);
       height: 1px;
-      background: var(--border);
     }
 
-    /* ── NEWS / AWARDS ── */
-    .awards-grid {
+    .edu-list,
+    .pub-list,
+    .course-list,
+    .activity-list { list-style: none; }
+
+    .edu-list,
+    .course-list,
+    .pub-list { border-top: 1px solid var(--line); }
+
+    .edu-item {
+      align-items: flex-start;
+      border-bottom: 1px solid var(--line);
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      gap: 24px;
+      grid-template-columns: 74px minmax(0, 1fr);
+      padding: 18px 0;
+    }
+
+    .edu-year,
+    .pub-num,
+    .activity-year {
+      color: var(--wine);
+      font-size: 0.82rem;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .edu-degree,
+    .pub-title {
+      color: var(--ink);
+      font-size: 0.98rem;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .edu-school,
+    .pub-authors,
+    .pub-venue,
+    .activity-place,
+    .course-term {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .edu-school { margin-top: 2px; }
+
+    .awards-grid,
+    .interests-grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .award-card,
+    .interest-item,
+    .contact-card {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
     }
 
     .award-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--gold);
-      border-radius: var(--radius);
-      padding: 20px 22px;
-      box-shadow: var(--shadow);
-      transition: transform 0.2s, box-shadow 0.2s;
+      border-top: 4px solid var(--gold);
+      padding: 20px 21px;
+      transition: box-shadow 0.18s ease, transform 0.18s ease;
     }
 
     .award-card:hover {
+      box-shadow: var(--shadow);
       transform: translateY(-2px);
-      box-shadow: var(--shadow-lg);
     }
 
-    .award-label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
+    .award-label,
+    .pub-section-label,
+    .contact-label {
+      color: var(--quiet);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0;
       text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 6px;
     }
 
     .award-card h3 {
-      font-size: 0.97rem;
-      font-weight: 600;
       color: var(--navy);
-      margin-bottom: 6px;
+      font-size: 0.98rem;
       line-height: 1.4;
+      margin: 8px 0 7px;
     }
 
     .award-card p {
-      font-size: 0.87rem;
-      color: var(--text-secondary);
-      line-height: 1.55;
-    }
-
-    .award-card a { color: var(--navy-light); text-decoration: none; font-weight: 500; }
-    .award-card a:hover { text-decoration: underline; }
-
-    /* ── RESEARCH INTERESTS ── */
-    .interests-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.58;
     }
 
     .interest-item {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 18px 20px;
-      display: flex;
       align-items: flex-start;
-      gap: 14px;
-      box-shadow: var(--shadow);
-      transition: transform 0.2s;
+      display: flex;
+      gap: 13px;
+      padding: 18px 18px;
     }
 
-    .interest-item:hover { transform: translateY(-2px); }
-
     .interest-dot {
-      width: 8px;
-      height: 8px;
-      background: var(--gold);
+      background: var(--wine);
       border-radius: 50%;
-      flex-shrink: 0;
-      margin-top: 7px;
+      flex: 0 0 auto;
+      height: 8px;
+      margin-top: 8px;
+      width: 8px;
     }
 
     .interest-item span {
-      font-size: 0.93rem;
-      font-weight: 500;
-      color: var(--text);
+      color: var(--ink);
+      font-size: 0.94rem;
+      font-weight: 650;
+      line-height: 1.55;
     }
 
-    /* ── PUBLICATIONS ── */
     .pub-section-label {
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 16px;
-      margin-top: 36px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid var(--border);
+      border-bottom: 1px solid var(--line);
+      margin: 38px 0 0;
+      padding: 0 0 10px;
     }
 
     .pub-section-label:first-of-type { margin-top: 0; }
 
-    .pub-list { list-style: none; }
-
     .pub-item {
-      padding: 18px 0;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--line);
       display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 16px;
-      align-items: start;
+      gap: 18px;
+      grid-template-columns: 48px minmax(0, 1fr);
+      padding: 18px 0;
     }
 
-    .pub-item:last-child { border-bottom: none; }
+    .pub-authors { margin-bottom: 3px; }
 
-    .pub-num {
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      padding-top: 3px;
-      min-width: 24px;
-    }
-
-    .pub-body {}
-
-    .pub-authors {
-      font-size: 0.9rem;
-      color: var(--text-secondary);
-      margin-bottom: 4px;
-    }
-
-    .pub-authors strong {
-      color: var(--navy);
-      font-weight: 600;
-    }
-
-    .pub-title {
-      font-size: 0.97rem;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 4px;
-      line-height: 1.45;
-    }
+    .pub-authors strong { color: var(--navy); font-weight: 800; }
 
     .pub-venue {
-      font-size: 0.87rem;
-      color: var(--text-secondary);
       font-style: italic;
-      margin-bottom: 8px;
+      margin-top: 3px;
     }
 
-    .pub-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .pub-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
 
     .pub-tag {
-      font-size: 0.76rem;
-      font-weight: 600;
-      padding: 3px 10px;
       border-radius: 5px;
+      display: inline-block;
+      font-size: 0.73rem;
+      font-weight: 800;
+      line-height: 1.3;
+      padding: 4px 8px;
       text-decoration: none;
-      transition: opacity 0.15s;
     }
 
-    .pub-tag:hover { opacity: 0.8; text-decoration: none; }
+    .tag-journal { background: #e8f0f5; border: 1px solid #c8d8e0; color: var(--blue); }
+    .tag-arxiv { background: #edf3ed; border: 1px solid #c9dacd; color: var(--green); }
+    .tag-preprint { background: #f8f0dc; border: 1px solid #ead4a4; color: #7c5a16; }
 
-    .tag-journal { background: #ebf4ff; color: #2563eb; border: 1px solid #bfdbfe; }
-    .tag-arxiv   { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
+    .teaching-group,
+    .activity-group { margin-bottom: 32px; }
 
-    /* ── EDUCATION ── */
-    .edu-list { list-style: none; }
-
-    .edu-item {
-      display: flex;
-      gap: 20px;
-      padding: 18px 0;
-      border-bottom: 1px solid var(--border);
-      align-items: flex-start;
-    }
-
-    .edu-item:last-child { border-bottom: none; }
-
-    .edu-year {
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      flex-shrink: 0;
-      min-width: 46px;
-      padding-top: 3px;
-    }
-
-    .edu-degree {
-      font-size: 0.97rem;
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    .edu-school {
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-      margin-top: 2px;
-    }
-
-    .edu-school a { color: var(--navy-light); text-decoration: none; font-weight: 500; }
-    .edu-school a:hover { text-decoration: underline; }
-
-    /* ── TEACHING ── */
-    .teaching-group { margin-bottom: 32px; }
-
-    .teaching-group h3 {
-      font-size: 1rem;
-      font-weight: 600;
+    .teaching-group h3,
+    .activity-group h3,
+    .contact-card h3 {
       color: var(--navy);
-      margin-bottom: 14px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--border);
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.45;
+      margin-bottom: 12px;
     }
-
-    .course-list { list-style: none; }
 
     .course-item {
-      display: flex;
-      justify-content: space-between;
       align-items: baseline;
-      padding: 9px 0;
-      border-bottom: 1px dotted var(--border);
-      gap: 16px;
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      gap: 18px;
+      grid-template-columns: 120px minmax(0, 1fr) auto;
+      padding: 11px 0;
     }
 
-    .course-item:last-child { border-bottom: none; }
-
     .course-code {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--navy);
+      color: var(--wine);
+      font-size: 0.84rem;
+      font-weight: 800;
       white-space: nowrap;
-      flex-shrink: 0;
     }
 
     .course-name {
-      font-size: 0.9rem;
-      color: var(--text);
-      flex: 1;
+      color: var(--ink);
+      font-size: 0.92rem;
     }
 
-    .course-term {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      white-space: nowrap;
+    .course-term { white-space: nowrap; }
+
+    .activity-columns {
+      display: grid;
+      gap: 42px;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
-
-    /* ── ACTIVITIES ── */
-    .activity-group { margin-bottom: 32px; }
-
-    .activity-group h3 {
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--navy);
-      margin-bottom: 14px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .activity-list { list-style: none; }
 
     .activity-item {
       display: grid;
-      grid-template-columns: auto 1fr;
       gap: 14px;
+      grid-template-columns: 68px minmax(0, 1fr);
       padding: 8px 0;
-      align-items: baseline;
-    }
-
-    .activity-year {
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--gold);
-      min-width: 40px;
     }
 
     .activity-desc {
-      font-size: 0.9rem;
-      color: var(--text);
+      color: var(--ink);
+      font-size: 0.91rem;
+      line-height: 1.48;
     }
 
-    .activity-place {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-    }
+    .service-list { max-width: 840px; }
+    .service-label { min-width: 92px; }
 
-    /* ── CONTACT ── */
     .contact-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
+      gap: 22px;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
 
-    .contact-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px;
-      box-shadow: var(--shadow);
-    }
-
-    .contact-card h3 {
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--navy);
-      margin-bottom: 18px;
-    }
+    .contact-card { padding: 25px; }
 
     .contact-row {
-      display: flex;
       align-items: flex-start;
-      gap: 12px;
-      margin-bottom: 14px;
+      display: flex;
+      gap: 13px;
+      margin-bottom: 15px;
     }
+
+    .contact-row:last-child { margin-bottom: 0; }
 
     .contact-icon {
-      width: 34px;
-      height: 34px;
-      background: var(--bg-alt);
-      border-radius: 8px;
-      display: flex;
       align-items: center;
+      background: var(--wash);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      display: flex;
+      flex: 0 0 auto;
+      height: 34px;
       justify-content: center;
-      flex-shrink: 0;
+      width: 34px;
     }
 
-    .contact-icon svg { width: 16px; height: 16px; fill: var(--navy); }
-
-    .contact-label {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
+    .contact-icon svg { fill: var(--navy); height: 16px; width: 16px; }
 
     .contact-value {
+      color: var(--ink);
       font-size: 0.92rem;
-      color: var(--text);
+      line-height: 1.55;
     }
 
-    .contact-value a { color: var(--navy-light); text-decoration: none; }
-    .contact-value a:hover { text-decoration: underline; }
-
-    /* ── FOOTER ── */
     footer {
       background: var(--navy);
-      color: rgba(255,255,255,0.55);
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.82rem;
+      padding: 30px 24px;
       text-align: center;
-      padding: 28px 24px;
-      font-size: 0.83rem;
     }
 
-    footer a { color: rgba(255,255,255,0.75); text-decoration: none; }
-    footer a:hover { color: #fff; }
+    footer a { color: #fff; }
 
-    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero-inner {
+        gap: 40px;
+        grid-template-columns: 210px minmax(0, 1fr);
+      }
+
+      .hero-photo { width: 210px; }
+      .hero-name { font-size: 3.05rem; }
+      .hero-text { padding-left: 32px; }
+      .course-item { grid-template-columns: 110px minmax(0, 1fr); }
+      .course-term { grid-column: 2; white-space: normal; }
+    }
+
     @media (max-width: 768px) {
-      .hero-inner { flex-direction: column; text-align: center; gap: 24px; }
-      .hero-photo { width: 140px; height: 140px; }
-      .hero-name { font-size: 1.8rem; }
-      .hero-badges, .hero-links { justify-content: center; }
-
-      .nav-links { display: none; flex-direction: column; gap: 0; position: absolute; top: 58px; left: 0; right: 0; background: var(--navy); padding: 8px 0 16px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
-      .nav-links.open { display: flex; }
-      .nav-links a { border-radius: 0; padding: 10px 24px; }
-      .hamburger { display: flex; }
-
       nav { position: relative; }
 
-      .contact-grid { grid-template-columns: 1fr; }
-      .course-item { flex-direction: column; gap: 2px; }
-      .course-term { margin-top: -4px; }
+      .nav-links {
+        background: var(--paper);
+        border-bottom: 1px solid var(--line);
+        box-shadow: var(--shadow-soft);
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        left: 0;
+        padding: 8px 18px 18px;
+        position: absolute;
+        right: 0;
+        top: 64px;
+      }
+
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 10px 8px; width: 100%; }
+      .hamburger { display: flex; }
+
+      .hero { padding: 54px 22px 58px; }
+
+      .hero-inner {
+        gap: 30px;
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-photo {
+        box-shadow: 14px 14px 0 rgba(73, 111, 100, 0.14), var(--shadow-soft);
+        justify-self: center;
+        width: 190px;
+      }
+
+      .hero-text {
+        border-left: 0;
+        padding-left: 0;
+      }
+
+      .hero-name { font-size: 2.45rem; }
+      .hero-links { justify-content: center; }
+      .hero-link { justify-content: center; }
+
+      section { padding: 56px 0; }
+
+      .section-header {
+        gap: 12px;
+        grid-template-columns: 38px minmax(0, 1fr);
+      }
+
+      .section-line { display: none; }
+
+      .contact-grid,
+      .activity-columns { grid-template-columns: 1fr; }
     }
 
-    /* ── UTILITIES ── */
-    .tag-preprint { background: #fef9e7; color: #92400e; border: 1px solid #fde68a; }
+    @media (max-width: 520px) {
+      .container,
+      .nav-inner { padding-left: 18px; padding-right: 18px; }
 
-    a { color: var(--navy-light); }
+      .hero-photo { width: 168px; }
+      .hero-name { font-size: 2.08rem; }
+      .hero-institution { font-size: 0.92rem; }
 
-    ::selection { background: #bfdbfe; color: var(--navy); }
+      .hero-links {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
 
-    /* Scroll offset for sticky nav */
-    :target::before {
-      content: '';
-      display: block;
-      height: 70px;
-      margin-top: -70px;
+      .edu-item,
+      .pub-item,
+      .activity-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+
+      .course-item { grid-template-columns: 1fr; gap: 2px; }
+      .course-term { grid-column: auto; }
+      .contact-card { padding: 21px; }
     }
   </style>
 </head>
@@ -737,10 +736,10 @@
 <nav>
   <div class="nav-inner">
     <a class="nav-brand" href="#">Qiuqi <span>Wang</span></a>
-    <button class="hamburger" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">
+    <button class="hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links">
+    <ul class="nav-links" id="site-nav">
       <li><a href="#appointment">About</a></li>
       <li><a href="#publications">Research</a></li>
       <li><a href="#teaching">Teaching</a></li>
@@ -757,29 +756,28 @@
   <div class="hero-inner">
     <img
       class="hero-photo"
-      src="https://qwangan.github.io/images/Photo1.jpeg"
+      src="images/Photo1.jpeg"
       alt="Qiuqi Wang"
+      width="260"
+      height="325"
+      decoding="async"
     />
     <div class="hero-text">
-      <div class="hero-name">Qiuqi Wang</div>
+      <h1 class="hero-name">Qiuqi Wang</h1>
       <div class="hero-cred">Ph.D. &nbsp;·&nbsp; A.S.A.</div>
       <div class="hero-position">Assistant Professor</div>
       <div class="hero-institution">
         Maurice R. Greenberg School of Risk Science<br>
         Robinson College of Business, Georgia State University
       </div>
-<div class="hero-links">
+      <div class="hero-links">
         <span class="hero-link">
           <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
           qwang30 {AT} gsu {DOT} edu
         </span>
-        <a class="hero-link" href="https://scholar.google.ca/citations?user=vboPnRoAAAAJ&hl=en" target="_blank">
+        <a class="hero-link" href="https://scholar.google.ca/citations?user=vboPnRoAAAAJ&amp;hl=en" target="_blank">
           <svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 10a8 8 0 017.162 3.44L24 9.5 12 0z"/></svg>
           Google Scholar
-        </a>
-        <a class="hero-link" href="https://github.com/qwangan" target="_blank">
-          <svg viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-          GitHub
         </a>
         <a class="hero-link" href="https://qwangan.github.io/files/Curriculum_Vitae.pdf" target="_blank">
           <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg>
@@ -1189,7 +1187,7 @@
       <div class="section-line"></div>
     </div>
 
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px;">
+    <div class="activity-columns">
 
       <div>
         <div class="activity-group">
@@ -1226,39 +1224,6 @@
           </ul>
         </div>
 
-        <div class="activity-group">
-          <h3>Academic Visits</h3>
-          <ul class="activity-list">
-            <li class="activity-item">
-              <span class="activity-year">2026</span>
-              <div><div class="activity-desc">University of Iowa (Department of Statistics and Actuarial Science)</div><div class="activity-place">Iowa City, US</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2025</span>
-              <div><div class="activity-desc">Michigan State University (Department of Statistics and Probability)</div><div class="activity-place">Lansing, US</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2023, 2025</span>
-              <div><div class="activity-desc">University of Waterloo (Department of Statistics and Actuarial Science)</div><div class="activity-place">Waterloo, Canada</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2023, 2025</span>
-              <div><div class="activity-desc">Nankai University (School of Mathematical Sciences)</div><div class="activity-place">Tianjin, China</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2024</span>
-              <div><div class="activity-desc">Chinese University of Hong Kong-Shenzhen (School of Science and Engineering)</div><div class="activity-place">Shenzhen, China</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2021, 2023</span>
-              <div><div class="activity-desc">Chinese Academy of Sciences (Academy of Math and Systems Science)</div><div class="activity-place">Beijing, China</div></div>
-            </li>
-            <li class="activity-item">
-              <span class="activity-year">2021</span>
-              <div><div class="activity-desc">University of Science and Technology of China (School of Management)</div><div class="activity-place">Hefei, China</div></div>
-            </li>
-          </ul>
-        </div>
         
         <div class="activity-group">
           <h3>Conference Organization</h3>
@@ -1339,6 +1304,51 @@
   </div>
 </section>
 
+<!-- ─── ACADEMIC VISITS ─── -->
+<section id="visits">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <h2 class="section-title">Academic Visits</h2>
+      <div class="section-line"></div>
+    </div>
+        <div class="activity-group">
+          <ul class="activity-list">
+            <li class="activity-item">
+              <span class="activity-year">2026</span>
+              <div><div class="activity-desc">University of Iowa (Department of Statistics and Actuarial Science)</div><div class="activity-place">Iowa City, US</div></div>
+            </li>
+            <li class="activity-item">
+              <span class="activity-year">2025</span>
+              <div><div class="activity-desc">Michigan State University (Department of Statistics and Probability)</div><div class="activity-place">Lansing, US</div></div>
+            </li>
+            <li class="activity-item">
+              <span class="activity-year">2023, 2025</span>
+              <div><div class="activity-desc">University of Waterloo (Department of Statistics and Actuarial Science)</div><div class="activity-place">Waterloo, Canada</div></div>
+            </li>
+            <li class="activity-item">
+              <span class="activity-year">2023, 2025</span>
+              <div><div class="activity-desc">Nankai University (School of Mathematical Sciences)</div><div class="activity-place">Tianjin, China</div></div>
+            </li>
+            <li class="activity-item">
+              <span class="activity-year">2024</span>
+              <div><div class="activity-desc">Chinese University of Hong Kong-Shenzhen (School of Science and Engineering)</div><div class="activity-place">Shenzhen, China</div></div>
+            </li>
+            <li class="activity-item">
+              <span class="activity-year">2021, 2023</span>
+              <div><div class="activity-desc">Chinese Academy of Sciences (Academy of Math and Systems Science)</div><div class="activity-place">Beijing, China</div></div>
+            </li>
+            <li class="activity-item">
+              <span class="activity-year">2021</span>
+              <div><div class="activity-desc">University of Science and Technology of China (School of Management)</div><div class="activity-place">Hefei, China</div></div>
+            </li>
+          </ul>
+        </div>
+  </div>
+</section>
+
 <!-- ─── PEER REVIEW SERVICE ─── -->
 <section id="service">
   <div class="container">
@@ -1349,12 +1359,12 @@
       <h2 class="section-title">Peer Review Service</h2>
       <div class="section-line"></div>
     </div>
-    <ul class="course-list" style="max-width:780px;">
-      <li class="course-item"><span class="course-code" style="min-width:80px;">Actuarial</span><span class="course-name">ASTIN Bulletin, Insurance: Mathematics and Economics, Annals of Actuarial Science, North American Actuarial Journal, European Actuarial Journal</span></li>
-      <li class="course-item"><span class="course-code" style="min-width:80px;">Finance</span><span class="course-name">Quantitative Finance, Mathematical Finance, Finance &amp; Stochastics</span></li>
-      <li class="course-item"><span class="course-code" style="min-width:80px;">OR</span><span class="course-name">Mathematics of Operations Research</span></li>
-      <li class="course-item"><span class="course-code" style="min-width:80px;">Probability</span><span class="course-name">Statistics &amp; Probability Letters</span></li>
-      <li class="course-item"><span class="course-code" style="min-width:80px;">Economics</span><span class="course-name">Economic Modelling</span></li>
+    <ul class="course-list service-list">
+      <li class="course-item"><span class="course-code service-label">Actuarial</span><span class="course-name">ASTIN Bulletin, Insurance: Mathematics and Economics, Annals of Actuarial Science, North American Actuarial Journal, European Actuarial Journal</span></li>
+      <li class="course-item"><span class="course-code service-label">Finance</span><span class="course-name">Quantitative Finance, Mathematical Finance, Finance &amp; Stochastics</span></li>
+      <li class="course-item"><span class="course-code service-label">OR</span><span class="course-name">Mathematics of Operations Research</span></li>
+      <li class="course-item"><span class="course-code service-label">Probability</span><span class="course-name">Statistics &amp; Probability Letters</span></li>
+      <li class="course-item"><span class="course-code service-label">Economics</span><span class="course-name">Economic Modelling</span></li>
     </ul>
   </div>
 </section>
@@ -1414,7 +1424,7 @@
           </div>
           <div>
             <div class="contact-label">Google Scholar</div>
-            <div class="contact-value"><a href="https://scholar.google.ca/citations?user=vboPnRoAAAAJ&hl=en" target="_blank">View Profile ↗</a></div>
+            <div class="contact-value"><a href="https://scholar.google.ca/citations?user=vboPnRoAAAAJ&amp;hl=en" target="_blank">View Profile ↗</a></div>
           </div>
         </div>
 
@@ -1462,15 +1472,33 @@
 </footer>
 
 <script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const selector = a.getAttribute('href');
+      const target = selector && selector.length > 1 ? document.querySelector(selector) : document.body;
       if (target) {
         e.preventDefault();
-        const offset = 66;
-        window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+        const offset = 76;
+        const top = target === document.body ? 0 : target.offsetTop - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+        if (navLinks) navLinks.classList.remove('open');
+        if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
       }
     });
+  });
+
+  document.querySelectorAll('a[target="_blank"]').forEach(a => {
+    a.rel = 'noopener noreferrer';
   });
 </script>
 
