@@ -6,6 +6,7 @@
 \usepackage{float}
 \usepackage{array}
 \usepackage{hyperref}
+\usepackage{multirow}
 \urlstyle{same}
 \addtolength{\topmargin}{-6pc}
 \addtolength{\textheight}{10pc}
@@ -27,43 +28,53 @@
 \end{tabular}
 \medskip
 
-\rule[4pt]{17cm}{0.3pt}
+\rule[4pt]{17cm}{0.3pt}\\
 \medskip
 {\large \bf Academic Appointment}
 \medskip
 
-\begin{center}
-\renewcommand{\arraystretch}{1.5}%
-\begin{tabular}{>{\raggedright}m{13cm}>{\raggedleft\arraybackslash} m{3.5cm}}
-Assistant Professor, Maurice R. Greenberg School of Risk Science, Robinson College of Business, Georgia State University & 2023--\\
-\end{tabular}
-\end{center}
+\begin{table}[H]
+    \begin{center}
+    \renewcommand{\arraystretch}{1.5}%
+    \begin{tabular}{>{\raggedright}m{13cm}>{\raggedleft\arraybackslash} m{3.5cm}}
+        Georgia State University & \multirow{2}{*}{08/2023 -- present}\\
+        -- Assistant Professor, Maurice R.~Greenberg School of Risk Science &
+    \end{tabular}
+    \end{center}
+    \end{table}
 
-\rule[4pt]{17cm}{0.3pt}
+\rule[4pt]{17cm}{0.3pt}\\
 \medskip
 {\large \bf Education}
 \medskip
 
-\begin{center}
-\renewcommand{\arraystretch}{1.5}%
-\begin{tabular}{>{\raggedright}m{13cm}>{\raggedleft\arraybackslash} m{3.5cm}}
-Ph.D. in Actuarial Science, University of Waterloo -- Advisor: Prof. Ruodu Wang & 2023\\
-M.Phil. in Mathematics, Hong Kong University of Science and Technology -- Advisor: Prof. Yue Kuen Kwok & 2019\\
-B.Sc. in Mathematics and Economics, Hong Kong University of Science and Technology & 2017\\
-\end{tabular}
-\end{center}
+\begin{table}[H]
+    \begin{center}
+    \renewcommand{\arraystretch}{1.5}%
+    \begin{tabular}{>{\raggedright}m{13cm}>{\raggedleft\arraybackslash} m{3.5cm}}
+        Ph.D.~Actuarial Science, University of Waterloo & \multirow{2}{*}{06/2023}\\
+        -- Advisor: Ruodu Wang & \\
+        M.Phil.~Mathematics, Hong Kong University of Science and Technology & \multirow{2}{*}{07/2019}\\
+        -- Advisor: Yue Kuen Kwok & \\
+        B.S.~Mathematics and Economics, Hong Kong University of Science and Technology & 07/2017\\
+        International Exchange Student, Technical University of Munich & 04/2016 -- 09/2016
+    \end{tabular}
+    \end{center}
+    \end{table}
 
-\rule[4pt]{17cm}{0.3pt}
+\rule[4pt]{17cm}{0.3pt}\\
 \medskip
 {\large \bf Professional Designation}
 \medskip
 
-\begin{center}
-\renewcommand{\arraystretch}{1.5}%
-\begin{tabular}{>{\raggedright}m{13cm}>{\raggedleft\arraybackslash} m{3.5cm}}
-Associate of the Society of Actuaries (A.S.A.) & 08/2023\\
-\end{tabular}
-\end{center}
+\begin{table}[H]
+    \begin{center}
+    \renewcommand{\arraystretch}{1.5}%
+    \begin{tabular}{>{\raggedright}m{13cm}>{\raggedleft\arraybackslash} m{3.5cm}}
+        Associate of the Society of Actuaries (A.S.A.) & 08/2023
+    \end{tabular}
+    \end{center}
+    \end{table}
 
 \rule[4pt]{17cm}{0.3pt}
 \medskip
@@ -71,7 +82,10 @@ Associate of the Society of Actuaries (A.S.A.) & 08/2023\\
 \medskip
 
 \begin{itemize}
-  \item Actuarial science; quantitative risk management; Operations research; financial engineering; Non-parametric hypothesis testing; Game theory
+  \item Actuarial science; quantitative risk management
+  \item Operations research; financial engineering
+  \item Non-parametric hypothesis testing
+  \item Game theory
 \end{itemize}
 
 \rule[4pt]{17cm}{0.3pt}

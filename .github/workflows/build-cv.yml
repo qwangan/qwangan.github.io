@@ -7,8 +7,6 @@ on:
       - master
     paths:
       - "_pages/activities.yml"
-      - "_pages/appointment.yml"
-      - "_pages/education.yml"
       - "_pages/interests.yml"
       - "_pages/publications.yml"
       - "_pages/service.yml"
@@ -32,7 +30,7 @@ jobs:
       - name: Install LaTeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-fonts-recommended
+          sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 
       - name: Build CV from website data
         run: ruby scripts/build_cv.rb

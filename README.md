@@ -24,9 +24,9 @@ The page layout is in `index.html`. The visual design is in `assets/css/site.css
 
 ## Updating the CV
 
-The website uses one CV PDF: `files/Curriculum_Vitae.pdf`. The CV is generated from the same YAML files that power the website for recurring sections such as publications, teaching, activities, visits, service, contact details, appointment, education, and research interests.
+The website uses one CV PDF: `files/Curriculum_Vitae.pdf`. The CV is generated from the same YAML files that power the website for recurring sections such as publications, teaching, activities, visits, service, contact details, and research interests.
 
-Honors & Awards is intentionally CV-only and lives in `cv-source/static/honors_awards.tex`; updating `_pages/awards.yml` changes the website but does not change the CV.
+Academic Appointment, Education, Professional Designation, and Honors & Awards are intentionally CV-only and live in `cv-source/static/`; updating `_pages/appointment.yml`, `_pages/education.yml`, or `_pages/awards.yml` changes the website but does not change the CV.
 
 To rebuild the CV locally:
 
@@ -40,7 +40,7 @@ To build a draft without replacing the public PDF:
 ruby scripts/build_cv.rb --draft-output
 ```
 
-On GitHub, the **Build CV PDF** workflow rebuilds and commits `files/Curriculum_Vitae.pdf` when shared website data changes. It does not watch `_pages/awards.yml`.
+On GitHub, the **Build CV PDF** workflow rebuilds and commits `files/Curriculum_Vitae.pdf` when shared website data changes. It does not watch `_pages/appointment.yml`, `_pages/education.yml`, or `_pages/awards.yml`.
 
 ## Updating Publications Automatically
 

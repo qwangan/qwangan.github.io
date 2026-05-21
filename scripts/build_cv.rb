@@ -10,7 +10,11 @@ CV_DIR = File.join(ROOT, 'cv-source')
 TEX_PATH = File.join(CV_DIR, 'Curriculum_Vitae.tex')
 PDF_PATH = File.join(ROOT, 'files', 'Curriculum_Vitae.pdf')
 BUILD_DIR = File.join(ROOT, '.cv-build')
-HONORS_PATH = File.join(CV_DIR, 'static', 'honors_awards.tex')
+STATIC_DIR = File.join(CV_DIR, 'static')
+APPOINTMENT_PATH = File.join(STATIC_DIR, 'academic_appointment.tex')
+EDUCATION_PATH = File.join(STATIC_DIR, 'education.tex')
+PROFESSIONAL_DESIGNATION_PATH = File.join(STATIC_DIR, 'professional_designation.tex')
+HONORS_PATH = File.join(STATIC_DIR, 'honors_awards.tex')
 
 FileUtils.mkdir_p(CV_DIR)
 FileUtils.mkdir_p(BUILD_DIR)
@@ -20,8 +24,6 @@ def data(name)
 end
 
 SITE = data('site')
-APPOINTMENT = data('appointment')
-EDUCATION = data('education')
 INTERESTS = data('interests')
 PUBLICATIONS = data('publications')
 TEACHING = data('teaching')
@@ -144,6 +146,7 @@ tex << <<~TEX
   \\usepackage{float}
   \\usepackage{array}
   \\usepackage{hyperref}
+  \\usepackage{multirow}
   \\urlstyle{same}
   \\addtolength{\\topmargin}{-6pc}
   \\addtolength{\\textheight}{10pc}
@@ -167,17 +170,17 @@ tex << <<~TEX
 
 TEX
 
-tex << section('Academic Appointment')
-tex << two_column_rows(APPOINTMENT.map { |item| ["#{item['title']}, #{item['detail']}", item['year']] })
+tex << File.read(APPOINTMENT_PATH)
+tex << "\n"
 
-tex << section('Education')
-tex << two_column_rows(EDUCATION.map { |item| ["#{item['degree']}, #{item['school']}", item['year']] })
+tex << File.read(EDUCATION_PATH)
+tex << "\n"
 
-tex << section('Professional Designation')
-tex << two_column_rows(CV_ONLY['professional_designation'])
+tex << File.read(PROFESSIONAL_DESIGNATION_PATH)
+tex << "\n"
 
 tex << section('Research Interests')
-tex << itemize([INTERESTS.join('; ')])
+tex << itemize(INTERESTS)
 
 tex << section('Publications and Manuscripts')
 PUBLICATIONS.each do |group|
