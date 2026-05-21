@@ -130,9 +130,10 @@
     .hero {
       background: linear-gradient(120deg, #fbfaf7 0%, #f7f1e8 52%, #e8f0ed 100%);
       border-bottom: 1px solid var(--line);
-      overflow: hidden;
+      overflow: visible;
       padding: 86px 26px 88px;
       position: relative;
+      z-index: 1;
     }
 
     .hero::before {
@@ -207,16 +208,16 @@
       background: transparent;
       border: 0;
       border-radius: 50%;
-      bottom: 14px;
+      bottom: -30px;
       clip-path: circle(49% at center);
       display: block;
-      height: 48px;
+      height: 88px;
       object-fit: cover;
       padding: 0;
       position: absolute;
-      right: max(26px, calc((100vw - 1120px) / 2));
-      width: 48px;
-      z-index: 1;
+      right: max(34px, calc((100vw - 1120px) / 2 + 42px));
+      width: 88px;
+      z-index: 2;
     }
 
     .hero-links {
@@ -633,7 +634,7 @@
       }
 
       .hero-name { font-size: 2.45rem; }
-      .hero-gsu-logo { bottom: 12px; height: 42px; right: 22px; width: 42px; }
+      .hero-gsu-logo { bottom: -24px; height: 64px; right: 24px; width: 64px; }
       .hero-links { justify-content: center; }
       .hero-link { justify-content: center; }
 
