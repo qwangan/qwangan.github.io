@@ -83,6 +83,10 @@ def trusted_latex(value)
          .gsub(/\\textperiodcentered\\\{\\\}/, '\\textperiodcentered{}')
 end
 
+def italicized_journals(journals)
+  journals.to_s.split(/\s*,\s*/).map { |journal| "<em>#{journal}</em>" }.join(", ")
+end
+
 def section(title)
   "\\rule[4pt]{17cm}{0.3pt}\n\\medskip\n{\\large \\bf #{escape_latex(title)}}\n\\medskip\n\n"
 end
@@ -216,7 +220,7 @@ TEACHING.each do |group|
 end
 
 tex << section('Peer-review Service')
-tex << itemize(SERVICE.map { |item| "#{item['label']}: #{item['journals']}" })
+tex << itemize(SERVICE.map { |item| "#{item['label']}: #{italicized_journals(item['journals'])}" })
 
 tex << <<~TEX
   \\rule[4pt]{17cm}{0.3pt}
