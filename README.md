@@ -22,6 +22,16 @@ The `google-sublinks/` folder contains redirect pages for old Google sitelinks s
 
 The page layout is in `index.html`. The visual design is in `assets/css/site.css`, and the small navigation script is in `assets/js/site.js`.
 
+## Updating the CV
+
+The website uses one CV PDF: `files/Curriculum_Vitae.pdf`. It can be rebuilt from the same YAML files that power the website:
+
+```bash
+ruby scripts/build_cv.rb
+```
+
+This generates `cv-source/Curriculum_Vitae.tex` and compiles a new `files/Curriculum_Vitae.pdf`. On GitHub, the **Build CV PDF** workflow runs when `_pages/*.yml`, the CV generator, or CV source files change, and commits the rebuilt PDF when needed.
+
 ## Updating Publications Automatically
 
 The publication list lives in `_pages/publications.yml`. To refresh metadata from DOI and arXiv links, run:
