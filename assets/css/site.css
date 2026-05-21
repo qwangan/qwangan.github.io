@@ -204,12 +204,19 @@
     }
 
     .hero-gsu-logo {
+      background: transparent;
+      border: 0;
       border-radius: 50%;
+      bottom: 14px;
+      clip-path: circle(49% at center);
       display: block;
-      height: 76px;
-      margin: 0 0 26px;
+      height: 48px;
       object-fit: cover;
-      width: 76px;
+      padding: 0;
+      position: absolute;
+      right: max(26px, calc((100vw - 1120px) / 2));
+      width: 48px;
+      z-index: 1;
     }
 
     .hero-links {
@@ -626,7 +633,7 @@
       }
 
       .hero-name { font-size: 2.45rem; }
-      .hero-gsu-logo { margin-left: auto; margin-right: auto; }
+      .hero-gsu-logo { bottom: 12px; height: 42px; right: 22px; width: 42px; }
       .hero-links { justify-content: center; }
       .hero-link { justify-content: center; }
 
