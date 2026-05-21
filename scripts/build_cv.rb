@@ -10,6 +10,7 @@ CV_DIR = File.join(ROOT, 'cv-source')
 TEX_PATH = File.join(CV_DIR, 'Curriculum_Vitae.tex')
 PDF_PATH = File.join(ROOT, 'files', 'Curriculum_Vitae.pdf')
 BUILD_DIR = File.join(ROOT, '.cv-build')
+HONORS_PATH = File.join(CV_DIR, 'static', 'honors_awards.tex')
 
 FileUtils.mkdir_p(CV_DIR)
 FileUtils.mkdir_p(BUILD_DIR)
@@ -22,7 +23,6 @@ SITE = data('site')
 APPOINTMENT = data('appointment')
 EDUCATION = data('education')
 INTERESTS = data('interests')
-AWARDS = data('awards')
 PUBLICATIONS = data('publications')
 TEACHING = data('teaching')
 ACTIVITIES = data('activities')
@@ -137,6 +137,7 @@ tex << <<~TEX
   \\raggedbottom
   \\raggedright
   \\setlength{\\tabcolsep}{0in}
+  \\usepackage{float}
   \\usepackage{array}
   \\usepackage{hyperref}
   \\urlstyle{same}
@@ -183,8 +184,8 @@ end
 tex << "{\\bf Dissertations}\n\n"
 tex << enumerate(CV_ONLY['dissertations'])
 
-tex << section('Selected Honors and Awards')
-tex << two_column_rows(AWARDS.map { |award| [award['title'], award['label'].to_s.split(' · ').first] })
+tex << File.read(HONORS_PATH)
+tex << "\n"
 
 tex << section('Academic Visits')
 tex << two_column_rows(VISITS.map { |visit| ["#{visit['description']} (#{visit['place']})", visit['year']] })

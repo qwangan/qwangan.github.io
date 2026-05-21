@@ -24,21 +24,23 @@ The page layout is in `index.html`. The visual design is in `assets/css/site.css
 
 ## Updating the CV
 
-The website uses one CV PDF: `files/Curriculum_Vitae.pdf`. This file is currently the restored original website CV and is the authoritative public PDF.
+The website uses one CV PDF: `files/Curriculum_Vitae.pdf`. The CV is generated from the same YAML files that power the website for recurring sections such as publications, teaching, activities, visits, service, contact details, appointment, education, and research interests.
 
-The repo also has a draft generator:
+Honors & Awards is intentionally CV-only and lives in `cv-source/static/honors_awards.tex`; updating `_pages/awards.yml` changes the website but does not change the CV.
 
-```bash
-ruby scripts/build_cv.rb --draft-output
-```
-
-This generates `cv-source/Curriculum_Vitae.tex` and builds a draft PDF in `.cv-build/` without replacing the public CV. To intentionally replace the public PDF after reviewing the draft, run:
+To rebuild the CV locally:
 
 ```bash
 ruby scripts/build_cv.rb
 ```
 
-The GitHub **Build CV PDF Draft** workflow is manual and uploads draft artifacts only; it does not overwrite `files/Curriculum_Vitae.pdf` automatically.
+To build a draft without replacing the public PDF:
+
+```bash
+ruby scripts/build_cv.rb --draft-output
+```
+
+On GitHub, the **Build CV PDF** workflow rebuilds and commits `files/Curriculum_Vitae.pdf` when shared website data changes. It does not watch `_pages/awards.yml`.
 
 ## Updating Publications Automatically
 
