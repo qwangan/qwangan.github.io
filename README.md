@@ -22,6 +22,23 @@ The `google-sublinks/` folder contains redirect pages for old Google sitelinks s
 
 The page layout is in `index.html`. The visual design is in `assets/css/site.css`, and the small navigation script is in `assets/js/site.js`.
 
+## Updating Publications Automatically
+
+The publication list lives in `_pages/publications.yml`. To refresh metadata from DOI and arXiv links, run:
+
+```bash
+python3 -m pip install -r requirements-publications.txt
+python3 scripts/update_publications.py --write
+```
+
+By default, the updater only fills blank `title`, `authors`, or `venue` fields. To refresh existing fields from DOI/arXiv metadata, run:
+
+```bash
+python3 scripts/update_publications.py --write --mode refresh
+```
+
+For a new paper, add a small entry in `_pages/publications.yml` with its `number` and either a DOI link or arXiv link, then run the updater. GitHub also has an **Update publications** workflow that can run manually or weekly and open a pull request when metadata changes.
+
 ## Previewing Locally
 
 Install Jekyll once if it is not already installed:
