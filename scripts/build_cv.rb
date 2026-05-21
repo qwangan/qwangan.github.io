@@ -115,11 +115,15 @@ def clean_venue(venue)
   trusted_latex(venue)
 end
 
+def venue_without_terminal_year(venue)
+  venue.to_s.sub(/,\s*20\d{2}\s*\z/, '')
+end
+
 def publication_line(pub)
   authors = trusted_latex(pub['authors'])
   title = trusted_latex(pub['title'])
-  venue = clean_venue(pub['venue'])
   year = pub['venue'].to_s[/\b(20\d{2})\b/, 1]
+  venue = clean_venue(venue_without_terminal_year(pub['venue']))
   prefix = year ? "#{authors} (#{year})." : "#{authors}."
   "#{prefix} #{title}. #{venue}.".gsub(/\s+/, ' ')
 end
@@ -164,7 +168,7 @@ tex << <<~TEX
 TEX
 
 tex << section('Academic Appointment')
-tex << two_column_rows(APPOINTMENT.map { |item| [item['title'], item['year']] })
+tex << two_column_rows(APPOINTMENT.map { |item| ["#{item['title']}, #{item['detail']}", item['year']] })
 
 tex << section('Education')
 tex << two_column_rows(EDUCATION.map { |item| ["#{item['degree']}, #{item['school']}", item['year']] })
