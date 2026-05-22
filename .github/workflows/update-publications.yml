@@ -34,12 +34,7 @@ jobs:
         run: python -m pip install -r requirements-publications.txt
 
       - name: Refresh publication metadata
-        run: |
-          MODE="${{ github.event.inputs.mode }}"
-          if [ -z "$MODE" ]; then
-            MODE=refresh
-          fi
-          python scripts/update_publications.py --write --mode "$MODE"
+        run: python scripts/update_publications.py --write --mode "${{ github.event.inputs.mode || 'missing' }}"
 
       - name: Create pull request when publications changed
         env:
