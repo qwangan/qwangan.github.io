@@ -2,6 +2,9 @@
     - heading: Invited Presentations
       items:
         - year: 2026
+          description: Institute of Mathematical Statistics - Asia Pacific Rim Meeting
+          place: Hong Kong, China
+        - year: 2026
           description: 2nd Midwest Actuarial Research Seminars
           place: West Lafayette, US
         - year: 2025
@@ -33,6 +36,9 @@
 - column:
     - heading: Conference Presentations
       items:
+        - year: 2026
+          description: 3rd Safe and Anytime Valid Inference (SAVI) Conference
+          place: Enschede, Netherlands
         - year: 2026
           description: 1st ASTIN Bulletin Conference
           place: Zurich, Switzerland
