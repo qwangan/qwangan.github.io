@@ -78,7 +78,7 @@ description: Qiuqi Wang, Ph.D., A.S.A. — Assistant Professor at the Maurice R.
     <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-2 4v2H7V7h10zm0 4v2H7v-2h10zm-4 4v2H7v-2h6z"/></svg></div><h2 class="section-title">Editorial Service</h2><div class="section-line"></div></div>
     <ul class="course-list service-list editorial-list">
       {% for item in site.data.editorial_service %}
-      <li class="course-item"><span class="course-code service-label">{{ item.role }}</span><span class="course-name"><strong>{{ item.journal }}</strong><br><span class="course-term editorial-journal">{{ item.issue }}</span></span><span class="course-term">{{ item.year }}</span></li>
+      <li class="course-item"><span class="course-code service-label">{{ item.role }}</span><span class="course-name"><strong><em>{{ item.journal }}</em></strong><br><span class="course-term editorial-journal">{{ item.issue }}</span></span><span class="course-term">{{ item.year }}</span></li>
       {% endfor %}
     </ul>
   </div>

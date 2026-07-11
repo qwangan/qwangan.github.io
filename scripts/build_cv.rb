@@ -112,14 +112,18 @@ end
 
 def editorial_service_table(items)
   body = items.map do |item|
-    details = "<em>#{item['journal']}</em>. #{item['issue']}"
-    "#{trusted_latex(item['role'])} & #{trusted_latex(details)} & #{trusted_latex(item['year'])}\\\\"
+    journal = "<em>#{item['journal']}</em>"
+    issue = trusted_latex(item['issue'])
+    [
+      "#{trusted_latex(item['role'])} & #{trusted_latex(journal)} & #{trusted_latex(item['year'])}\\\\[-1pt]",
+      " & {\\footnotesize #{issue}} & \\\\"
+    ].join("\n")
   end.join("\n")
 
   <<~TEX
     \\begin{table}[H]
     \\begin{center}
-    \\renewcommand{\\arraystretch}{1.5}%
+    \\renewcommand{\\arraystretch}{1.25}%
     \\begin{tabular}{>{\\raggedright}m{3.4cm}>{\\raggedright}m{9.6cm}>{\\raggedleft\\arraybackslash}m{3.5cm}}
     #{body}
     \\end{tabular}
