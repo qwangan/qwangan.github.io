@@ -540,6 +540,12 @@
 
     .service-list { max-width: 840px; }
     .service-label { min-width: 92px; }
+    .editorial-list .course-item { grid-template-columns: 150px minmax(0, 1fr); }
+    .editorial-journal {
+      display: inline-block;
+      margin-top: 3px;
+      white-space: normal;
+    }
 
     .contact-grid {
       display: grid;
@@ -680,6 +686,7 @@
       }
 
       .course-item { grid-template-columns: 1fr; gap: 2px; }
+      .editorial-list .course-item { grid-template-columns: 1fr; }
       .course-term { grid-column: auto; }
       .contact-card { padding: 21px; }
     }

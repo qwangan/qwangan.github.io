@@ -16,7 +16,7 @@ description: Qiuqi Wang, Ph.D., A.S.A. — Assistant Professor at the Maurice R.
       <li><a href="#publications">Research</a></li>
       <li><a href="#teaching">Teaching</a></li>
       <li><a href="#activities">Activities</a></li>
-      <li><a href="#service">Service</a></li>
+      <li><a href="#editorial-service">Service</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="{{ site.data.site.cv_url | relative_url }}" target="_blank">CV ↗</a></li>
     </ul>
@@ -165,6 +165,17 @@ description: Qiuqi Wang, Ph.D., A.S.A. — Assistant Professor at the Maurice R.
         {% endfor %}
       </ul>
     </div>
+  </div>
+</section>
+
+<section id="editorial-service">
+  <div class="container">
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-2 4v2H7V7h10zm0 4v2H7v-2h10zm-4 4v2H7v-2h6z"/></svg></div><h2 class="section-title">Editorial Service</h2><div class="section-line"></div></div>
+    <ul class="course-list service-list editorial-list">
+      {% for item in site.data.editorial_service %}
+      <li class="course-item"><span class="course-code service-label">{{ item.role }}</span><span class="course-name">{{ item.issue }}<br><span class="course-term editorial-journal">{{ item.journal }}</span></span></li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 
