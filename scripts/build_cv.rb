@@ -64,7 +64,8 @@ def html_to_latex(value)
   text.gsub!(/&mdash;/, '--')
   text.gsub!(/&nbsp;/, ' ')
   text.gsub!(/&amp;/, '&')
-  text.gsub!(/&ldquo;|&rdquo;/, '"')
+  text.gsub!(/&ldquo;/, '``')
+  text.gsub!(/&rdquo;/, "''")
   text.gsub!(/↗/, '')
   text.gsub!(/—/, '--')
   text.gsub!(/–/, '--')
@@ -105,6 +106,25 @@ def two_column_rows(rows)
     #{body}
     \\end{tabular}
     \\end{center}
+
+  TEX
+end
+
+def editorial_service_table(items)
+  body = items.map do |item|
+    details = "<em>#{item['journal']}</em>. #{item['issue']}"
+    "#{trusted_latex(item['role'])} & #{trusted_latex(details)} & #{trusted_latex(item['year'])}\\\\"
+  end.join("\n")
+
+  <<~TEX
+    \\begin{table}[H]
+    \\begin{center}
+    \\renewcommand{\\arraystretch}{1.5}%
+    \\begin{tabular}{>{\\raggedright}m{3.4cm}>{\\raggedright}m{9.6cm}>{\\raggedleft\\arraybackslash}m{3.5cm}}
+    #{body}
+    \\end{tabular}
+    \\end{center}
+    \\end{table}
 
   TEX
 end
@@ -185,6 +205,9 @@ tex << "\n"
 tex << File.read(PROFESSIONAL_DESIGNATION_PATH)
 tex << "\n"
 
+tex << section('Editorial Service')
+tex << editorial_service_table(EDITORIAL_SERVICE)
+
 tex << section('Research Interests')
 tex << itemize(INTERESTS)
 
@@ -220,11 +243,6 @@ TEACHING.each do |group|
   tex << "{\\bf #{escape_latex(group['heading'])}}\n\n"
   tex << two_column_rows(group['courses'].map { |course| ["#{course['code']} - #{course['name']}", course['term']] })
 end
-
-tex << section('Editorial Service')
-tex << itemize(EDITORIAL_SERVICE.map do |item|
-  "#{item['role']}, <em>#{item['journal']}</em>, #{item['issue']}"
-end)
 
 tex << section('Peer-review Service')
 tex << itemize(SERVICE.map { |item| "#{item['label']}: #{italicized_journals(item['journals'])}" })

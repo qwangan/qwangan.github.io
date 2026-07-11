@@ -540,7 +540,7 @@
 
     .service-list { max-width: 840px; }
     .service-label { min-width: 92px; }
-    .editorial-list .course-item { grid-template-columns: 150px minmax(0, 1fr); }
+    .editorial-list .course-item { grid-template-columns: 150px minmax(0, 1fr) auto; }
     .editorial-journal {
       display: inline-block;
       margin-top: 3px;
