@@ -7,6 +7,7 @@ on:
       - master
     paths:
       - "_pages/activities.yml"
+      - "_pages/editorial_service.yml"
       - "_pages/interests.yml"
       - "_pages/publications.yml"
       - "_pages/service.yml"

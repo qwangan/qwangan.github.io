@@ -29,6 +29,7 @@ PUBLICATIONS = data('publications')
 TEACHING = data('teaching')
 ACTIVITIES = data('activities')
 VISITS = data('visits')
+EDITORIAL_SERVICE = data('editorial_service')
 SERVICE = data('service')
 
 CV_ONLY = {
@@ -63,6 +64,7 @@ def html_to_latex(value)
   text.gsub!(/&mdash;/, '--')
   text.gsub!(/&nbsp;/, ' ')
   text.gsub!(/&amp;/, '&')
+  text.gsub!(/&ldquo;|&rdquo;/, '"')
   text.gsub!(/↗/, '')
   text.gsub!(/—/, '--')
   text.gsub!(/–/, '--')
@@ -218,6 +220,11 @@ TEACHING.each do |group|
   tex << "{\\bf #{escape_latex(group['heading'])}}\n\n"
   tex << two_column_rows(group['courses'].map { |course| ["#{course['code']} - #{course['name']}", course['term']] })
 end
+
+tex << section('Editorial Service')
+tex << itemize(EDITORIAL_SERVICE.map do |item|
+  "#{item['role']}, <em>#{item['journal']}</em>, #{item['issue']}"
+end)
 
 tex << section('Peer-review Service')
 tex << itemize(SERVICE.map { |item| "#{item['label']}: #{italicized_journals(item['journals'])}" })

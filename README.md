@@ -10,6 +10,7 @@ Most routine edits are in `_pages/`:
 - `_pages/teaching.yml` for courses
 - `_pages/activities.yml` for invited presentations, conference presentations, and organization
 - `_pages/visits.yml` for academic visits
+- `_pages/editorial_service.yml` for editorial service
 - `_pages/awards.yml` for honors and awards
 - `_pages/education.yml` and `_pages/appointment.yml` for background entries
 - `_pages/service.yml` for peer review service
@@ -24,7 +25,7 @@ The page layout is in `index.html`. The visual design is in `assets/css/site.css
 
 ## Updating the CV
 
-The website uses one CV PDF: `files/Curriculum_Vitae.pdf`. The CV is generated from the same YAML files that power the website for recurring sections such as publications, teaching, activities, visits, service, contact details, and research interests.
+The website uses one CV PDF: `files/Curriculum_Vitae.pdf`. The CV is generated from the same YAML files that power the website for recurring sections such as publications, teaching, activities, visits, editorial service, service, contact details, and research interests.
 
 Academic Appointment, Education, Professional Designation, and Honors & Awards are intentionally CV-only and live in `cv-source/static/`; updating `_pages/appointment.yml`, `_pages/education.yml`, or `_pages/awards.yml` changes the website but does not change the CV.
 
