@@ -106,7 +106,7 @@ def format_crossref_venue(message: Dict[str, Any]) -> str:
     year = get_nested_year(message)
     volume = clean_text(message.get("volume") or "")
     issue = clean_text(message.get("issue") or "")
-    pages = clean_text(message.get("page") or "")
+    pages = format_pages(clean_text(message.get("page") or ""))
 
     parts: List[str] = []
     if journal:
@@ -197,11 +197,27 @@ def extract_arxiv(item: Dict[str, Any]) -> Optional[str]:
     return None
 
 
-def should_update(current: Any, new_value: str, mode: str) -> bool:
+def format_pages(value: str) -> str:
+    return re.sub(r"(?<=\d)-(?=\d)", "–", value)
+
+
+def is_provisional_venue(value: Any) -> bool:
+    text = clean_text(str(value or "")).lower()
+    return "available online" in text or "forthcoming" in text
+
+
+def is_final_venue(value: str) -> bool:
+    text = clean_text(value)
+    return bool(text) and not is_provisional_venue(text) and bool(re.search(r"<strong>[^<]+</strong>", text))
+
+
+def should_update(current: Any, new_value: str, mode: str, field: str) -> bool:
     if not new_value:
         return False
     if mode == "refresh":
         return clean_text(str(current or "")) != clean_text(new_value)
+    if field == "venue" and is_provisional_venue(current) and is_final_venue(new_value):
+        return True
     return not clean_text(str(current or ""))
 
 
@@ -224,7 +240,7 @@ def update_item(item: Dict[str, Any], mode: str) -> Tuple[bool, List[str]]:
     notes: List[str] = []
     for field in ("title", "authors", "venue"):
         new_value = metadata.get(field, "")
-        if should_update(item.get(field), new_value, mode):
+        if should_update(item.get(field), new_value, mode, field):
             old = item.get(field, "")
             item[field] = new_value
             changed = True
@@ -247,7 +263,8 @@ def load_publications() -> List[Dict[str, Any]]:
 
 def dump_publications(data: List[Dict[str, Any]]) -> None:
     class Dumper(yaml.SafeDumper):
-        pass
+        def increase_indent(self, flow: bool = False, indentless: bool = False) -> None:
+            return super().increase_indent(flow, False)
 
     def represent_str(dumper: yaml.SafeDumper, value: str) -> yaml.nodes.ScalarNode:
         if "\n" in value:
@@ -277,7 +294,7 @@ def main() -> int:
         "--mode",
         choices=("missing", "refresh"),
         default="missing",
-        help="missing fills only blank fields; refresh updates title/authors/venue from metadata",
+        help="missing fills blank fields and finalizes provisional venues; refresh updates title/authors/venue from metadata",
     )
     parser.add_argument("--sleep", type=float, default=1.0, help="seconds to pause between API requests")
     parser.add_argument(

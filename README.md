@@ -52,13 +52,13 @@ python3 -m pip install -r requirements-publications.txt
 python3 scripts/update_publications.py --write
 ```
 
-By default, the updater only fills blank `title`, `authors`, or `venue` fields. To refresh existing fields from DOI/arXiv metadata, run:
+By default, the updater fills blank `title`, `authors`, or `venue` fields and replaces provisional venue text such as `available online` once DOI metadata has final volume/issue/page details. To refresh all existing fields from DOI/arXiv metadata, run:
 
 ```bash
 python3 scripts/update_publications.py --write --mode refresh
 ```
 
-For a new paper, add a small entry in `_pages/publications.yml` with its `number` and either a DOI link or arXiv link, then run the updater. GitHub also has an **Update publications** workflow that can run manually or weekly and open a pull request when metadata changes.
+For a new paper, add a small entry in `_pages/publications.yml` with its `number` and either a DOI link or arXiv link, then run the updater. GitHub also has an **Update publications** workflow that runs weekly, refreshes metadata, and commits changes directly when DOI/arXiv records change.
 
 ## Previewing Locally
 
