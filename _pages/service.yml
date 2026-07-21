@@ -1,9 +1,9 @@
 - label: Actuarial
-  journals: 'ASTIN Bulletin, Insurance: Mathematics and Economics, Annals of Actuarial Science, North American Actuarial Journal, European Actuarial Journal'
+  journals: 'Insurance: Mathematics and Economics, ASTIN Bulletin, North American Actuarial Journal, European Actuarial Journal, Annals of Actuarial Science'
 - label: Finance
-  journals: 'Quantitative Finance, Mathematical Finance, Finance &amp; Stochastics'
+  journals: 'Mathematical Finance, Finance &amp; Stochastics, Quantitative Finance'
 - label: OR
-  journals: Mathematics of Operations Research, European Journal of Operational Research
+  journals: Operations Research, Mathematics of Operations Research, European Journal of Operational Research
 - label: Probability
   journals: 'Statistics &amp; Probability Letters'
 - label: Economics
