@@ -11,7 +11,7 @@
     - number: P2
       authors: Bellini, F., Huang, M., <strong>Wang, Q.</strong> and Wang, R.
       title: Lambda Expected Shortfall
-      venue: Preprint, 2026
+      venue: Preprint, 2025
       links:
         - label: arXiv
           url: https://arxiv.org/abs/2512.23139
@@ -32,8 +32,8 @@
           class: tag-journal
     - number: J9
       authors: Han, X., <strong>Wang, Q.</strong>, Wang, R. and Xia, J.
-      title: Cash-subadditive risk measures without quasi-convexity
-      venue: <em>Mathematics of Operations Research</em>, <strong>51</strong>(2), 1205–1226, 2025
+      title: Cash-Subadditive Risk Measures Without Quasi-Convexity
+      venue: <em>Mathematics of Operations Research</em>, <strong>51</strong>(2), 1205–1226, 2026
       links:
         - label: Journal
           url: https://doi.org/10.1287/moor.2022.0312
@@ -55,15 +55,15 @@
           url: https://doi.org/10.1016/j.ejor.2024.11.027
           class: tag-journal
     - number: J6
-      authors: Pesenti, S., <strong>Wang, Q.</strong> and Wang, R.
+      authors: Pesenti, S. M., <strong>Wang, Q.</strong> and Wang, R.
       title: Optimizing distortion riskmetrics with distributional uncertainty
-      venue: <em>Mathematical Programming</em>, <strong>213</strong>, 51–106, 2024
+      venue: <em>Mathematical Programming</em>, <strong>213</strong>(1-2), 51–106, 2025
       links:
         - label: Journal
           url: https://doi.org/10.1007/s10107-024-02128-6
           class: tag-journal
     - number: J5
-      authors: <strong>Wang, Q.</strong>, Wang, R. and Zitikis, R.
+      authors: <strong>Wang, Q.</strong>, Wang, R. and Zitikis, R. a.
       title: Risk measures induced by efficient insurance contracts
       venue: '<em>Insurance: Mathematics and Economics</em>, <strong>103</strong>, 56–65, 2022'
       links:
@@ -80,16 +80,16 @@
           class: tag-journal
     - number: J3
       authors: <strong>Wang, Q.</strong>, Wang, R. and Wei, Y.
-      title: Distortion riskmetrics on general spaces
+      title: DISTORTION RISKMETRICS ON GENERAL SPACES
       venue: <em>ASTIN Bulletin</em>, <strong>50</strong>(3), 827–851, 2020
       links:
         - label: Journal
           url: https://doi.org/10.1017/asb.2020.14
           class: tag-journal
     - number: J2
-      authors: <strong>Wang, Q.</strong> and Kwok, Y. K.
-      title: Real option signaling games of debt financing using equity guarantee swaps
-      venue: <em>International Journal of Theoretical and Applied Finance</em>, <strong>23</strong>(5), 2050036, 2020
+      authors: <strong>WANG, Q.</strong> and KWOK, Y. K.
+      title: REAL OPTION SIGNALING GAMES OF DEBT FINANCING USING EQUITY GUARANTEE SWAPS UNDER ASYMMETRIC INFORMATION
+      venue: <em>International Journal of Theoretical and Applied Finance</em>, <strong>23</strong>(05), 2050036, 2020
       links:
         - label: Journal
           url: https://doi.org/10.1142/S0219024920500363
@@ -97,7 +97,7 @@
     - number: J1
       authors: <strong>Wang, Q.</strong> and Kwok, Y. K.
       title: Signaling game models of equity financing under information asymmetry and finite project life
-      venue: <em>International Journal of Financial Engineering</em>, <strong>6</strong>(1), 1950002, 2019
+      venue: <em>International Journal of Financial Engineering</em>, <strong>06</strong>(01), 1950002, 2019
       links:
         - label: Journal
           url: https://www.worldscientific.com/doi/10.1142/S2424786319500026
