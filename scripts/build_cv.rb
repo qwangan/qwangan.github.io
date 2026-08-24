@@ -147,6 +147,10 @@ def clean_venue(venue)
   trusted_latex(venue)
 end
 
+def office_suite
+  SITE['office_html'].to_s[/Suite\s+\d+/] || 'Suite 1138'
+end
+
 def venue_without_terminal_year(venue)
   venue.to_s.sub(/,\s*20\d{2}\s*\z/, '')
 end
@@ -193,7 +197,7 @@ tex << <<~TEX
   \\begin{tabular}{l l l}
       Maurice R.~Greenberg School of Risk Science & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Email: & ~~~~qwang30@gsu.edu\\\\
       Georgia State University & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Tel: & ~~~~#{escape_latex(SITE['phone'])}\\\\
-      35 Broad Street NW & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Office: & ~~~~Suite 1127\\\\
+      35 Broad Street NW & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Office: & ~~~~#{escape_latex(office_suite)}\\\\
       Atlanta, GA 30303, USA & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Website: &~~~ \\url{https://qwangan.github.io/}
   \\end{tabular}
   \\medskip
