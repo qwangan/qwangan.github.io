@@ -32,7 +32,7 @@
           class: tag-journal
     - number: J9
       authors: Han, X., <strong>Wang, Q.</strong>, Wang, R. and Xia, J.
-      title: Cash-Subadditive Risk Measures Without Quasi-Convexity
+      title: Cash-subadditive risk measures without quasi-convexity
       venue: <em>Mathematics of Operations Research</em>, <strong>51</strong>(2), 1205–1226, 2026
       links:
         - label: Journal
@@ -63,7 +63,7 @@
           url: https://doi.org/10.1007/s10107-024-02128-6
           class: tag-journal
     - number: J5
-      authors: <strong>Wang, Q.</strong>, Wang, R. and Zitikis, R. a.
+      authors: <strong>Wang, Q.</strong>, Wang, R. and Zitikis, R.
       title: Risk measures induced by efficient insurance contracts
       venue: '<em>Insurance: Mathematics and Economics</em>, <strong>103</strong>, 56–65, 2022'
       links:
@@ -80,15 +80,15 @@
           class: tag-journal
     - number: J3
       authors: <strong>Wang, Q.</strong>, Wang, R. and Wei, Y.
-      title: DISTORTION RISKMETRICS ON GENERAL SPACES
+      title: Distortion riskmetrics on general spaces
       venue: <em>ASTIN Bulletin</em>, <strong>50</strong>(3), 827–851, 2020
       links:
         - label: Journal
           url: https://doi.org/10.1017/asb.2020.14
           class: tag-journal
     - number: J2
-      authors: <strong>WANG, Q.</strong> and KWOK, Y. K.
-      title: REAL OPTION SIGNALING GAMES OF DEBT FINANCING USING EQUITY GUARANTEE SWAPS UNDER ASYMMETRIC INFORMATION
+      authors: <strong>Wang, Q.</strong> and Kwok, Y. K.
+      title: Real option signaling games of debt financing using equity guarantee swaps under asymmetric information
       venue: <em>International Journal of Theoretical and Applied Finance</em>, <strong>23</strong>(05), 2050036, 2020
       links:
         - label: Journal

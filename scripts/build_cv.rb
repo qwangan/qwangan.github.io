@@ -213,7 +213,7 @@ tex << "\n"
 tex << File.read(PROFESSIONAL_DESIGNATION_PATH)
 tex << "\n"
 
-tex << section('Editorial Service')
+tex << section('Editorial Roles')
 tex << editorial_service_table(EDITORIAL_SERVICE)
 
 tex << section('Research Interests')

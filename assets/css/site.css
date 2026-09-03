@@ -483,9 +483,11 @@
     .tag-arxiv { background: #edf3ed; border: 1px solid #c9dacd; color: var(--green); }
     .tag-preprint { background: #f8f0dc; border: 1px solid #ead4a4; color: #7c5a16; }
 
+    .position-group,
     .teaching-group,
     .activity-group { margin-bottom: 32px; }
 
+    .position-group h3,
     .teaching-group h3,
     .activity-group h3,
     .contact-card h3 {
@@ -495,6 +497,8 @@
       line-height: 1.45;
       margin-bottom: 12px;
     }
+
+    .position-group:last-child { margin-bottom: 0; }
 
     .course-item {
       align-items: baseline;

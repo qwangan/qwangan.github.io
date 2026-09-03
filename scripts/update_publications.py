@@ -58,7 +58,8 @@ def clean_text(value: str) -> str:
 
 
 def initials(given: str) -> str:
-    parts = re.findall(r"[A-Za-z]+", given or "")
+    parts = re.findall(r"[^\W\d_]+", given or "", flags=re.UNICODE)
+    parts = [part for part in parts if len(part) > 1 or part.isupper()]
     if not parts:
         return ""
     return " ".join(f"{part[0]}." for part in parts)
@@ -214,11 +215,15 @@ def is_final_venue(value: str) -> bool:
 def should_update(current: Any, new_value: str, mode: str, field: str) -> bool:
     if not new_value:
         return False
+    current_text = clean_text(str(current or ""))
+    new_text = clean_text(new_value)
+    if field in ("title", "authors") and current_text.casefold() == new_text.casefold():
+        return False
     if mode == "refresh":
-        return clean_text(str(current or "")) != clean_text(new_value)
+        return current_text != new_text
     if field == "venue" and is_provisional_venue(current) and is_final_venue(new_value):
         return True
-    return not clean_text(str(current or ""))
+    return not current_text
 
 
 def update_item(item: Dict[str, Any], mode: str) -> Tuple[bool, List[str]]:

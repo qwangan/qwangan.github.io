@@ -1,11 +1,11 @@
 - heading: Instructor — Georgia State University
   courses:
+    - code: AS 3230/8230
+      name: Financial Mathematics
+      term: Spring 2024; Fall 2024–2026
     - code: RMI 8300
       name: Predictive Risk Modeling
       term: Fall 2024, 2025
-    - code: AS 3230/8230
-      name: Financial Mathematics
-      term: Spring 2024; Fall 2024, 2025
 - heading: Instructor — University of Waterloo
   courses:
     - code: ACTSC 371
