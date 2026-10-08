@@ -1,5 +1,21 @@
 - heading: Pre-publication Manuscripts
   items:
+    - number: P5
+      authors: Liu, Y., <strong>Wang, Q.</strong> and Wang, Y.
+      title: Robust distortion riskmetrics under Wasserstein ambiguity
+      venue: Preprint, 2026
+      links:
+        - label: arXiv
+          url: https://arxiv.org/abs/2610.09622
+          class: tag-arxiv
+    - number: P4
+      authors: <strong>Wang, Q.</strong>, Wang, R. and Zhang, Z.
+      title: Sequential resetting procedures and false discovery rate
+      venue: Preprint, 2026
+      links:
+        - label: arXiv
+          url: https://arxiv.org/abs/2610.09339
+          class: tag-arxiv
     - number: P3
       authors: Jiao, Z., <strong>Wang, Q.</strong> and Zhao, Y.
       title: Comparative e-backtests for general risk measures
@@ -30,6 +46,15 @@
         - label: Journal
           url: https://doi.org/10.1287/mnsc.2023.01659
           class: tag-journal
+        - label: arXiv
+          url: https://arxiv.org/abs/2209.00991
+          class: tag-arxiv
+        - label: SSRN
+          url: https://ssrn.com/abstract=4206997
+          class: tag-ssrn
+        - label: SSRN supplement
+          url: https://ssrn.com/abstract=4346325
+          class: tag-ssrn
     - number: J9
       authors: Han, X., <strong>Wang, Q.</strong>, Wang, R. and Xia, J.
       title: Cash-subadditive risk measures without quasi-convexity
@@ -38,6 +63,9 @@
         - label: Journal
           url: https://doi.org/10.1287/moor.2022.0312
           class: tag-journal
+        - label: arXiv
+          url: https://arxiv.org/abs/2110.12198
+          class: tag-arxiv
     - number: J8
       authors: Boonen, T. J., Chen, Y., Han, X. and <strong>Wang, Q.</strong>
       title: Optimal insurance design with Lambda-Value-at-Risk
@@ -46,6 +74,9 @@
         - label: Journal
           url: https://doi.org/10.1016/j.ejor.2025.04.038
           class: tag-journal
+        - label: arXiv
+          url: https://arxiv.org/abs/2408.09799
+          class: tag-arxiv
     - number: J7
       authors: Aboagye, E., Asimit, V., Fung, T. C., Peng, L. and <strong>Wang, Q.</strong>
       title: A revisit of the optimal excess-of-loss contract
@@ -54,6 +85,9 @@
         - label: Journal
           url: https://doi.org/10.1016/j.ejor.2024.11.027
           class: tag-journal
+        - label: arXiv
+          url: https://arxiv.org/abs/2405.00188
+          class: tag-arxiv
     - number: J6
       authors: Pesenti, S. M., <strong>Wang, Q.</strong> and Wang, R.
       title: Optimizing distortion riskmetrics with distributional uncertainty
@@ -62,6 +96,12 @@
         - label: Journal
           url: https://doi.org/10.1007/s10107-024-02128-6
           class: tag-journal
+        - label: arXiv
+          url: https://arxiv.org/abs/2011.04889
+          class: tag-arxiv
+        - label: SSRN
+          url: https://ssrn.com/abstract=3728638
+          class: tag-ssrn
     - number: J5
       authors: <strong>Wang, Q.</strong>, Wang, R. and Zitikis, R.
       title: Risk measures induced by efficient insurance contracts
@@ -70,6 +110,12 @@
         - label: Journal
           url: https://doi.org/10.1016/j.insmatheco.2022.01.003
           class: tag-journal
+        - label: arXiv
+          url: https://arxiv.org/abs/2109.00314
+          class: tag-arxiv
+        - label: SSRN
+          url: https://ssrn.com/abstract=3915592
+          class: tag-ssrn
     - number: J4
       authors: Embrechts, P., Mao, T., <strong>Wang, Q.</strong> and Wang, R.
       title: Bayes risk, elicitability, and the Expected Shortfall
@@ -78,6 +124,9 @@
         - label: Journal
           url: https://onlinelibrary.wiley.com/doi/full/10.1111/mafi.12313
           class: tag-journal
+        - label: SSRN
+          url: https://ssrn.com/abstract=3708379
+          class: tag-ssrn
     - number: J3
       authors: <strong>Wang, Q.</strong>, Wang, R. and Wei, Y.
       title: Distortion riskmetrics on general spaces
@@ -86,6 +135,9 @@
         - label: Journal
           url: https://doi.org/10.1017/asb.2020.14
           class: tag-journal
+        - label: SSRN
+          url: https://ssrn.com/abstract=3510363
+          class: tag-ssrn
     - number: J2
       authors: <strong>Wang, Q.</strong> and Kwok, Y. K.
       title: Real option signaling games of debt financing using equity guarantee swaps under asymmetric information
@@ -94,6 +146,9 @@
         - label: Journal
           url: https://doi.org/10.1142/S0219024920500363
           class: tag-journal
+        - label: SSRN
+          url: https://ssrn.com/abstract=3442989
+          class: tag-ssrn
     - number: J1
       authors: <strong>Wang, Q.</strong> and Kwok, Y. K.
       title: Signaling game models of equity financing under information asymmetry and finite project life
@@ -102,3 +157,6 @@
         - label: Journal
           url: https://www.worldscientific.com/doi/10.1142/S2424786319500026
           class: tag-journal
+        - label: SSRN
+          url: https://ssrn.com/abstract=3188645
+          class: tag-ssrn
