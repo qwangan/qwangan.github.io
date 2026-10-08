@@ -157,5 +157,17 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(self.data[0]["items"][0]["title"], "New arXiv paper")
 
 
+class WorkflowTests(unittest.TestCase):
+    def test_writers_share_lock_and_check_out_latest_branch(self):
+        workflows = Path(__file__).resolve().parents[1] / ".github" / "workflows"
+        for filename in ("update-publications.yml", "build-cv.yml"):
+            workflow = pub.yaml.load((workflows / filename).read_text(), Loader=pub.yaml.BaseLoader)
+            self.assertEqual(workflow["concurrency"]["group"], "website-content")
+            self.assertEqual(workflow["concurrency"]["cancel-in-progress"], "false")
+            for job in workflow["jobs"].values():
+                checkout = next(step for step in job["steps"] if step.get("uses", "").startswith("actions/checkout@"))
+                self.assertEqual(checkout["with"]["ref"], "${{ github.ref_name }}")
+
+
 if __name__ == "__main__":
     unittest.main()

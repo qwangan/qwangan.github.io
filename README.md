@@ -51,7 +51,7 @@ Author identity and companion-paper mappings are configured in `publication-sour
 
 Discovery matches existing papers by source identifier or normalized title, adds arXiv/SSRN links to existing journal entries, and assigns stable P-numbers to genuinely new manuscripts. Related material can be mapped to a parent paper; the SSRN simulation companion to E-backtesting is linked under J10. Existing author/title capitalization and journal citations are retained in the default `missing` mode. Genuine title or author changes can be accepted using a manual `refresh` run.
 
-After a changed list is committed, the workflow **explicitly requests a Pages build and dispatches the CV builder**. This is required because commits made with `GITHUB_TOKEN` do not trigger ordinary Pages builds or push workflows. Both writers use one concurrency group to avoid conflicting pushes. If a source fails, successful updates are retained and published, and the workflow finishes with a visible failure instead of silently reporting success.
+After a changed list is committed, the workflow **explicitly requests a Pages build and dispatches the CV builder**. This is required because commits made with `GITHUB_TOKEN` do not trigger ordinary Pages builds or push workflows. Both writers use one concurrency group and check out the latest branch when starting, so a queued run does not push from an outdated event commit. If a source fails, successful updates are retained and published, and the workflow finishes with a visible failure instead of silently reporting success.
 
 To discover papers and refresh metadata locally:
 
