@@ -1,0 +1,9 @@
+# Author identity verified in the arXiv feed and SSRN's Crossref records.
+author: Qiuqi Wang
+orcid: 0000-0002-9671-8425
+
+# Attach companion material to its parent publication instead of adding a paper.
+related_records:
+  SSRN:4346325:
+    publication: J10
+    label: SSRN supplement

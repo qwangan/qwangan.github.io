@@ -5,3 +5,5 @@ _site/
 .jekyll-metadata
 vendor/
 .cv-build/
+__pycache__/
+*.pyc

@@ -20,10 +20,16 @@ on:
 
 permissions:
   contents: write
+  pages: write
+
+concurrency:
+  group: website-content
+  cancel-in-progress: false
 
 jobs:
   build-cv:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -47,3 +53,8 @@ jobs:
           git add files/Curriculum_Vitae.pdf cv-source/Curriculum_Vitae.tex
           git commit -m "Build CV PDF from website data"
           git push
+
+      - name: Publish the website and CV
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"

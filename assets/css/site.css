@@ -481,6 +481,7 @@
 
     .tag-journal { background: #e8f0f5; border: 1px solid #c8d8e0; color: var(--blue); }
     .tag-arxiv { background: #edf3ed; border: 1px solid #c9dacd; color: var(--green); }
+    .tag-ssrn { background: #f8f0dc; border: 1px solid #ead4a4; color: #7c5a16; }
     .tag-preprint { background: #f8f0dc; border: 1px solid #ead4a4; color: #7c5a16; }
 
     .position-group,
