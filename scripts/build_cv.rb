@@ -91,7 +91,7 @@ def italicized_journals(journals)
 end
 
 def section(title)
-  "\\rule[4pt]{17cm}{0.3pt}\n\\medskip\n{\\large \\bf #{escape_latex(title)}}\n\\medskip\n\n"
+  "\\Needspace{6\\baselineskip}\n\\rule[4pt]{17cm}{0.3pt}\n\\medskip\n{\\large \\bf #{escape_latex(title)}}\n\\medskip\n\\nopagebreak[4]\n\n"
 end
 
 def two_column_rows(rows)
@@ -181,6 +181,7 @@ tex << <<~TEX
   \\usepackage{array}
   \\usepackage{hyperref}
   \\usepackage{multirow}
+  \\usepackage{needspace}
   \\urlstyle{same}
   \\addtolength{\\topmargin}{-6pc}
   \\addtolength{\\textheight}{10pc}
