@@ -2,6 +2,9 @@
     - heading: Invited Presentations
       items:
         - year: 2026
+          description: Georgia Statistics Day
+          place: Atlanta, US
+        - year: 2026
           description: Institute of Mathematical Statistics - Asia Pacific Rim Meeting
           place: Hong Kong, China
         - year: 2026
