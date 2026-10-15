@@ -1,10 +1,10 @@
 - label: Actuarial
   journals: 'Insurance: Mathematics and Economics, ASTIN Bulletin, North American Actuarial Journal, European Actuarial Journal, Annals of Actuarial Science'
 - label: Finance
-  journals: 'Mathematical Finance, Finance &amp; Stochastics, SIAM Journal on Financial Mathematics, Quantitative Finance'
+  journals: 'Mathematical Finance, Finance & Stochastics, SIAM Journal on Financial Mathematics, Quantitative Finance'
 - label: OR
   journals: 'Operations Research, Mathematics of Operations Research, European Journal of Operational Research'
 - label: Probability
-  journals: 'Statistics &amp; Probability Letters'
-- label: Economics &amp Finance
-  journals: 'Economic Modelling; International Review of Financial Analysis'
+  journals: 'Statistics & Probability Letters'
+- label: Economics & Finance
+  journals: 'Economic Modelling, International Review of Financial Analysis'

@@ -185,7 +185,7 @@ description: Qiuqi Wang, Ph.D., A.S.A. — Assistant Professor at the Maurice R.
     <ul class="course-list service-list">
       {% for item in site.data.service %}
       {% assign journals = item.journals | split: ', ' %}
-      <li class="course-item"><span class="course-code service-label">{{ item.label }}</span><span class="course-name">{% for journal in journals %}<em>{{ journal }}</em>{% unless forloop.last %}, {% endunless %}{% endfor %}</span></li>
+      <li class="course-item"><span class="course-code service-label">{{ item.label | escape }}</span><span class="course-name">{% for journal in journals %}<em>{{ journal | escape }}</em>{% unless forloop.last %}, {% endunless %}{% endfor %}</span></li>
       {% endfor %}
     </ul>
   </div>

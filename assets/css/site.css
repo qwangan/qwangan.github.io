@@ -545,6 +545,10 @@
 
     .service-list { max-width: 840px; }
     .service-label { min-width: 92px; }
+    #service .course-item {
+      grid-template-columns: 160px minmax(0, 1fr);
+      column-gap: 24px;
+    }
     .editorial-list .course-item { grid-template-columns: 150px minmax(0, 1fr) auto; }
     .editorial-journal {
       display: inline-block;
@@ -691,6 +695,7 @@
       }
 
       .course-item { grid-template-columns: 1fr; gap: 2px; }
+      #service .course-item { grid-template-columns: 1fr; gap: 2px; }
       .editorial-list .course-item { grid-template-columns: 1fr; }
       .course-term { grid-column: auto; }
       .contact-card { padding: 21px; }
