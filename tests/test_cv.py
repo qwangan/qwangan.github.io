@@ -27,17 +27,19 @@ class CVServiceTests(unittest.TestCase):
     def test_ampersands_render_as_latex_symbols_not_html_entities(self):
         self.assertNotIn(r"\&amp", self.tex)
         for text in (
-            r"Econ. \& Fin.:",
             r"Finance \& Stochastics",
             r"Statistics \& Probability Letters",
         ):
             self.assertIn(text, self.tex)
 
-    def test_last_service_row_has_comma_separated_journals(self):
+    def test_irfa_belongs_only_to_finance(self):
+        finance = next(line for line in self.tex.splitlines() if line.strip().startswith(r"\item Finance:"))
         self.assertIn(
-            r"Econ. \& Fin.: \emph{Economic Modelling}, \emph{International Review of Financial Analysis}",
-            self.tex,
+            r"\emph{Quantitative Finance}, \emph{International Review of Financial Analysis}",
+            finance,
         )
+        self.assertIn("\\item Economics: \\emph{Economic Modelling}\n", self.tex)
+        self.assertEqual(self.tex.count("International Review of Financial Analysis"), 1)
 
 
 if __name__ == "__main__":
