@@ -27,7 +27,7 @@ class CVServiceTests(unittest.TestCase):
     def test_ampersands_render_as_latex_symbols_not_html_entities(self):
         self.assertNotIn(r"\&amp", self.tex)
         for text in (
-            r"Economics \& Finance:",
+            r"Econ. \& Fin.:",
             r"Finance \& Stochastics",
             r"Statistics \& Probability Letters",
         ):
@@ -35,7 +35,7 @@ class CVServiceTests(unittest.TestCase):
 
     def test_last_service_row_has_comma_separated_journals(self):
         self.assertIn(
-            r"Economics \& Finance: \emph{Economic Modelling}, \emph{International Review of Financial Analysis}",
+            r"Econ. \& Fin.: \emph{Economic Modelling}, \emph{International Review of Financial Analysis}",
             self.tex,
         )
 

@@ -546,7 +546,7 @@
     .service-list { max-width: 840px; }
     .service-label { min-width: 92px; }
     #service .course-item {
-      grid-template-columns: 160px minmax(0, 1fr);
+      grid-template-columns: 120px minmax(0, 1fr);
       column-gap: 24px;
     }
     .editorial-list .course-item { grid-template-columns: 150px minmax(0, 1fr) auto; }
