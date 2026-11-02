@@ -14,6 +14,7 @@ STATIC_DIR = File.join(CV_DIR, 'static')
 APPOINTMENT_PATH = File.join(STATIC_DIR, 'academic_appointment.tex')
 EDUCATION_PATH = File.join(STATIC_DIR, 'education.tex')
 PROFESSIONAL_DESIGNATION_PATH = File.join(STATIC_DIR, 'professional_designation.tex')
+GRANTS_PATH = File.join(STATIC_DIR, 'research_grants.tex')
 HONORS_PATH = File.join(STATIC_DIR, 'honors_awards.tex')
 
 FileUtils.mkdir_p(CV_DIR)
@@ -229,11 +230,17 @@ end
 tex << "{\\bf Dissertations}\n\n"
 tex << enumerate(CV_ONLY['dissertations'])
 
+tex << section('Competitive Research Grants')
+tex << File.read(GRANTS_PATH)
+tex << "\n"
+
 tex << File.read(HONORS_PATH)
 tex << "\n"
 
+tex << "\\noindent\\begin{minipage}{\\linewidth}\n"
 tex << section('Academic Visits')
 tex << two_column_rows(VISITS.map { |visit| ["#{visit['description']} (#{visit['place']})", visit['year']] })
+tex << "\\end{minipage}\n\n"
 
 tex << section('Conferences Organized')
 organization = activity_items('Conference Organization')

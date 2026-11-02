@@ -1,4 +1,4 @@
-"""Regression checks for shared service data in the generated CV."""
+"""Regression checks for service and grant entries in the generated CV."""
 
 import shutil
 import subprocess
@@ -40,6 +40,16 @@ class CVServiceTests(unittest.TestCase):
         )
         self.assertIn("\\item Economics: \\emph{Economic Modelling}\n", self.tex)
         self.assertEqual(self.tex.count("International Review of Financial Analysis"), 1)
+
+    def test_research_grant_survives_regeneration(self):
+        heading = r"{\large \bf Competitive Research Grants}"
+        entry = (
+            "Faculty Internal Grants (Tier 1), Georgia State University"
+            r" & [sole PI] FY27--28\\"
+        )
+        self.assertEqual(self.tex.count(entry), 1)
+        self.assertLess(self.tex.index(heading), self.tex.index(entry))
+        self.assertLess(self.tex.index(entry), self.tex.index("Selected Honors and Awards"))
 
 
 if __name__ == "__main__":
