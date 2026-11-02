@@ -45,9 +45,10 @@ class CVServiceTests(unittest.TestCase):
         heading = r"{\large \bf Competitive Research Grants}"
         entry = (
             "Faculty Internal Grants (Tier 1), Georgia State University"
-            r" & [sole PI] FY27--28\\"
+            r" & [PI] FY27--28\\"
         )
         self.assertEqual(self.tex.count(entry), 1)
+        self.assertNotIn("sole PI", self.tex)
         self.assertLess(self.tex.index(heading), self.tex.index(entry))
         self.assertLess(self.tex.index(entry), self.tex.index("Selected Honors and Awards"))
 
