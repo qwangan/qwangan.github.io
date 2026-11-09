@@ -18,7 +18,7 @@
           class: tag-arxiv
     - number: P3
       authors: Jiao, Z., <strong>Wang, Q.</strong> and Zhao, Y.
-      title: Comparative e-backtests for general risk measures
+      title: Comparative e-backtesting
       venue: Preprint, 2025
       links:
         - label: arXiv
